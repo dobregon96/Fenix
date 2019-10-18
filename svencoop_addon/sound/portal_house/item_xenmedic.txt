@@ -1,0 +1,2 @@
+"items/smallmedkit1.wav"	"portal_house/clistal.wav"
+"items/smallmedkit2.wav"	"portal_house/clistal.wav"

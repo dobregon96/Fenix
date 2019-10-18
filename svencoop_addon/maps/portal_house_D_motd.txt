@@ -1,0 +1,35 @@
+Portal House  - Sector "D"
+
+Bienvenido a Xen... El sector "D" del laboratorio Black Mesa, fue extraido al mundo fronterizo.. Ahora tenemos que mantener a salvo los portales del laboratorio hasta derrotar la Manta.
+Tu mision aqui debes defender la base mientras tus aliados te ayudan a combatir con las fuerzas enemigas de Xen. A lo largo de la batalla de 2 mundos, te encontraras con los personajes de los Mods mas jugados de half life.
+
+PRIMERO: ESCOGE TU EQUIPO
+*Dispones de 2 equipos al comienzo del juego para que te ayuden a derrotar los enemigos.
+ EL EQUIPO BLACK MESA
+ EL EQUIPO HECU
+
+SEGUNDO: DEFENDER LA BASE
+*no permitas que destruyan el laboratorio [Lab central - Sector D] tiene 2500 puntos de defensa, mientras estas ausente ocupandote de recorrer diferentes plataformas, es recomendable activar los escudos que esta en el laboratorio, puede proteger la base durante 90 segundos, pero demorar en refrescar el comando por 5 min de couldown. Si la base es destruida seria un GG ;)
+
+TERCERO: DERROTAR LOS JEFES
+*Nihilanth enviara a sus agentes mas poderos cada cierto tiempo, consta de 4 jefes por niveles, destruyelos lo mas antes posible, no podemos dejarlos rondar en el mapa porque acumulara otra unidad mas poderosa y sera complicado enfretarse a la ves 2 o mas jefes
+
+CUARTO: EMISORES XEN
+Cuando tu derrotes un jefe, se te abrira un camino nuevo por lo que ahi empieza la busqueda de los Emisores Xen. Los emisores se encuentran en diferentes plataformas de la Roca central enemiga. Activa los emisores, para restaurar la energia suficiente y asi poder abrir los portales.
+
+QUINTO: PORTALES
+Despues de activar los emisores, en la consola del laboratorio encontraras 4 botones de los portales te ayudara a reclutar mas aliados. las unidades aliadas que saldran de los portales va dependiendo del equipo que hayas escogido. Recuerda cuanto mas portales abras, mas enemigos apareceran.
+
+SEXTO: MANTA
+Es el enemigo final, unidad voladora muy poderosa que dispara rayos que sacude el suelo con una explosion muy potente, ten cuidado su blindaje es inmune a las balas, asi que tendras que derrotarlo con el Rocket Launcher u otra arma que sea de fuego potente.
+
+Mapa creado por: Pierre Limaco
+
+creditos:
+Andrea "Toadman" Butti, DeathBog, Toxagen, Koumei Satou(SHL)
+
+vissage23.lap@gmail.com
+
+		Adios Amigo !!!
+		
+		Enjoy it..Good Night

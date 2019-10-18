@@ -1,0 +1,8 @@
+"squeek/sqk_blast1.wav"	"portal_house/toad/toad_blast1.wav"
+"squeek/sqk_deploy1.wav"	"portal_house/toad/toad_deploy1.wav"
+"squeek/sqk_die1.wav"	"portal_house/toad/toad_die1.wav"
+"squeek/sqk_hunt1.wav"	"portal_house/toad/toad_hunt1.wav"
+"squeek/sqk_hunt2.wav"	"portal_house/toad/toad_hunt2.wav"
+"squeek/sqk_hunt3.wav"	"portal_house/toad/toad_hunt3.wav"
+
+"!SCI_6SAT"	"portal_house/keller/dk_12_whenstart.wav"

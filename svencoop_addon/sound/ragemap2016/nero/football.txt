@@ -1,0 +1,6 @@
+"squeek/sqk_blast1.wav" "ragemap2016/nero/aieou05.mp3"
+"squeek/sqk_deploy1.wav" "ragemap2016/nero/football01.mp3"
+"squeek/sqk_die1.wav" "ragemap2016/nero/aieou01.mp3"
+"squeek/sqk_hunt1.wav" "ragemap2016/nero/football02.mp3"
+"squeek/sqk_hunt2.wav" "ragemap2016/nero/football03.mp3"
+"squeek/sqk_hunt3.wav" "ragemap2016/nero/football04.mp3"

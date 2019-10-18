@@ -1,0 +1,55 @@
+TB_mesa2
+Made by TheBard
+with ideas from Jazz-Man
+
+Incoming transmision.
+Right you've made it though the waste recycling center.
+We are dectecting a large amount of enemy activity down there.
+Looks like there ready for a small war down there
+we are picking up large heat blooms from the satellite probably
+aircraft.
+Your in to the main phase now commander sweep and kill everything
+thats not supose to be there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================
+Now for the pointless stuff!
+build time apx. 200 to 250 hours
+number of bugged versions before i got it right! 6
+2 custom textures
+
+ideal players 8+
+can be done by just one player though (if you dont mind dying a
+hell of a lot.
+tb_mesa4 comming in a long time!
+
+map info if anyone's really intrested in this sort of stuff
+
+Object names  Objects/Maxobjs  Memory / Maxmem  Fullness
+------------  ---------------  ---------------  --------
+models            206/400        13184/25600    (51.5%)
+planes          26118/32767     522360/655340   (79.7%)
+vertexes        21489/65535     257868/786420   (32.8%)
+nodes            8175/32767     196200/786408   (24.9%)
+texinfos         2718/8192      108720/327680   (33.2%)
+faces           15445/65535     308900/1310700  (23.6%)
+clipnodes       25098/32767     200784/262136   (76.6%)
+leaves           5730/8192      160440/229376   (69.9%)
+marksurfaces    20584/65535      41168/131070   (31.4%)
+surfedges       72351/512000    289404/2048000  (14.1%)
+edges           38890/256000    155560/1024000  (15.2%)
+texdata          [variable]      15768/2097152  ( 0.8%)
+lightdata        [variable]    1758690/2097152  (83.9%)VERY FULL!
+visdata          [variable]          0/2097152  ( 0.0%)
+entdata          [variable]      55206/131072   (42.1%)

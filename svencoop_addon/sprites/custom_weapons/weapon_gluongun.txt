@@ -1,0 +1,9 @@
+8
+weapon			320 custom_weapons/gluongun			0	0	170	52
+weapon_s		320 custom_weapons/gluongun			0	0	170	52
+ammo			320 custom_weapons/gluongun			145	51	24	24
+crosshair		320 custom_weapons/gluongun_crosshairs		0	0	61	42
+weapon			640 custom_weapons/gluongun			0	0	170	52
+weapon_s		640 custom_weapons/gluongun			0	0	170	52
+ammo			640 custom_weapons/gluongun			145	51	24	24
+crosshair		640 custom_weapons/gluongun_crosshairs		0	0	61	42

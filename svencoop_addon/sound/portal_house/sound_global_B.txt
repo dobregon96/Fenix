@@ -1,0 +1,10 @@
+"!SC_DISA"	"portal_house/rosenberg/ro_yard_rose1.wav"
+"!SC_DIS1A"	"portal_house/rosenberg/ro_03_inside.wav"
+"!SC_CONSOLE1A"	"portal_house/rosenberg/ro_01_survived.wav"
+"!SC_CONSOLE2A"	"portal_house/rosenberg/ro_03_surface.wav"
+"!SC_CONSOLE3A"	"portal_house/rosenberg/ro_calhoun2.wav"
+
+"!SC_POWERON"	"portal_house/keller/dk_12_deploy1.wav"
+"!SC_POWEROFF"	"portal_house/keller/dk_12_critical1.wav"
+
+"!BA_SURFACE"	"portal_house/barney/ba_ht07_15.wav"

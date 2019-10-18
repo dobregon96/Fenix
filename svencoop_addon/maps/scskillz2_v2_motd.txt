@@ -1,0 +1,50 @@
+* SCSkillz2 - Sven Co-Op Skill Course the 2nd *
+
+
+Version 2.0
+
+Map made by Volcom82
+Visit http://www.bay-clan.org/volcom82 for more of my maps.
+Location: Somewhere in Black Mesa
+
+The Objective:
+Race the other team to the finish and win by completing all of the given obstacles before they do.
+
+----------HOW TO SKILL JUMP:-------------------
+
+Crossbow Jumping: Crouch down, then JUMP and SHOOT the ground at the SAME TIME.
+
+Running Crossbow jump: Same thing as a regular xbow jump, except just duck at the end of your run and JUMP and SHOOT the ground.
+
+RPG Jump: Same thing as the x-bow jump, except that you need to have some armor. TWENTY FIVE ARMOR!! THATS ONE BATTERY ON A NORMAL SERVER. 
+The battery prevents you from dying from the RPG's splash damage.
+After getting the battery, just crouch, then shoot and jump like normal.
+
+Grenade Jump: You can either throw the grenade on the floor and jump when it explodes, 
+OR you can "cook" the grenade for about 3-4 seconds, then jump and let go of the grenade. 
+You should be able to clear a great distance using this method.
+
+--------------------------------------------------
+
+
+Note: The map is meant to have 2 people on each team, to balance out the game.
+
+How to start out:
+
+Pick a side, either Blue or Red and go into your teleport room. 
+You and someone on the opposite team need to press the buttons on the computer simoutaneously to start the teleportation sequence. 
+If done right, a portal will open after 1 minute. 
+After a team wins the round, the teleport chamber will reset, and you will need to do this again to start the next round.
+
+Good Luck and God Speed!
+
+THANKS TO:
+
+Lockdown - Beta Tester, made the terrain on Jump 3
+{Ls} Kami - Beta Tester, for being such a great friend :)
+Overkill - 1337
+Monkey Squad - 1337
+Hux!!! - For helping me figure out how to prevent suicides
+
+
+* (c) Volcom82 2007 *

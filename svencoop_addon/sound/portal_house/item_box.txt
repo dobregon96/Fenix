@@ -1,0 +1,2 @@
+"items/suitchargeok1.wav"	"portal_house/items/gunpickup4.wav"
+"hgrunt/gr_reload1.wav"	"portal_house/rc_step1.wav"

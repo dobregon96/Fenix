@@ -1,0 +1,7 @@
+ragemap2016 part 1
+by
+Keen, engiSonic, Walter, Nero, Silencer, JPolito, The303, Tuesday's Avenger and Maestro Fenix
+
+In May 2016 JPolito and Keen joined forces to bring a new ragemap to the game. However, there were problems. Someone wanted to add racial slurs or something to the map, and then JPolito got very mad. Also all the development files were all over the place. Keen kept working on it but someone else got angry over some bug or something. Also engine limits were reached. Then Keen and JP were quitting and rejoining the project for some time I cannot even remember in which order anymore. Anyway the project lied around dead for a while, until Fenix decided to reassemble everything from scratch and fix some bugs. Then Silencer fixed some more bugs and somehow made a final compile with less bugs which is what you are playing now.
+
+Enjoy!

@@ -1,0 +1,4 @@
+"weapons/pl_gun3.wav"	"ragemap2016/hk1.wav"
+"weapons/hks1.wav"	"ragemap2016/hk1.wav"
+"weapons/hks2.wav"	"ragemap2016/hk2.wav"
+"weapons/hks3.wav"	"ragemap2016/hk3.wav"

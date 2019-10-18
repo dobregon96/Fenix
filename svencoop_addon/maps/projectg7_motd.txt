@@ -1,0 +1,15 @@
+============PROJECT: GUILTY - Mission 1===================
+
+Mission Info: 
+
+A large South American temple has been taken over by a Columbian
+drug lord and his army, who wishes to use the treasures in the 
+temple to fund his anti-US activities
+
+We have recieved word that a document proving a link between the
+Columbian Government and this Drug Lord can be found deep within 
+the temple where the troops base is located. Your mission is to
+retrieve this document
+
+There have been some strange reports of mutated creatures throughout
+the facility, possibly the result of genetic experiments. Be careful
