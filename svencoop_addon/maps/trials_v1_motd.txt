@@ -1,0 +1,35 @@
+#-----------------
+#Trials (V.1)
+#By: Streamfox
+#-----------------
+Minimum of 2 players are required!
+Map is meant for max 4 players!
+Wait for others before start the map, otherwise they won't able to hear the
+music! Don't be a retarded rusher, and a wandering idiot!
+------------------
+Escort the cube through severel puzzles to reach the end.
+Most of the puzzles are need the cube to complete them.
+------------------
+Betatest:
+RNG
+Sence
+Lemonsoda
+Beton
+Blue Cheetah
+CryoKeen
+and those who I don't remember…
+-----------
+Hints, tips:
+
+*Lift and thorw the cube: 
+Aim on the cube then push and hold down "use" 
+(default E key) and lift it with the mouse.
+
+*"Cuberiding":
+Jump on the cube then press and hold down the 
+"use" key while moving forward gently. 
+You have to stop regularly in order to make 
+the cube moving in the right direction.
+
+-You always have to take the cube with yourself 
+while moving forward. It gonna be needed for further actions.
