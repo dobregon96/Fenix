@@ -1,8 +1,8 @@
 #include "proj_nuke"
 
 const int REDEEMER_DEFAULT_GIVE			= 4;
-const int REDEEMER_MAX_CARRY			= 12;
-const int REDEEMER_MAX_CLIP				= 1;
+const int REDEEMER_MAX_CARRY			= 20;
+const int REDEEMER_MAX_CLIP				= 2;
 const int REDEEMER_WEIGHT				= 110;
 const int REDEEMER_DAMAGE				= 1500;
 
@@ -75,7 +75,7 @@ class CRedeemer : ScriptBasePlayerWeaponEntity
 		info.iMaxAmmo1 	= REDEEMER_MAX_CARRY;
 		info.iMaxAmmo2 	= -1;
 		info.iMaxClip 	= REDEEMER_MAX_CLIP;
-		info.iSlot 		= 5;
+		info.iSlot 		= 8;
 		info.iPosition 	= 8;
 		info.iFlags 	= ITEM_FLAG_SELECTONEMPTY | ITEM_FLAG_NOAUTORELOAD;
 		info.iWeight 	= REDEEMER_WEIGHT;
