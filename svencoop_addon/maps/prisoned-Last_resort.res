@@ -1,1 +1,0 @@
-models/superrobo/superrobo.mdl

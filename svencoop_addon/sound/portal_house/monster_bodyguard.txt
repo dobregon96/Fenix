@@ -1,1 +1,0 @@
-"minigun/hw_shoot1.wav" "portal_house/weapons/fire_minigun01.wav"

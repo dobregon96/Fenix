@@ -1,9 +1,0 @@
-attachment 0 
-bone 4 
-spritename sprites/starwars/expB1.spr 
-scale  10
-colorR 255
-colorB 150
-colorG 150
-rendermode 5
-transparency 255

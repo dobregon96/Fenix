@@ -1,3 +1,0 @@
-"weapons/sniper_fire.wav"	"portal_house/weapons/sniper_fire.wav"
-"weapons/m16_3round.wav"	"portal_house/weapons/gr_mgun1.wav"
-"weapons/m16_single.wav"		"portal_house/weapons/gr_mgun1.wav"

@@ -1,9 +1,0 @@
-attachment 0
-bone 0
-spritename sprites/muzzleflash.spr
-scale  10
-colorR 65
-colorB 105
-colorG 255
-rendermode 5
-transparency 255

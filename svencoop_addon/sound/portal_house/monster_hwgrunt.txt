@@ -1,8 +1,0 @@
-"hgrunt/gr_die1.wav"	"portal_house/hassault/assault_die1.wav"
-"hgrunt/gr_die2.wav"	"portal_house/hassault/assault_die2.wav"
-"hgrunt/gr_die3.wav"	"portal_house/hassault/assault_die3.wav"
-"hgrunt/gr_pain1.wav"	"portal_house/hassault/assault_pain1.wav"
-"hgrunt/gr_pain2.wav"	"portal_house/hassault/assault_pain2.wav"
-"hgrunt/gr_pain3.wav"	"portal_house/hassault/assault_pain3.wav"
-"hgrunt/gr_pain4.wav"	"portal_house/hassault/assault_pain1.wav"
-"hgrunt/gr_pain5.wav"	"portal_house/hassault/assault_pain2.wav"
