@@ -1,0 +1,3 @@
+//DEATH
+HEV_DEAD0 barney/ba_die1
+HEV_DEAD1 barney/ba_die3
