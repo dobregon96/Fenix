@@ -25,7 +25,11 @@ const int PAR_WEIGHT 		= 5;
 
 class weapon_par21 : ScriptBasePlayerWeaponEntity
 {
-	private CBasePlayer@ m_pPlayer = null;
+	private CBasePlayer@ m_pPlayer
+	{
+		get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set       	{ self.m_hPlayer = EHandle( @value ); }
+	}
 
 	float m_flNextAnimTime;
 	int m_iShell;

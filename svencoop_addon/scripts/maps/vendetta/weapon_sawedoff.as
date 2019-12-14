@@ -33,7 +33,11 @@ enum SawedOffAnimation
 
 class weapon_sawedoff : ScriptBasePlayerWeaponEntity
 {
-	private CBasePlayer@ m_pPlayer = null;
+	private CBasePlayer@ m_pPlayer
+	{
+		get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set       	{ self.m_hPlayer = EHandle( @value ); }
+	}
 	
 	float m_flNextReload;
 	int m_iShell;
@@ -103,7 +107,10 @@ class weapon_sawedoff : ScriptBasePlayerWeaponEntity
 	void Holster( int skipLocal = 0 )
 	{
 		m_fShotgunReload = false;
-		
+
+		// Fix for null pointer access in EjectShell -R4to0 (20 May 2019)
+		SetThink( null );
+
 		BaseClass.Holster( skipLocal );
 	}
 

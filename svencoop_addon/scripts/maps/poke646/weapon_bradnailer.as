@@ -31,7 +31,11 @@ enum BRADNAILERAnimation
 
 class weapon_bradnailer : ScriptBasePlayerWeaponEntity
 {
-	private CBasePlayer@ m_pPlayer = null;
+	private CBasePlayer@ m_pPlayer
+	{
+		get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set       	{ self.m_hPlayer = EHandle( @value ); }
+	}
 
 	int m_iShell;
 	bool m_bCanReload = true;
@@ -93,11 +97,15 @@ class weapon_bradnailer : ScriptBasePlayerWeaponEntity
 		return self.DefaultDeploy( self.GetV_Model( "models/poke646/weapons/bradnailer/v_bradnailer.mdl" ), self.GetP_Model( "models/poke646/weapons/bradnailer/p_bradnailer.mdl" ), BRADNAILER_DRAW, "onehanded" );
 	}
 
-	void Holster( int skiplocal /* = 0 */ )
+	void Holster( int skipLocal = 0 )
 	{
 		m_bIsTilted = false;
 		m_pPlayer.m_flNextAttack = g_WeaponFuncs.WeaponTimeBase() + 0.5;
 		m_bCanReload = true;
+
+		// Fix for the viewmodel bug in observer mode.
+		// This sets pev.viewmodel and pev.weaponmodel to 0 (Thanks GeckonCZ). -R4to0 (24 September 2019)
+		BaseClass.Holster( skipLocal );
 	}
 
 	float WeaponTimeBase()

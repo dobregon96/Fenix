@@ -27,7 +27,11 @@ enum CMLWBRAnimation
 
 class weapon_cmlwbr : ScriptBasePlayerWeaponEntity
 {
-	private CBasePlayer@ m_pPlayer = null;
+	private CBasePlayer@ m_pPlayer
+	{
+		get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set       	{ self.m_hPlayer = EHandle( @value ); }
+	}
 	
 	bool m_fInReload = false;
 	int m_iZoomLevel;

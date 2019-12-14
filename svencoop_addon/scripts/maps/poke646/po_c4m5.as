@@ -2,9 +2,6 @@
 // po_c4m5 Anti-Troll Script
 // Author: Zorbos / Anti-Troll code by w00tguy123
 
-#include "Survival"
-#include "point_checkpoint"
-
 #include "ammo_nailclip"
 #include "ammo_nailround"
 #include "weapon_bradnailer"
@@ -12,20 +9,14 @@
 #include "weapon_heaterpipe"
 #include "weapon_nailgun"
 #include "weapon_sawedoff"
-
-Survival g_Survival;
+#include "point_checkpoint"
 
 void MapInit()
 { 
-	RegisterPointCheckPointEntity();
+	// Survival checkpoint
+	POKECHECKPOINT::RegisterPointCheckPointEntity();
+
 	g_Hooks.RegisterHook(Hooks::Player::PlayerSpawn, @poke646_PlayerSpawn);
-
-	//Uncomment this to test survival mode in single player mode
-	g_Survival.MinPlayersRequired = 1;
-	g_Survival.DelayBeforeStart = 45;
-	g_Survival.DelayBeforeEnd = 3;
-
-	g_Survival.MapInit();
 
 	RegisterBradnailer();
 	RegisterNailgun();
@@ -52,7 +43,6 @@ void SetPlayerAmmo( CBasePlayer@ pPlayer )
 
 void MapActivate()
 {
-	g_Survival.MapActivate();
 	disableRestart();
 	findTripmines();
 	g_Scheduler.SetInterval("mineThink", 0.0);

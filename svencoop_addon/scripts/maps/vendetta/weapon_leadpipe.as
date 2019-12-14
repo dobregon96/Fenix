@@ -22,7 +22,11 @@ const float PIPE_MOD_FATIGUE_TICK = 0.50; // Time between fatigue checks
 
 class weapon_leadpipe : ScriptBasePlayerWeaponEntity
 {
-	private CBasePlayer@ m_pPlayer = null;
+	private CBasePlayer@ m_pPlayer
+	{
+		get const 	{ return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set       	{ self.m_hPlayer = EHandle( @value ); }
+	}
 	
 	int m_iSwing;
 	int m_iSwingCount = 0;
@@ -85,7 +89,7 @@ class weapon_leadpipe : ScriptBasePlayerWeaponEntity
 		return self.DefaultDeploy( self.GetV_Model( "models/vendetta/weapons/leadpipe/v_leadpipe.mdl" ), self.GetP_Model( "models/vendetta/weapons/leadpipe/p_leadpipe.mdl" ), PIPE_DRAW, "crowbar" );
 	}
 
-	void Holster( int skiplocal /* = 0 */ )
+	void Holster( int skipLocal = 0 )
 	{
 		self.m_fInReload = false;// cancel any reload in progress.
 		m_flDmgMulti = 1.0;
@@ -99,6 +103,13 @@ class weapon_leadpipe : ScriptBasePlayerWeaponEntity
 		}
 		
 		m_pPlayer.m_flNextAttack = g_WeaponFuncs.WeaponTimeBase() + 0.5;
+
+		// Fix for the SendWeaponAnim crash -R4to0 (8 May 2019)
+		SetThink( null );
+
+		// Fix for the viewmodel bug in observer mode.
+		// This sets pev.viewmodel and pev.weaponmodel to 0 (Thanks GeckonCZ). -R4to0 (24 September 2019)
+		BaseClass.Holster( skipLocal );
 	}
 	
 	void PrimaryAttack()

@@ -8,9 +8,13 @@
 #include "weapon_leadpipe"
 #include "weapon_par21"
 #include "weapon_sawedoff"
+#include "../poke646/point_checkpoint"
 
 void MapInit()
 {
+	// Survival checkpoint
+	POKECHECKPOINT::RegisterPointCheckPointEntity();
+
 	// Register weapons
 	RegisterPAR21();
 	RegisterSawedOff();
