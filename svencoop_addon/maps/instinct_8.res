@@ -2,3 +2,5 @@
 // https://github.com/wootguy/resguy
 
 hlinstinct.wad
+models/cubemath/chars/d6.mdl
+models/cubemath/chars/percent.mdl

@@ -1,9 +1,8 @@
 #include "point_checkpoint"
-#include "hlsp/trigger_suitcheck"
-#include "HLSPClassicMode"
 #include "cubemath/trigger_once_mp"
+#include "cubemath/func_wall_custom"
 #include "instinct_polygon"
-
+#include "crouch_spawn"
 
 array<Vector> old_ply_posis;
 
@@ -108,13 +107,12 @@ void just_fallingdamage(){
 }
 
 void MapInit(){
+	RegisterPointCheckPointEntity();
 	RegisterTriggerOnceMpEntity();
-    RegisterPointCheckPointEntity();
-    RegisterTriggerSuitcheckEntity();
-    
+	RegisterFuncWallCustomEntity();
+    if(g_Engine.mapname != "instinct_3")
+        g_crspawn.Disable();
   g_Scheduler.SetTimeout( "just_fallingdamage", 0.1f );
-  
-  ClassicModeMapInit();
   
   old_ply_posis.resize(g_Engine.maxClients);
   for( int iPlayer = 0; iPlayer < g_Engine.maxClients; ++iPlayer ){
