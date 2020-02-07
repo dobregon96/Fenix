@@ -3,6 +3,7 @@
 #include "cubemath/trigger_once_mp"
 #include "cubemath/trigger_mediaplayer"
 #include "cubemath/item_airbubble"
+#include "ofnvision"
 
 void MapInit()
 {	
@@ -10,6 +11,7 @@ void MapInit()
 	RegisterTriggerOnceMpEntity();
 	RegisterTriggerMediaPlayerEntity();
 	RegisterAirbubbleCustomEntity();
+	g_nv.MapInit();
 	
 	// Map support is enabled here by default.
 	// So you don't have to add "mp_survival_supported 1" to the map config
