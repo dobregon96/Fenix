@@ -4,6 +4,7 @@
 #include "cubemath/trigger_mediaplayer"
 #include "cubemath/item_airbubble"
 #include "ofnvision"
+#include "crouch_spawn"
 
 void MapInit()
 {	
@@ -12,6 +13,7 @@ void MapInit()
 	RegisterTriggerMediaPlayerEntity();
 	RegisterAirbubbleCustomEntity();
 	g_nv.MapInit();
+	g_crspawn.Enable();  
 	
 	// Map support is enabled here by default.
 	// So you don't have to add "mp_survival_supported 1" to the map config
