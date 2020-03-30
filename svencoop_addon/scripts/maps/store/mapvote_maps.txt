@@ -3,10 +3,21 @@ sprites/dynamic_mapvote/half-life.spr|Half-Life|hl_c00|hl_c02_a1
 sprites/dynamic_mapvote/blue-shift.spr|Half-Life\nBlue Shift|ba_tram1|ba_canal1
 sprites/dynamic_mapvote/opposing-force.spr|Half-Life\nOpposing Force|of0a0|of1a1
 sprites/dynamic_mapvote/uplink.spr|Half-Life\nUplink|uplink
-sprites/dynamic_mapvote/half-life.spr|infested
-sprites/dynamic_mapvote/half-life.spr|toonrun1
-sprites/dynamic_mapvote/decay.spr|dy_accident1|dy_hazard
+sprites/dynamic_mapvote/decay.spr|Half-Life\nDecay|dy_accident1|dy_accident2
+sprites/dynamic_mapvote/of-utbm.spr|Half-Life\nOpposing Force: Under the Black Moon|of_utbm
+sprites/dynamic_mapvote/ua.spr|Half-Life\nUltimate Attack|ss0a0|ss1a1
+sprites/dynamic_mapvote/residuallife.spr|Residual Life|rk00|rl02
+sprites/dynamic_mapvote/half-life.spr|Case Closed|case1
+sprites/dynamic_mapvote/tunnelvision.spr|Tunnel Vision|tunnelvision_1
+sprites/dynamic_mapvote/echoes.spr|Echoes|echoes00|echoes06
+sprites/dynamic_mapvote/half-life.spr|Destination: Black Mesa|dbm_1
 sprites/dynamic_mapvote/disconator.spr|disco_boss
-sprites/dynamic_mapvote/instinct_v3.spr|instinct_1
-sprites/dynamic_mapvote/half-life.spr|asmap00|asmap00b
+sprites/dynamic_mapvote/instinct_v3.spr|\nInstinct|instinct_1|instinct_2
+sprites/dynamic_mapvote/half-life.spr|azure_sheep|asmap00|asmap00d
+sprites/dynamic_mapvote/persia.spr|Half-Life\npersia|sc_persia
+sprites/dynamic_mapvote/last.spr|Half-Life\nlast|last
+sprites/dynamic_mapvote/infested.spr|Half-Life\ninfested|infested
+sprites/dynamic_mapvote/intruder.spr|Half-Life\nintruder|intruder
+sprites/dynamic_mapvote/toonrun.spr|Half-Life\ntoonrun|toonrun1
+sprites/dynamic_mapvote/doc.spr|Half-Life\ndoc|sc_doc
 
