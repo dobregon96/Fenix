@@ -177,7 +177,7 @@ MAP18_CHAT1 echoes/barney/ba_soldier
 MAP18_CHAT2 scientist/saved
 
 MAP19_DOOR0 echoes/barney/nocandoo
-MAP19_DOOR1 barney/ba_ht07_04, banoplease_door3
+MAP19_DOOR1 echoes/barney/ba_ht07_04, banoplease_door3
 MAP19_BA0 echoes/barney/ba_safe1
 MAP19_BA1 barney/ba_ht07_01
 MAP19_BA2 barney/ba_opgate

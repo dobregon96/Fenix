@@ -2,6 +2,8 @@
 #include "cubemath/trigger_once_mp"
 #include "cubemath/func_wall_custom"
 #include "crouch_spawn"
+#include "azuresheep/monster_barniel_custom"
+#include "azuresheep/monster_kate_custom"
 
 void MapInit()
 {
@@ -11,7 +13,8 @@ void MapInit()
 	RegisterTriggerOnceMpEntity();
 	// Enable custom blocker entity script for Anti-Rush
 	RegisterFuncWallCustomEntity();
-		
-	//Cvars, easier to put them here than in all of the map cfgs individually to save time
-	g_EngineFuncs.CVarSetFloat( "skill", 2 );
+	
+	// Register Custom NPCS
+	barnielCustom::Register();
+	kateCustom::Register();
 }

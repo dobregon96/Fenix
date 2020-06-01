@@ -1,0 +1,35 @@
+MG386 OSP Serie
+=========================================================
+Title			: Osp Serie v4.50
+Filename		: osp1.bsp
+Game			: Sven Co-op Half-Life
+Author			: Martin Girard (MG386)
+Email Address		: map at xtremecoop dot com
+Web Address		: http://xtremecoop.com
+Web Address #2		: http://mg386.com
+special thanks to	: Sven Viking for your mod and tester: Zardoz
+                                                 
+=========================================================
+* Info *
+
+Single Player		: no
+Cooperative		: yes best with 4-8 players (Minimum 2)
+New Sounds		: yes 
+New Graphics		: yes
+New Sky			: yes
+New Models		: yes
+
+=========================================================
+* Construction *
+
+The Map			: All maps MG386 OSP Serie
+Editor(s)		: Worldcraft 3.5
+Known Bugs		: I don't no...                       
+                           
+Compile Time(Approximate): 1 hours With Full Vis and Extra Wad
+   
+Compile Machine		: P4 3GHz  1024 RAM
+
+R_speeds                : Good
+       		  
+=========================================================

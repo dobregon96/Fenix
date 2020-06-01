@@ -1,0 +1,9 @@
+Title: Warehouse-invasion
+Author: Corona 	(Vinnie_Corona@hotmail.com)
+A verry special thanks http://rcs.valve-erc.com (remote compile system).
+-Description: 
+Get into the warehouse with the help of your party members. When your inside, open the big sliding doors and invade the warehouse :)
+-Miscellaneous: 
+*For the people that dont know how to climb on each other: One person must duck and stay ducked, the other one jumps on the ducked person. Now the one that is ducking, must release the ducking key, and the person op top must press the jump key ONCE. The one on top is now in the air, and can duck-jump to high places.
+*When your at the little river, there will be a rope hanging above it. To climb the rope, stand beneeth it and press the jump key ONCE. Then look at the end of the rope, and press forward, be sure not to fall becouse then you will have to start over again.
+*And there is a secret below the helicopter landing pad @_@.

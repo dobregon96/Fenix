@@ -1,0 +1,23 @@
+============================================================================================
+Map: sc_liberation (SVEN Co-op)
+Author: Derek St. Amand (HeAdCrAb KILLA) - headcrab_killa@hotmail.com
+============================================================================================
+
+LIBERATION - You're captured. The military has moved you to a high security holding unit somewhere outside of the Black Mesa complex. They have stripped you of your weapons but left you a handgun in case you wanted to "end it all" for yourself. You can't give up now, you must escape captivity and return to friendly forces. There's a communications array nearby. Use it to uplink with your fellow soldiers and get your ass out of there! Enemy troops are everywhere and hostile aliens threaten your advance. Can you escape alive?
+
+============================================================================================
+
+ADDITIONAL MAP INFO -
+
+NAME: Liberation
+SIZE: Large
+IDEAL PLAYERS: 4-8
+EDITOR USED: Hammer 3.4
+TOTAL COMP. TIME: 15 Minutes
+(2005)
+
+
+
+
+
+

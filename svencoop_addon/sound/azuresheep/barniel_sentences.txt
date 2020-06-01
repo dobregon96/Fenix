@@ -13,112 +13,113 @@ AL_NULL common/null
 // AZURE SHEEP VARIOUS
 AZS_FARWAR1 ambience/(v30) distantmortar1 distantmortar3 distantmortar2 mgun_burst3 mgun_burst2 distantmortar2
 AZS_FARWAR2 ambience/(v15) mgun_burst1 mgun_burst3 mgun_burst3
-AZS_BATHRWOM1 girl/hctroub
 
 // BARNIEL (Female barniel) uses the sound files barniel for now
 
-BN_VAR0 barniel/hevno
-BN_VAR1 barniel/seeya
+BN_VAR0 azuresheep/barniel/hevno
+BN_VAR1 azuresheep/barniel/seeya
 
 // Barniel is triggered to not follow player
-BN_NOFOLLOW0 barniel/seelater
+BN_NOFOLLOW0 azuresheep/barniel/seelater
 
 // Barniel is going to use a retina scanner
-BN_RETINA0 barniel/yessir
+BN_RETINA0 azuresheep/barniel/yessir
 
-BN_HISTOP1 barniel/humm, waitin
-BN_SLEEP1 barniel/bn_die1
+BN_HISTOP1 azuresheep/barniel/humm, waitin
+BN_SLEEP1 azuresheep/barniel/bn_die1
 
 // If you use Barniel before the disaster
-BN_POK0 barniel/bn_post
+BN_POK0 azuresheep/barniel/bn_post
 
 // Hello Barniel sentences before the disaster
-BN_PHELLO0 barniel/hi
+BN_PHELLO0 azuresheep/barniel/hi
 
 // Idle Barniel sentences before the disaster
-BN_PIDLE0 barniel/badfeeling
-BN_PIDLE1 barniel/movietv
+BN_PIDLE0 azuresheep/barniel/badfeeling
+BN_PIDLE1 azuresheep/barniel/movietv
 
 // Question Barniel sentences before the disaster
-BN_PQUEST0 barniel/thinking
-BN_PQUEST0 barniel/whatsgoingon
+BN_PQUEST0 azuresheep/barniel/thinking
+BN_PQUEST0 azuresheep/barniel/whatsgoingon
 
-BN_OK0 barniel/teamup1
-BN_OK1 barniel/teamup2
+BN_OK0 azuresheep/barniel/teamup1
+BN_OK1 azuresheep/barniel/teamup2
 
-BN_WAIT0 barniel/waitin
+BN_WAIT0 azuresheep/barniel/waitin
 
-BN_HELLO0 barniel/hi
+BN_HELLO0 azuresheep/barniel/hi
 
-BN_QUESTION0 barniel/drinktopside
-BN_QUESTION1 barniel/rightway
-BN_QUESTION2 barniel/thinking
-BN_QUESTION3 barniel/slimything
-BN_QUESTION4 barniel/whatsgoingon
+BN_QUESTION0 azuresheep/barniel/drinktopside
+BN_QUESTION1 azuresheep/barniel/rightway
+BN_QUESTION2 azuresheep/barniel/thinking
+BN_QUESTION3 azuresheep/barniel/slimything
+BN_QUESTION4 azuresheep/barniel/whatsgoingon
 
-BN_ANSWER0 barniel/yessir
-BN_ANSWER1 barniel/dontagree
-BN_ANSWER2 barniel/humm
-BN_ANSWER3 barniel/nosir
-BN_ANSWER4 barniel/dontknow
-BN_ANSWER5 barniel/bequiet
+BN_ANSWER0 azuresheep/barniel/yessir
+BN_ANSWER1 azuresheep/barniel/dontagree
+BN_ANSWER2 azuresheep/barniel/humm
+BN_ANSWER3 azuresheep/barniel/nosir
+BN_ANSWER4 azuresheep/barniel/dontknow
+BN_ANSWER5 azuresheep/barniel/bequiet
 
 // player is staring at barniel
-BN_STARE0 barniel/yessir
-BN_STARE1 barniel/aimforhead
-BN_STARE2 barniel/badfeeling
+BN_STARE0 azuresheep/barniel/yessir
+BN_STARE1 azuresheep/barniel/aimforhead
+BN_STARE2 azuresheep/barniel/badfeeling
 
-BN_IDLE0 barniel/movietv
-BN_IDLE1 barniel/badfeeling
-BN_IDLE2 barniel/aimforhead
+BN_IDLE0 azuresheep/barniel/movietv
+BN_IDLE1 azuresheep/barniel/badfeeling
+BN_IDLE2 azuresheep/barniel/aimforhead
 
-BN_ATTACK0 barniel/diegreenthing
-BN_ATTACK1 barniel/aimforhead
-BN_ATTACK2 barniel/bn_attack1
-BN_ATTACK3 barniel/openfire
+BN_ATTACK0 azuresheep/barniel/diegreenthing
+BN_ATTACK1 azuresheep/barniel/aimforhead
+BN_ATTACK2 azuresheep/barniel/bn_attack1
+BN_ATTACK3 azuresheep/barniel/openfire
 
-BN_HEAR0 barniel/hearsomething
+BN_HEAR0 azuresheep/barniel/hearsomething
+BN_HEAR1 azuresheep/barniel/somethingmoves
+BN_HEAR2 azuresheep/barniel/badfeeling
 
-BN_SMELL0 barniel/somethingmoves
+BN_SMELL0 azuresheep/barniel/somethingmoves
 
-BN_CUREA barniel/youneedmedic
-BN_CUREB barniel/youneedmedic
-BN_CUREC barniel/youneedmedic
+BN_CUREA azuresheep/barniel/youneedmedic
+BN_CUREB azuresheep/barniel/youneedmedic
+BN_CUREC azuresheep/barniel/youneedmedic
 
-BN_SCARED0 barniel/bn_whatyou
-BN_SCARED1 barniel/bn_dontdothat
+BN_SCARED0 azuresheep/barniel/bn_whatyou
+BN_SCARED1 azuresheep/barniel/bn_dontdothat
 
-BN_WOUND0 barniel/imhit
-BN_WOUND1 barniel/hitbad
-BN_MORTAL0 barniel/hitbad
+BN_WOUND0 azuresheep/barniel/imhit
+BN_WOUND1 azuresheep/barniel/hitbad
+BN_MORTAL0 azuresheep/barniel/hitbad
 
 //If you shoot barniel:
-BN_SHOT0 barniel/bn_carefull
-BN_SHOT1 barniel/bn_dontdothat
-BN_SHOT2 barniel/bn_becarefull
-BN_SHOT3 barniel/bn_whatyou
-BN_SHOT4 barniel/bn_friends
+BN_SHOT0 azuresheep/barniel/bn_carefull
+BN_SHOT1 azuresheep/barniel/bn_dontdothat
+BN_SHOT2 azuresheep/barniel/bn_becarefull
+BN_SHOT3 azuresheep/barniel/bn_whatyou
+BN_SHOT4 azuresheep/barniel/bn_friends
 
 //When barniel's really pissed at you:
-BN_MAD0 barniel/bn_stepoff
-BN_MAD1 barniel/bn_iwish
-BN_MAD2 barniel/bn_uwish
-BN_MAD3 barniel/bn_somuch
-BN_MAD4 barniel/bn_endline
-BN_MAD5 barniel/bn_dontmake
-BN_MAD6 barniel/bn_tomb
+BN_MAD0 azuresheep/barniel/bn_stepoff
+BN_MAD1 azuresheep/barniel/bn_iwish
+BN_MAD2 azuresheep/barniel/bn_uwish
+BN_MAD3 azuresheep/barniel/bn_somuch
+BN_MAD4 azuresheep/barniel/bn_endline
+BN_MAD5 azuresheep/barniel/bn_dontmake
+BN_MAD6 azuresheep/barniel/bn_tomb
 
 //When barniel's killed something
-BN_KILL0 barniel/bn_gotone
-BN_KILL1 barniel/bn_another
-BN_KILL2 barniel/bn_onelessh
-BN_KILL3 barniel/bn_seethat
-BN_KILL4 barniel/bn_close
-BN_KILL5 barniel/bn_firepl
-BN_KILL6 barniel/bn_bring
+BN_KILL0 azuresheep/barniel/bn_gotone
+BN_KILL1 azuresheep/barniel/bn_another
+BN_KILL2 azuresheep/barniel/bn_onelessh
+BN_KILL3 azuresheep/barniel/bn_seethat
+BN_KILL4 azuresheep/barniel/bn_close
+BN_KILL5 azuresheep/barniel/bn_firepl
+BN_KILL6 azuresheep/barniel/bn_bring
 
 // if barniel can't follow you
-BN_STOP0 barniel/stop1
+BN_STOP0 azuresheep/barniel/stop1
 
 
 // HUMAN TERRORIST
@@ -139,7 +140,7 @@ TR_THROW0 common/null
 
 // Taunt
 TR_TAUNT0 hgrunt/gr_loadtalk
-TR_TAUNT1 hgrunt/gr_pain
+TR_TAUNT1 hgrunt/gr_pain1
 TR_TAUNT2 hgrunt/gr_pain2
 
 // Charge
@@ -249,56 +250,56 @@ WK_SCARED1 scientist/stopattacking
 WK_SCARED2 scientist/youinsane
 
 // Gordon
-GO_SURPRISE0 gordon/go_pain2
+GO_SURPRISE0 azuresheep/gordon/go_pain2
 
-GO_OK0 gordon/teamup1
-GO_OK1 gordon/dobettertogether
-GO_OK2 gordon/gladtolendhand
+GO_OK0 azuresheep/gordon/teamup1
+GO_OK1 azuresheep/gordon/dobettertogether
+GO_OK2 azuresheep/gordon/gladtolendhand
 
-GO_WAIT0 gordon/slowingyoudown
-GO_WAIT1 gordon/seeya
-GO_WAIT2 gordon/standguard
+GO_WAIT0 azuresheep/gordon/slowingyoudown
+GO_WAIT1 azuresheep/gordon/seeya
+GO_WAIT2 azuresheep/gordon/standguard
 
-GO_HELLO0 gordon/hellonicesuit
+GO_HELLO0 azuresheep/gordon/hellonicesuit
 
-GO_QUESTION0 gordon/gladof38
-GO_QUESTION1 gordon/getanyworse
-GO_QUESTION2 gordon/aintscared
-GO_QUESTION3 gordon/youhearthat
-GO_QUESTION4 gordon/somethingmoves
+GO_QUESTION0 azuresheep/gordon/gladof38
+GO_QUESTION1 azuresheep/gordon/getanyworse
+GO_QUESTION2 azuresheep/gordon/aintscared
+GO_QUESTION3 azuresheep/gordon/youhearthat
+GO_QUESTION4 azuresheep/gordon/somethingmoves
 
-GO_ANSWER0 gordon/noway
-GO_ANSWER1 gordon/soundsright
-GO_ANSWER2 gordon/yougotit
-GO_ANSWER3 gordon/dontbet
+GO_ANSWER0 azuresheep/gordon/noway
+GO_ANSWER1 azuresheep/gordon/soundsright
+GO_ANSWER2 azuresheep/gordon/yougotit
+GO_ANSWER3 azuresheep/gordon/dontbet
 
 // player is staring at Gordon
-GO_STARE0 gordon/yup
+GO_STARE0 azuresheep/gordon/yup
 
-GO_IDLE0 gordon/bigmess
-GO_IDLE1 gordon/luckwillturn
-GO_IDLE2 gordon/targetpractice
-GO_IDLE3 gordon/ambush
+GO_IDLE0 azuresheep/gordon/bigmess
+GO_IDLE1 azuresheep/gordon/luckwillturn
+GO_IDLE2 azuresheep/gordon/targetpractice
+GO_IDLE3 azuresheep/gordon/ambush
 
-GO_ATTACK0 gordon/diebloodsucker
-GO_ATTACK1 gordon/aimforhead
-GO_ATTACK2 gordon/standback
+GO_ATTACK0 azuresheep/gordon/diebloodsucker
+GO_ATTACK1 azuresheep/gordon/aimforhead
+GO_ATTACK2 azuresheep/gordon/standback
 
-GO_HEAR0 gordon/hearsomething
-GO_HEAR1 gordon/hearsomething2
+GO_HEAR0 azuresheep/gordon/hearsomething
+GO_HEAR1 azuresheep/gordon/hearsomething2
 
-GO_SMELL0 gordon/somethingdied
-GO_SMELL1 gordon/stench
+GO_SMELL0 azuresheep/gordon/somethingdied
+GO_SMELL1 azuresheep/gordon/stench
 
-GO_CUREA gordon/checkwounds
-GO_CUREB gordon/youneedmedic
+GO_CUREA azuresheep/gordon/checkwounds
+GO_CUREB azuresheep/gordon/youneedmedic
 
-GO_SCARED0 gordon/donthurtem
-GO_SCARED1 gordon/leavealone
+GO_SCARED0 azuresheep/gordon/donthurtem
+GO_SCARED1 azuresheep/gordon/leavealone
 
-GO_WOUND0 gordon/imhit
-GO_WOUND1 gordon/hitbad
-GO_MORTAL0 gordon/imdead
+GO_WOUND0 azuresheep/gordon/imhit
+GO_WOUND1 azuresheep/gordon/hitbad
+GO_MORTAL0 azuresheep/gordon/imdead
 
 //If you use Gordon before the disaster
 //(used in Azure Sheep when not allowed to use a monster)
@@ -308,121 +309,121 @@ GO_POK2 common/null
 GO_POK3 common/null
 
 //If you shoot Gordon:
-GO_SHOT0 gordon/go_whoathere
-GO_SHOT1 gordon/go_dotoyou
-GO_SHOT2 gordon/go_watchit
-GO_SHOT3 gordon/go_whatyou
-GO_SHOT4 gordon/go_friends
-GO_SHOT5 gordon/go_watchit
+GO_SHOT0 azuresheep/gordon/go_whoathere
+GO_SHOT1 azuresheep/gordon/go_dotoyou
+GO_SHOT2 azuresheep/gordon/go_watchit
+GO_SHOT3 azuresheep/gordon/go_whatyou
+GO_SHOT4 azuresheep/gordon/go_friends
+GO_SHOT5 azuresheep/gordon/go_watchit
 
 //When Gordon's really pissed at you:
-GO_MAD0 gordon/go_stepoff
-GO_MAD1 gordon/go_iwish
-GO_MAD2 gordon/go_uwish
-GO_MAD3 gordon/go_somuch
-GO_MAD4 gordon/go_endline
-GO_MAD5 gordon/go_dontmake
-GO_MAD6 gordon/go_tomb
+GO_MAD0 azuresheep/gordon/go_stepoff
+GO_MAD1 azuresheep/gordon/go_iwish
+GO_MAD2 azuresheep/gordon/go_uwish
+GO_MAD3 azuresheep/gordon/go_somuch
+GO_MAD4 azuresheep/gordon/go_endline
+GO_MAD5 azuresheep/gordon/go_dontmake
+GO_MAD6 azuresheep/gordon/go_tomb
 
 //When Gordon's killed something
-GO_KILL0 gordon/go_gotone
-GO_KILL1 gordon/go_another
-GO_KILL2 gordon/go_buttugly
-GO_KILL3 gordon/go_seethat
-GO_KILL4 gordon/go_close
-GO_KILL5 gordon/go_firepl
-GO_KILL6 gordon/go_bring
+GO_KILL0 azuresheep/gordon/go_gotone
+GO_KILL1 azuresheep/gordon/go_another
+GO_KILL2 azuresheep/gordon/go_buttugly
+GO_KILL3 azuresheep/gordon/go_seethat
+GO_KILL4 azuresheep/gordon/go_close
+GO_KILL5 azuresheep/gordon/go_firepl
+GO_KILL6 azuresheep/gordon/go_bring
 
 // if Gordon can't follow you
-GO_STOP0 gordon/stop1
-GO_STOP1 gordon/stop2
+GO_STOP0 azuresheep/gordon/stop1
+GO_STOP1 azuresheep/gordon/stop2
 
 
 // KATE
 
 // Scripted kate trouble
-KA_SCRIPT0 kate/whatgoingon2
-KA_SCRIPT1 kate/somethingmove
-KA_SCRIPT2 kate/ka_attack1
-KA_SCRIPT3 kate/youwish
+KA_SCRIPT0 azuresheep/kate/whatgoingon2
+KA_SCRIPT1 azuresheep/kate/somethingmove
+KA_SCRIPT2 azuresheep/kate/ka_attack1
+KA_SCRIPT3 azuresheep/kate/youwish
 
 // When Kate is arrested
 KA_ARRESTED0 common/null
 
 // When Kate is going to use a elevator
-KA_PLAT0 kate/correctway
+KA_PLAT0 azuresheep/kate/correctway
 
 // When Kate is going to use a retina scanner
-KA_RETINA0 kate/yesbarn
+KA_RETINA0 azuresheep/kate/yesbarn
 
 // When Kate doesn't want to go into water
-KA_NOWATER0 kate/waithere2
+KA_NOWATER0 azuresheep/kate/waithere2
 
 // When Kate must wait for player
-KA_WAIT0 kate/seeyoulater
+KA_WAIT0 azuresheep/kate/seeyoulater
 
 // Kate misc sentences
-KA_VAR0 kate/ka_attack1
-KA_VAR1 kate/iamkate
-KA_VAR2 kate/freebarney
-KA_VAR3 kate/seelater
-KA_VAR4 kate/hevno
-KA_VAR5 kate/resquedatlast
-KA_VAR6 kate/staypost
-KA_VAR7 kate/welcome
+KA_VAR0 azuresheep/kate/ka_attack1
+KA_VAR1 azuresheep/kate/iamkate
+KA_VAR2 azuresheep/kate/freebarney
+KA_VAR3 azuresheep/kate/seelater
+KA_VAR4 azuresheep/kate/hevno
+KA_VAR5 azuresheep/kate/resquedatlast
+KA_VAR6 azuresheep/kate/staypost
+KA_VAR7 azuresheep/kate/welcome
 
 // Kate ok to teamup
-KA_OK0 kate/teamup1
-KA_OK1 kate/teamup2
+KA_OK0 azuresheep/kate/teamup1
+KA_OK1 azuresheep/kate/teamup2
 
 // When Kate is told to wait
-KA_WAIT0 kate/waithere
+KA_WAIT0 azuresheep/kate/waithere
 
-KA_HELLO0 kate/hi
+KA_HELLO0 azuresheep/kate/hi
 
-KA_QUESTION0 kate/bigeye
-KA_QUESTION1 kate/thinking
-KA_QUESTION2 kate/whatgoingon
-KA_QUESTION3 kate/correctway
-KA_QUESTION4 kate/badfelling
-KA_QUESTION5 kate/cupoftie
+KA_QUESTION0 azuresheep/kate/bigeye
+KA_QUESTION1 azuresheep/kate/thinking
+KA_QUESTION2 azuresheep/kate/whatgoingon
+KA_QUESTION3 azuresheep/kate/correctway
+KA_QUESTION4 azuresheep/kate/badfelling
+KA_QUESTION5 azuresheep/kate/cupoftie
 
-KA_ANSWER0 kate/bequiet
-KA_ANSWER1 kate/dontagree
-KA_ANSWER2 kate/dontknow
-KA_ANSWER3 kate/notatall
-KA_ANSWER4 kate/hoyes
+KA_ANSWER0 azuresheep/kate/bequiet
+KA_ANSWER1 azuresheep/kate/dontagree
+KA_ANSWER2 azuresheep/kate/dontknow
+KA_ANSWER3 azuresheep/kate/notatall
+KA_ANSWER4 azuresheep/kate/hoyes
 
 // player is staring at kate
-KA_STARE0 kate/badfelling
-KA_STARE1 kate/dinnerend
-KA_STARE2 kate/thinking
-KA_STARE3 kate/yesbarn
-KA_STARE4 kate/hi
-KA_STARE5 kate/whatgoingon
+KA_STARE0 azuresheep/kate/badfelling
+KA_STARE1 azuresheep/kate/dinnerend
+KA_STARE2 azuresheep/kate/thinking
+KA_STARE3 azuresheep/kate/yesbarn
+KA_STARE4 azuresheep/kate/hi
+KA_STARE5 azuresheep/kate/whatgoingon
 
-KA_IDLE0 kate/bigeye
-KA_IDLE1 kate/cupoftie
-KA_IDLE2 kate/hummm
-KA_IDLE3 kate/badfelling
+KA_IDLE0 azuresheep/kate/bigeye
+KA_IDLE1 azuresheep/kate/cupoftie
+KA_IDLE2 azuresheep/kate/hummm
+KA_IDLE3 azuresheep/kate/badfelling
 
-KA_ATTACK0 kate/dieslimy
-KA_ATTACK1 kate/openfire
-KA_ATTACK2 kate/ka_attack1
-KA_ATTACK3 kate/aimforhead
+KA_ATTACK0 azuresheep/kate/dieslimy
+KA_ATTACK1 azuresheep/kate/openfire
+KA_ATTACK2 azuresheep/kate/ka_attack1
+KA_ATTACK3 azuresheep/kate/aimforhead
 
-KA_HEAR0 kate/hearsomething
+KA_HEAR0 azuresheep/kate/hearsomething
 
-KA_SMELL0 kate/somethingmove
+KA_SMELL0 azuresheep/kate/somethingmove
 
-KA_CUREA kate/youneedmedic
-KA_CUREB kate/youneedmedic
-KA_CUREC kate/youneedmedic
+KA_CUREA azuresheep/kate/youneedmedic
+KA_CUREB azuresheep/kate/youneedmedic
+KA_CUREC azuresheep/kate/youneedmedic
 
-KA_SCARED0 kate/whatyoudoing
+KA_SCARED0 azuresheep/kate/whatyoudoing
 
-KA_WOUND0 kate/hitbad
-KA_MORTAL0 kate/hitbad2
+KA_WOUND0 azuresheep/kate/hitbad
+KA_MORTAL0 azuresheep/kate/hitbad2
 
 //If you use Kate before the disaster
 //(used in Azure Sheep when not allowed to use a monster)
@@ -432,30 +433,30 @@ KA_POK2 common/null
 KA_POK3 common/null
 
 //If you shoot kate:
-KA_SHOT0 kate/becarefull
-KA_SHOT1 kate/dontdothat
-KA_SHOT2 kate/dontdothis
-KA_SHOT3 kate/friendslikeyou
-KA_SHOT4 kate/muchmore
+KA_SHOT0 azuresheep/kate/becarefull
+KA_SHOT1 azuresheep/kate/dontdothat
+KA_SHOT2 azuresheep/kate/dontdothis
+KA_SHOT3 azuresheep/kate/friendslikeyou
+KA_SHOT4 azuresheep/kate/muchmore
 
 //When kate's really pissed at you:
-KA_MAD0 kate/didntwantthis
-KA_MAD1 kate/dontwantlive
-KA_MAD2 kate/stepoff
-KA_MAD3 kate/youaredead
-KA_MAD4 kate/youwish
+KA_MAD0 azuresheep/kate/didntwantthis
+KA_MAD1 azuresheep/kate/dontwantlive
+KA_MAD2 azuresheep/kate/stepoff
+KA_MAD3 azuresheep/kate/youaredead
+KA_MAD4 azuresheep/kate/youwish
 
 //When kate's killed something
-KA_KILL0 kate/anotherdown
-KA_KILL1 kate/didseeshot
-KA_KILL2 kate/gotanother
-KA_KILL3 kate/gotone
-KA_KILL4 kate/oneless
-KA_KILL5 kate/close
-KA_KILL6 kate/bringitone
+KA_KILL0 azuresheep/kate/anotherdown
+KA_KILL1 azuresheep/kate/didseeshot
+KA_KILL2 azuresheep/kate/gotanother
+KA_KILL3 azuresheep/kate/gotone
+KA_KILL4 azuresheep/kate/oneless
+KA_KILL5 azuresheep/kate/close
+KA_KILL6 azuresheep/kate/bringitone
 
 // if kate can't follow you
-KA_STOP0 kate/stop1
+KA_STOP0 azuresheep/kate/stop1
 
 // kate health suit saying
 KA_HEALTHST1 weapons/kmedkit_sayhealth
@@ -791,9 +792,9 @@ HEV_A10 fvox/safe_day, bell
 // Azure Sheep some added sentences
 HEV_DEAD0 fvox/beep beep, beep beep, beep, beep, flatline
 HEV_DEAD1 fvox/beep beep, beep beep, beep, flatline
-HEV_NHEVDEAD0 player/heart1
+HEV_NHEVDEAD0 player/heartbeat1
 
-HEV_MED0 fvox/(p140) boop, boop, boop, (p100) innsufficient_medical
+HEV_MED0 fvox/(p140) boop, boop, boop, (p100) innsuficient_medical
 HEV_MED1 fvox/(p140) boop, boop, boop, (p100) automedic_on
 HEV_MED2 fvox/(p140) boop, boop, boop, (p100) administering_medical
 
@@ -926,9 +927,9 @@ HEV_DET5 fvox/blip blip blip, antitoxin_shot(e25) radiation_detected(e50), onehu
 // BARNEY
 
 // Azure sheep new ones
-BA_HISTOP1 barniel/humm, waitin
+BA_HISTOP1 azuresheep/barniel/humm, waitin
 BA_SLEEP1 barney/ba_die3
-BA_GOON1 barney/goon
+BA_GOON1 azuresheep/barney/goon
 
 // If you use Barney before the disaster
 BA_POK0 barney/ba_post
@@ -954,137 +955,137 @@ BA_PQUEST1 barney/ba_raincheck
 BA_PQUEST2 barney/somethingstinky
 BA_PQUEST3 barney/thinking
 
-BA_OK0 barniel/teamup1
-BA_OK1 barniel/teamup2
-BA_OK2 barniel/teamup1
-BA_OK3 barniel/teamup2
-BA_OK4 barniel/teamup1
-BA_OK5 barniel/teamup2
-BA_OK6 barniel/teamup1
+BA_OK0 azuresheep/barniel/teamup1
+BA_OK1 azuresheep/barniel/teamup2
+BA_OK2 azuresheep/barniel/teamup1
+BA_OK3 azuresheep/barniel/teamup2
+BA_OK4 azuresheep/barniel/teamup1
+BA_OK5 azuresheep/barniel/teamup2
+BA_OK6 azuresheep/barniel/teamup1
 
-BA_WAIT0 barniel/waitin
-BA_WAIT1 barniel/waitin
-BA_WAIT2 barniel/waitin
-BA_WAIT3 barniel/waitin
-BA_WAIT4 barniel/waitin
-BA_WAIT5 barniel/waitin
+BA_WAIT0 azuresheep/barniel/waitin
+BA_WAIT1 azuresheep/barniel/waitin
+BA_WAIT2 azuresheep/barniel/waitin
+BA_WAIT3 azuresheep/barniel/waitin
+BA_WAIT4 azuresheep/barniel/waitin
+BA_WAIT5 azuresheep/barniel/waitin
 
 // Azure Sheep some changed or removed sentences because of using the Gordon or Freeman word
-BA_HELLO0 barniel/hi
-BA_HELLO1 barniel/hi
-BA_HELLO2 barniel/hi
-BA_HELLO3 barniel/hi
-BA_HELLO4 barniel/hi
+BA_HELLO0 azuresheep/barniel/hi
+BA_HELLO1 azuresheep/barniel/hi
+BA_HELLO2 azuresheep/barniel/hi
+BA_HELLO3 azuresheep/barniel/hi
+BA_HELLO4 azuresheep/barniel/hi
 
-BA_QUESTION0 barniel/drinktopside
-BA_QUESTION1 barniel/rightway
-BA_QUESTION2 barniel/thinking
-BA_QUESTION3 barniel/slimything
-BA_QUESTION4 barniel/drinktopside
-BA_QUESTION5 barniel/rightway
-BA_QUESTION6 barniel/thinking
-BA_QUESTION7 barniel/slimything
-BA_QUESTION8 barniel/drinktopside
-BA_QUESTION9 barniel/rightway
-BA_QUESTION10 barniel/thinking
-BA_QUESTION11 barniel/slimything
-BA_QUESTION12 barniel/whatsgoingon
-BA_QUESTION13 barniel/whatsgoingon
-BA_QUESTION14 barniel/whatsgoingon
+BA_QUESTION0 azuresheep/barniel/drinktopside
+BA_QUESTION1 azuresheep/barniel/rightway
+BA_QUESTION2 azuresheep/barniel/thinking
+BA_QUESTION3 azuresheep/barniel/slimything
+BA_QUESTION4 azuresheep/barniel/drinktopside
+BA_QUESTION5 azuresheep/barniel/rightway
+BA_QUESTION6 azuresheep/barniel/thinking
+BA_QUESTION7 azuresheep/barniel/slimything
+BA_QUESTION8 azuresheep/barniel/drinktopside
+BA_QUESTION9 azuresheep/barniel/rightway
+BA_QUESTION10 azuresheep/barniel/thinking
+BA_QUESTION11 azuresheep/barniel/slimything
+BA_QUESTION12 azuresheep/barniel/whatsgoingon
+BA_QUESTION13 azuresheep/barniel/whatsgoingon
+BA_QUESTION14 azuresheep/barniel/whatsgoingon
 
-BA_ANSWER0 barniel/yessir
-BA_ANSWER1 barniel/dontagree
-BA_ANSWER2 barniel/humm
-BA_ANSWER3 barniel/nosir
-BA_ANSWER4 barniel/dontknow
-BA_ANSWER5 barniel/bequiet
-BA_ANSWER6 barniel/yessir
-BA_ANSWER7 barniel/dontagree
-BA_ANSWER8 barniel/humm
-BA_ANSWER9 barniel/nosir
-BA_ANSWER10 barniel/dontknow
-BA_ANSWER11 barniel/bequiet
-BA_ANSWER12 barniel/yessir
-BA_ANSWER13 barniel/dontagree
-BA_ANSWER14 barniel/humm
-BA_ANSWER15 barniel/nosir
-BA_ANSWER16 barniel/dontknow
-BA_ANSWER17 barniel/bequiet
-BA_ANSWER18 barniel/yessir
-BA_ANSWER19 barniel/dontagree
-BA_ANSWER20 barniel/humm
-BA_ANSWER21 barniel/nosir
+BA_ANSWER0 azuresheep/barniel/yessir
+BA_ANSWER1 azuresheep/barniel/dontagree
+BA_ANSWER2 azuresheep/barniel/humm
+BA_ANSWER3 azuresheep/barniel/nosir
+BA_ANSWER4 azuresheep/barniel/dontknow
+BA_ANSWER5 azuresheep/barniel/bequiet
+BA_ANSWER6 azuresheep/barniel/yessir
+BA_ANSWER7 azuresheep/barniel/dontagree
+BA_ANSWER8 azuresheep/barniel/humm
+BA_ANSWER9 azuresheep/barniel/nosir
+BA_ANSWER10 azuresheep/barniel/dontknow
+BA_ANSWER11 azuresheep/barniel/bequiet
+BA_ANSWER12 azuresheep/barniel/yessir
+BA_ANSWER13 azuresheep/barniel/dontagree
+BA_ANSWER14 azuresheep/barniel/humm
+BA_ANSWER15 azuresheep/barniel/nosir
+BA_ANSWER16 azuresheep/barniel/dontknow
+BA_ANSWER17 azuresheep/barniel/bequiet
+BA_ANSWER18 azuresheep/barniel/yessir
+BA_ANSWER19 azuresheep/barniel/dontagree
+BA_ANSWER20 azuresheep/barniel/humm
+BA_ANSWER21 azuresheep/barniel/nosir
 
 // player is staring at barney
-BA_STARE0 barniel/yessir
-BA_STARE1 barniel/yessir
-BA_STARE2 barniel/aimforhead
-BA_STARE3 barniel/badfeeling
+BA_STARE0 azuresheep/barniel/yessir
+BA_STARE1 azuresheep/barniel/yessir
+BA_STARE2 azuresheep/barniel/aimforhead
+BA_STARE3 azuresheep/barniel/badfeeling
 
-BA_IDLE0 barniel/movietv
-BA_IDLE1 barniel/badfeeling
-BA_IDLE2 barniel/aimforhead
-BA_IDLE3 barniel/movietv
-BA_IDLE4 barniel/badfeeling
-BA_IDLE5 barniel/aimforhead
-BA_IDLE6 barniel/movietv
-BA_IDLE7 barniel/badfeeling
-BA_IDLE8 barniel/aimforhead
-BA_IDLE9 barniel/movietv
-BA_IDLE10 barniel/aimforhead
+BA_IDLE0 azuresheep/barniel/movietv
+BA_IDLE1 azuresheep/barniel/badfeeling
+BA_IDLE2 azuresheep/barniel/aimforhead
+BA_IDLE3 azuresheep/barniel/movietv
+BA_IDLE4 azuresheep/barniel/badfeeling
+BA_IDLE5 azuresheep/barniel/aimforhead
+BA_IDLE6 azuresheep/barniel/movietv
+BA_IDLE7 azuresheep/barniel/badfeeling
+BA_IDLE8 azuresheep/barniel/aimforhead
+BA_IDLE9 azuresheep/barniel/movietv
+BA_IDLE10 azuresheep/barniel/aimforhead
 
 // Azure Sheep some changed or removed sentences because of using the Gordon or Freeman word
-BA_ATTACK0 barniel/diegreenthing
-BA_ATTACK1 barniel/aimforhead
-BA_ATTACK2 barniel/bn_attack1
-BA_ATTACK3 barniel/openfire
+BA_ATTACK0 azuresheep/barniel/diegreenthing
+BA_ATTACK1 azuresheep/barniel/aimforhead
+BA_ATTACK2 azuresheep/barniel/bn_attack1
+BA_ATTACK3 azuresheep/barniel/openfire
 
-BA_HEAR0 barniel/hearsomething
-BA_HEAR1 barniel/hearsomething
-BA_HEAR2 barniel/hearsomething
-BA_HEAR3 barniel/hearsomething
+BA_HEAR0 azuresheep/barniel/hearsomething
+BA_HEAR1 azuresheep/barniel/hearsomething
+BA_HEAR2 azuresheep/barniel/hearsomething
+BA_HEAR3 azuresheep/barniel/hearsomething
 
-BA_SMELL0 barniel/somethingmoves
-BA_SMELL1 barniel/somethingmoves
-BA_SMELL2 barniel/somethingmoves
+BA_SMELL0 azuresheep/barniel/somethingmoves
+BA_SMELL1 azuresheep/barniel/somethingmoves
+BA_SMELL2 azuresheep/barniel/somethingmoves
 
-BA_CUREA barniel/youneedmedic
-BA_CUREB barniel/youneedmedic
-BA_CUREC barniel/youneedmedic
+BA_CUREA azuresheep/barniel/youneedmedic
+BA_CUREB azuresheep/barniel/youneedmedic
+BA_CUREC azuresheep/barniel/youneedmedic
 
-BA_SCARED0 barniel/bn_whatyou
-BA_SCARED1 barniel/bn_dontdothat
+BA_SCARED0 azuresheep/barniel/bn_whatyou
+BA_SCARED1 azuresheep/barniel/bn_dontdothat
 
-BA_WOUND0 barniel/imhit
-BA_WOUND1 barniel/hitbad
-BA_MORTAL0 barniel/hitbad
+BA_WOUND0 azuresheep/barniel/imhit
+BA_WOUND1 azuresheep/barniel/hitbad
+BA_MORTAL0 azuresheep/barniel/hitbad
 
 //If you shoot Barney:
 // Azure Sheep some changed or removed sentences because of using the Gordon or Freeman word
-BA_SHOT0 barniel/bn_carefull
-BA_SHOT1 barniel/bn_dontdothat
-BA_SHOT2 barniel/bn_becarefull
-BA_SHOT3 barniel/bn_whatyou
-BA_SHOT4 barniel/bn_friends
+BA_SHOT0 azuresheep/barniel/bn_carefull
+BA_SHOT1 azuresheep/barniel/bn_dontdothat
+BA_SHOT2 azuresheep/barniel/bn_becarefull
+BA_SHOT3 azuresheep/barniel/bn_whatyou
+BA_SHOT4 azuresheep/barniel/bn_friends
 
 
 //When Barney's really pissed at you:
-BA_MAD0 barniel/bn_stepoff
-BA_MAD1 barniel/bn_iwish
-BA_MAD2 barniel/bn_uwish
-BA_MAD3 barniel/bn_somuch
-BA_MAD4 barniel/bn_endline
-BA_MAD5 barniel/bn_dontmake
-BA_MAD6 barniel/bn_tomb
+BA_MAD0 azuresheep/barniel/bn_stepoff
+BA_MAD1 azuresheep/barniel/bn_iwish
+BA_MAD2 azuresheep/barniel/bn_uwish
+BA_MAD3 azuresheep/barniel/bn_somuch
+BA_MAD4 azuresheep/barniel/bn_endline
+BA_MAD5 azuresheep/barniel/bn_dontmake
+BA_MAD6 azuresheep/barniel/bn_tomb
 
 //When Barney's killed something
-BA_KILL0 barniel/bn_gotone
-BA_KILL1 barniel/bn_another
-BA_KILL2 barniel/bn_onelessh
-BA_KILL3 barniel/bn_seethat
-BA_KILL4 barniel/bn_close
-BA_KILL5 barniel/bn_firepl
-BA_KILL6 barniel/bn_bring
+BA_KILL0 azuresheep/barniel/bn_gotone
+BA_KILL1 azuresheep/barniel/bn_another
+BA_KILL2 azuresheep/barniel/bn_onelessh
+BA_KILL3 azuresheep/barniel/bn_seethat
+BA_KILL4 azuresheep/barniel/bn_close
+BA_KILL5 azuresheep/barniel/bn_firepl
+BA_KILL6 azuresheep/barniel/bn_bring
 
 
 //If you use Barney in Hazard Course
@@ -1097,8 +1098,8 @@ BA_HAZ_WAIT0 holo/tr_ba_unuse
 BA_LIGHTSON holo/tr_ba_lightson
 
 // if barney can't follow you
-BA_STOP0 barniel/stop1
-BA_STOP1 barniel/stop1
+BA_STOP0 azuresheep/barniel/stop1
+BA_STOP1 azuresheep/barniel/stop1
 
 //scripted_sentences
 

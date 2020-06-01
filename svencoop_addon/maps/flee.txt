@@ -1,0 +1,53 @@
+Flee
+by TruSoulja
+
+   The whole research team has been waiting for this day
+for months.  They're going to open the portal between a
+newly discovered world using instructions found in an
+ancient alien artifact.  All goes planned except the
+aliens are more powerful than expected and can not be
+contained.  Hell breaks loose and you must flee from the
+facility!
+
+
+
+
+=========================================================
+* File *
+
+Title			: Flee
+Filename		: Flee.zip
+Date			: July 23, 2001
+Game			: Sven Co-op Half-Life
+Author			: TruSoulja
+Email Address	: trusoulja@zbzoom.net
+Description		: A Sven Co-op map.
+
+=========================================================
+* Info *
+
+Single Player	: No
+Cooperative		: Yes
+Deathmatch		: No
+New Sounds		: No
+New Graphics	: One texture included in BSP
+New Sky			: No
+Special Thanks	: VVarheaD for Ideas
+				  Testers
+				  Everyone who has made a mapping Tutorial
+
+=========================================================
+* Construction *
+
+The Map			: From Scratch
+Editor(s)		: Worldcraft 3.1, Zoners HL Tools 2.4.2
+Known Bugs		: None
+Build Time		: 10 days on and off
+Build Machine	: K6-II 450Mhz, 128Mb RAM, ATI Rage Fury
+Compile Time	: 1 hour
+
+=========================================================
+* Copyright / Permissions *
+
+Use this map for whatever you want, a nice e-mail letting
+me know of your thoughts/uses would be nice.

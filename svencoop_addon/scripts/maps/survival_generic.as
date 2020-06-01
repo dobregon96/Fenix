@@ -3,7 +3,7 @@
 #include "cubemath/trigger_once_mp"
 #include "cubemath/trigger_mediaplayer"
 #include "cubemath/item_airbubble"
-#include "ofnvision"
+//#include "ofnvision"
 #include "crouch_spawn"
 
 void MapInit()
@@ -12,7 +12,7 @@ void MapInit()
 	RegisterTriggerOnceMpEntity();
 	RegisterTriggerMediaPlayerEntity();
 	RegisterAirbubbleCustomEntity();
-	g_nv.MapInit();
+	//g_nv.MapInit();
 	g_crspawn.Enable();  
 	
 	// Map support is enabled here by default.

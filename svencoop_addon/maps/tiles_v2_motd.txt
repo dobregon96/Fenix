@@ -1,0 +1,18 @@
+============================================================
+Tiles
+by Maiten & Streamfox
+Version: 2.0
+============================================================
+
+Be the last one alive and receive points.
+
+Two players required
+
+Touch the tiles,when it becomes red jump to another before it disappears
+
+============================================================
+============================================================
+
+Very special thanks to:
+
+wolf-3d
