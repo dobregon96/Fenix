@@ -1,0 +1,6424 @@
+{
+  "wad" "halflife.wad;liquids.wad;xeno.wad;tfc.wad;tfc2.wad"
+  "mapversion" "220"
+  "scversion2" "517"
+  "skyname" "2desert"
+  "MaxRange" "32768"
+  "classname" "worldspawn"
+}
+{
+  "origin" "1184 -3776 -3940"
+  "pitch" "-75"
+  "_light" "255 255 128 200"
+  "angles" "0 225 0"
+  "classname" "light_environment"
+}
+{
+  "origin" "-1424 -4016 2464"
+  "angles" "45 68 0"
+  "classname" "info_player_start"
+}
+{
+  "origin" "0 0 0"
+  "triggerstate" "1"
+  "delay" "0.25"
+  "target" "spawn_msg"
+  "targetname" "spawn_msg_relay"
+  "spawnflags" "64"
+  "classname" "trigger_relay"
+}
+{
+  "origin" "0 0 0"
+  "message" "Map made by Joe/NYRONIC\nSome jumps by GOGETA"
+  "effect" "1"
+  "targetname" "spawn_msg"
+  "channel" "1"
+  "fxtime" "0.25"
+  "holdtime" "4"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 0 160"
+  "color" "224 224 80"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "origin" "1152 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1152 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1104 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1104 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1008 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1056 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1056 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "1008 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "912 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "960 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "960 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "912 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "816 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "864 -3776 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "864 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "816 -3728 -3956"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "720 -1952 -3968"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "720 -1984 -3968"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "720 -2016 -3968"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "720 -2048 -3968"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "720 -2080 -3968"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "720 -2112 -3968"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "model" "*1"
+  "zhlt_lightflags" "3"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*2"
+  "zhlt_lightflags" "3"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*3"
+  "zhlt_lightflags" "3"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*4"
+  "renderamt" "128"
+  "rendermode" "2"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*5"
+  "WaveHeight" "2"
+  "speed" "100"
+  "wait" "4"
+  "angles" "0 0 0"
+  "rendermode" "2"
+  "renderamt" "128"
+  "skin" "-3"
+  "rendercolor" "0 0 0"
+  "classname" "func_water"
+}
+{
+  "model" "*6"
+  "angles" "90 0 0"
+  "speed" "1150"
+  "classname" "trigger_push"
+}
+{
+  "origin" "-2016 -1656 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2016 -1576 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2016 -1488 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2016 -1320 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2016 -1400 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "model" "*7"
+  "zhlt_lightflags" "3"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*8"
+  "renderamt" "40"
+  "rendermode" "5"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*9"
+  "renderamt" "40"
+  "rendermode" "5"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-2112 -1656 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2112 -1576 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2112 -1488 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2112 -1400 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2112 -1320 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "model" "*10"
+  "renderamt" "40"
+  "rendermode" "5"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-192 -2368 -2216"
+  "target" "train1_p2"
+  "targetname" "train1_p1"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-64 -2496 -2216"
+  "target" "train1_p3"
+  "targetname" "train1_p2"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "128 -2496 -2216"
+  "target" "train1_p4"
+  "targetname" "train1_p3"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "256 -2368 -2216"
+  "target" "train1_p5"
+  "targetname" "train1_p4"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "256 -2176 -2216"
+  "target" "train1_p6"
+  "targetname" "train1_p5"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "128 -2048 -2216"
+  "target" "train1_p7"
+  "targetname" "train1_p6"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-64 -2048 -2216"
+  "target" "train1_p8"
+  "targetname" "train1_p7"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-192 -2176 -2216"
+  "target" "train1_p1"
+  "targetname" "train1_p8"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "model" "*11"
+  "origin" "-192 -2368 -2216"
+  "volume" "0.85"
+  "speed" "48"
+  "target" "train1_p1"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_train"
+}
+{
+  "model" "*12"
+  "origin" "256 -2176 -2216"
+  "volume" "0.85"
+  "speed" "48"
+  "target" "train1_p5"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_train"
+}
+{
+  "origin" "384 -2048 -2216"
+  "target" "train2_p7"
+  "targetname" "train2_p6"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "576 -2048 -2216"
+  "target" "train2_p8"
+  "targetname" "train2_p7"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "704 -2176 -2216"
+  "target" "train2_p1"
+  "targetname" "train2_p8"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "576 -2496 -2216"
+  "target" "train2_p3"
+  "targetname" "train2_p2"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "384 -2496 -2216"
+  "target" "train2_p4"
+  "targetname" "train2_p3"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "256 -2368 -2216"
+  "target" "train2_p5"
+  "targetname" "train2_p4"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "model" "*13"
+  "origin" "704 -2176 -2216"
+  "volume" "0.85"
+  "speed" "48"
+  "target" "train2_p8"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_train"
+}
+{
+  "origin" "704 -2368 -2216"
+  "target" "train2_p2"
+  "targetname" "train2_p1"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "model" "*14"
+  "origin" "256 -2368 -2216"
+  "volume" "0.85"
+  "speed" "48"
+  "target" "train2_p4"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_train"
+}
+{
+  "origin" "256 -2176 -2216"
+  "target" "train2_p6"
+  "targetname" "train2_p5"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "model" "*15"
+  "speed" "400"
+  "angles" "0 0 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*16"
+  "speed" "400"
+  "angles" "0 180 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*17"
+  "speed" "400"
+  "angles" "0 270 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*18"
+  "speed" "400"
+  "angles" "0 90 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*19"
+  "speed" "400"
+  "angles" "0 315 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*20"
+  "speed" "400"
+  "angles" "0 225 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*21"
+  "speed" "400"
+  "angles" "0 135 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*22"
+  "speed" "400"
+  "angles" "0 45 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*23"
+  "speed" "100"
+  "wait" "4"
+  "angles" "0 0 0"
+  "renderamt" "128"
+  "rendermode" "2"
+  "skin" "-3"
+  "rendercolor" "0 0 0"
+  "classname" "func_water"
+}
+{
+  "model" "*24"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*25"
+  "speed" "100"
+  "wait" "4"
+  "angles" "0 0 0"
+  "renderamt" "128"
+  "rendermode" "2"
+  "skin" "-3"
+  "rendercolor" "0 0 0"
+  "classname" "func_water"
+}
+{
+  "model" "*26"
+  "wait" "0.1"
+  "target" "itg_m26_msg"
+  "targetname" "itg_m26"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "''Rage Cave''"
+  "effect" "2"
+  "targetname" "itg_m26_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "origin" "-1416 -64 -1224"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-1416 384 -1264"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-1408 1064 -1208"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-2344 1488 -664"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3024 1200 -664"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3192 832 -824"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3200 384 -1208"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "model" "*27"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*28"
+  "wait" "0.1"
+  "target" "itg_m28_msg"
+  "targetname" "itg_m28"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "''Raging Waters''"
+  "effect" "2"
+  "targetname" "itg_m28_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*29"
+  "wait" "0.1"
+  "target" "itg_m29_msg"
+  "targetname" "itg_m29"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "What a peaceful\nlooking waterfall. :)"
+  "effect" "2"
+  "targetname" "itg_m29_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*30"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-2984 -968 -232"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-2064 -1296 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2064 -1680 -3456"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "model" "*31"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*32"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*33"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*34"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*35"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*36"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*37"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*38"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*39"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-2336 -1400 3504"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2336 -1312 3520"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2336 -1488 3520"
+  "scale" "8"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/xsmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "model" "*40"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*41"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*42"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*43"
+  "targetname" "tpo_push1"
+  "speed" "1600"
+  "angles" "-90 0 0"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "origin" "-768 -2176 304"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr1a"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-768 -2176 336"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr1b"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-768 -2176 384"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr1c"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-768 -2176 448"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr1d"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-720 -2176 320"
+  "tpo_spr1d" "0.3"
+  "tpo_spr1c" "0.2"
+  "tpo_spr1b" "0.1"
+  "tpo_spr1a" "0"
+  "tpo_sound1" "0"
+  "tpo_push1#1" "1"
+  "tpo_push1" "0"
+  "targetname" "tpo_mm1"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1232 -2176 320"
+  "tpo_spr2d" "0.3"
+  "tpo_spr2c" "0.2"
+  "tpo_spr2b" "0.1"
+  "tpo_spr2a" "0"
+  "tpo_sound2" "0"
+  "tpo_push2#1" "1"
+  "tpo_push2" "0"
+  "targetname" "tpo_mm2"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1280 -2176 304"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr2a"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1280 -2176 336"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr2b"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1280 -2176 384"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr2c"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1280 -2176 448"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr2d"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1584 -1952 352"
+  "tpo_spr3d" "0.3"
+  "tpo_spr3c" "0.2"
+  "tpo_spr3b" "0.1"
+  "tpo_spr3a" "0"
+  "tpo_sound3" "0"
+  "tpo_push3#1" "1"
+  "tpo_push3" "0"
+  "targetname" "tpo_mm3"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1632 -1952 336"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr3a"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1632 -1952 368"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr3b"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1632 -1952 416"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr3c"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1632 -1952 480"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr3d"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-776 -2224 336"
+  "target" "tpo_mm_main"
+  "spawnflags" "1"
+  "classname" "trigger_auto"
+}
+{
+  "origin" "-768 -2224 320"
+  "tpo_mm4" "3"
+  "tpo_mm_main_loop" "6"
+  "tpo_mm3" "2"
+  "tpo_mm2" "1"
+  "tpo_mm1" "0.01"
+  "targetname" "tpo_mm_main"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-760 -2224 336"
+  "tpo_mm_main" "0.01"
+  "targetname" "tpo_mm_main_loop"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "model" "*44"
+  "wait" "0.1"
+  "target" "itg_m44_msg"
+  "targetname" "itg_m44"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "''Raging Steam''"
+  "effect" "2"
+  "targetname" "itg_m44_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "origin" "-2016 -1728 384"
+  "tpo_spr4d" "0.3"
+  "tpo_spr4c" "0.2"
+  "tpo_spr4b" "0.1"
+  "tpo_spr4a" "0"
+  "tpo_sound4" "0"
+  "tpo_push4#1" "1"
+  "tpo_push4" "0"
+  "targetname" "tpo_mm4"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-2064 -1728 512"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr4d"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2064 -1728 448"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr4c"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2064 -1728 400"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr4b"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-2064 -1728 368"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr4a"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "model" "*45"
+  "g_e" "9"
+  "g_a" "1"
+  "health" "50"
+  "wait" "1"
+  "goal_state" "2"
+  "classname" "i_t_g"
+}
+{
+  "model" "*46"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*47"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*48"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*49"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*50"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*51"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*52"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*53"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*54"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*55"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*56"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*57"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*58"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*59"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*60"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*61"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*62"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*63"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*64"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*65"
+  "wait" "0.1"
+  "target" "itg_m65_msg"
+  "targetname" "itg_m65"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "Look down :)"
+  "effect" "2"
+  "targetname" "itg_m65_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*66"
+  "wait" "0.1"
+  "target" "itg_m66_msg"
+  "targetname" "itg_m66"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "''Raging Headache''"
+  "effect" "2"
+  "targetname" "itg_m66_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*67"
+  "targetname" "tpo_push2"
+  "speed" "1600"
+  "angles" "-90 0 0"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "model" "*68"
+  "targetname" "tpo_push3"
+  "speed" "1650"
+  "angles" "-90 0 0"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "model" "*69"
+  "targetname" "tpo_push4"
+  "speed" "1700"
+  "angles" "-90 0 0"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "origin" "-1184 -1480 1068"
+  "tpo_spr5da" "0.15"
+  "tpo_spr5ca" "0.1"
+  "tpo_spr5ba" "0.05"
+  "tpo_spr5aa" "0"
+  "tpo_sound5a" "0"
+  "tpo_push5a#1" "1"
+  "tpo_push5a" "0"
+  "targetname" "tpo_mm5a"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1200 -1480 1116"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5aa"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1168 -1480 1116"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5ba"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1120 -1480 1116"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5ca"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1056 -1480 1116"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5da"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "model" "*70"
+  "speed" "1700"
+  "angles" "0 0 0"
+  "targetname" "tpo_push5a"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "model" "*71"
+  "speed" "1700"
+  "angles" "0 0 0"
+  "targetname" "tpo_push6a"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "origin" "-1184 -1736 1068"
+  "tpo_push6a" "0"
+  "tpo_spr6da" "0.15"
+  "tpo_spr6ca" "0.1"
+  "tpo_spr6ba" "0.05"
+  "tpo_spr6aa" "0"
+  "tpo_sound6a" "0"
+  "tpo_push6a#1" "1"
+  "targetname" "tpo_mm6a"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1056 -1736 1116"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6da"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1120 -1736 1116"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6ca"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1168 -1736 1116"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6ba"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1200 -1736 1116"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6aa"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1096 -1480 1152"
+  "tpo_push5b" "0"
+  "tpo_spr5db" "0.15"
+  "tpo_spr5cb" "0.1"
+  "tpo_spr5bb" "0.05"
+  "tpo_spr5ab" "0"
+  "tpo_sound5b" "0"
+  "tpo_push5b#1" "1"
+  "targetname" "tpo_mm5b"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1144 -1480 1168"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5ab"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1144 -1480 1136"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5bb"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1144 -1480 1088"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5cb"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1144 -1480 1024"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr5db"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "model" "*72"
+  "speed" "1700"
+  "angles" "90 0 0"
+  "targetname" "tpo_push5b"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "model" "*73"
+  "speed" "1700"
+  "angles" "90 0 0"
+  "targetname" "tpo_push6b"
+  "spawnflags" "2"
+  "classname" "trigger_push"
+}
+{
+  "origin" "-1144 -1736 1024"
+  "scale" "5"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6db"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "12.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1144 -1736 1088"
+  "scale" "4"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6cb"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "14.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1144 -1736 1136"
+  "scale" "3"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6bb"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "16.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1144 -1736 1168"
+  "scale" "2"
+  "renderamt" "50"
+  "rendermode" "5"
+  "targetname" "tpo_spr6ab"
+  "model" "sprites/stmbal1.spr"
+  "framerate" "18.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1096 -1736 1152"
+  "tpo_spr6db" "0.15"
+  "tpo_spr6cb" "0.1"
+  "tpo_spr6bb" "0.05"
+  "tpo_spr6ab" "0"
+  "tpo_sound6b" "0"
+  "tpo_push6b#1" "1"
+  "tpo_push6b" "0"
+  "targetname" "tpo_mm6b"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1064 -1488 1228"
+  "tpo_mm5a#7" "12.50"
+  "tpo_mm5a#6" "11.25"
+  "tpo_mm5a#5" "8.75"
+  "tpo_mm5a#4" "7.5"
+  "tpo_mm5a#3" "5"
+  "tpo_mm5a#2" "3.75"
+  "tpo_mm5a#1" "1.25"
+  "tpo_mm5_main_loop" "13.75"
+  "tpo_mm5a" "0.01"
+  "targetname" "tpo_mm5a_main"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1064 -1472 1228"
+  "tpo_mm5b_main" "0.01"
+  "tpo_mm5a_main" "0.01"
+  "targetname" "tpo_mm5_main_loop"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1064 -1480 1244"
+  "target" "tpo_mm5_main_loop"
+  "spawnflags" "1"
+  "classname" "trigger_auto"
+}
+{
+  "origin" "-1064 -1736 1244"
+  "target" "tpo_mm6_main_loop"
+  "spawnflags" "1"
+  "classname" "trigger_auto"
+}
+{
+  "origin" "-1064 -1744 1228"
+  "tpo_mm6a#4" "15"
+  "tpo_mm6a#3" "11.25"
+  "tpo_mm6a#2" "7.5"
+  "tpo_mm6a#1" "3.75"
+  "tpo_mm6a" "0.01"
+  "tpo_mm6_main_loop" "18.75"
+  "targetname" "tpo_mm6a_main"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1064 -1728 1228"
+  "tpo_mm6b_main" "0.01"
+  "tpo_mm6a_main" "0.01"
+  "targetname" "tpo_mm6_main_loop"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "model" "*74"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*75"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*76"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*77"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*78"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*79"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*80"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*81"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*82"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*83"
+  "renderamt" "200"
+  "rendermode" "2"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-2672 1472 -664"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-2128 1496 -664"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-1216 808 -1264"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-1544 1312 -1208"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-1408 712 -1264"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3168 1024 -768"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3200 632 -1000"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3200 32 -1336"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3200 -192 -1336"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3200 -448 -1336"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "origin" "-3200 -696 -1336"
+  "_light" "128 255 255 200"
+  "classname" "light"
+}
+{
+  "model" "*84"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*85"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*86"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*87"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*88"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*89"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*90"
+  "wait" "0.1"
+  "target" "itg_m90_msg"
+  "targetname" "itg_m90"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "13%"
+  "effect" "2"
+  "targetname" "itg_m90_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*91"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*92"
+  "teleport_if_blocked" "1"
+  "teleport_start_inactive" "0"
+  "teleport_ignore_delay" "0"
+  "teleport_cooldown" "0.5"
+  "targetname" "win_portal"
+  "target" "win_destination"
+  "spawnflags" "525"
+  "classname" "trigger_teleport"
+}
+{
+  "origin" "1200 -3752 -3872"
+  "teleport_cooldown" "0.5"
+  "targetname" "win_destination"
+  "target" "win_mm"
+  "angles" "0 125 0"
+  "spawnflags" "32"
+  "classname" "info_teleport_destination"
+}
+{
+  "origin" "-1340 -188 3360"
+  "win_portal_used_snd" "10#0"
+  "win_portal_used_spr" "10#0"
+  "win_portal_spr" "10#1"
+  "win_portal" "10#1"
+  "win_portal_used_snd" "0#1"
+  "win_portal_used_spr" "0#1"
+  "win_portal_spr" "0#0"
+  "win_portal" "0#0"
+  "win_snd" "0#1"
+  "win_msg" "0#1"
+  "win_points" "0#1"
+  "targetname" "win_mm"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1340 -188 3316"
+  "scale" "1"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/e-tele1.spr"
+  "framerate" "10.0"
+  "targetname" "win_portal_spr"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1340 -188 3316"
+  "scale" "1"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/d-tele1.spr"
+  "framerate" "10.0"
+  "targetname" "win_portal_used_spr"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1340 -188 3316"
+  "message" "debris/beamstart14.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "win_portal_used_snd"
+  "spawnflags" "50"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1340 -188 3376"
+  "frags" "10"
+  "targetname" "win_points"
+  "classname" "game_score"
+}
+{
+  "origin" "-1340 -188 3392"
+  "message" "Congratulations!\nYou've mastered the climb 3!"
+  "effect" "2"
+  "targetname" "win_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "origin" "-1340 -188 3408"
+  "message" "tfc/ambience/goal_1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "win_snd"
+  "spawnflags" "112"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*93"
+  "wait" "0.1"
+  "target" "itg_m93_msg"
+  "targetname" "itg_m93"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "5%"
+  "effect" "2"
+  "targetname" "itg_m93_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*94"
+  "wait" "0.1"
+  "target" "itg_m94_msg"
+  "targetname" "itg_m94"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "10%"
+  "effect" "2"
+  "targetname" "itg_m94_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*95"
+  "wait" "0.1"
+  "target" "itg_m95_msg"
+  "targetname" "itg_m95"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "47%"
+  "effect" "2"
+  "targetname" "itg_m95_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*96"
+  "wait" "0.1"
+  "target" "itg_m96_msg"
+  "targetname" "itg_m96"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "51%"
+  "effect" "2"
+  "targetname" "itg_m96_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*97"
+  "wait" "0.1"
+  "target" "itg_m97_msg"
+  "targetname" "itg_m97"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "71%"
+  "effect" "2"
+  "targetname" "itg_m97_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*98"
+  "wait" "0.1"
+  "target" "itg_m98_msg"
+  "targetname" "itg_m98"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "1%"
+  "effect" "2"
+  "targetname" "itg_m98_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*99"
+  "wait" "0.1"
+  "target" "itg_m99_msg"
+  "targetname" "itg_m99"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "2%"
+  "effect" "2"
+  "targetname" "itg_m99_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*100"
+  "wait" "0.1"
+  "target" "itg_m100_msg"
+  "targetname" "itg_m100"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "3%"
+  "effect" "2"
+  "targetname" "itg_m100_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*101"
+  "wait" "0.1"
+  "target" "itg_m101_msg"
+  "targetname" "itg_m101"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "4%"
+  "effect" "2"
+  "targetname" "itg_m101_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*102"
+  "wait" "0.1"
+  "target" "itg_m102_msg"
+  "targetname" "itg_m102"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "6%"
+  "effect" "2"
+  "targetname" "itg_m102_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*103"
+  "wait" "0.1"
+  "target" "itg_m103_msg"
+  "targetname" "itg_m103"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "7%"
+  "effect" "2"
+  "targetname" "itg_m103_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*104"
+  "wait" "0.1"
+  "target" "itg_m104_msg"
+  "targetname" "itg_m104"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "8%"
+  "effect" "2"
+  "targetname" "itg_m104_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*105"
+  "wait" "0.1"
+  "target" "itg_m105_msg"
+  "targetname" "itg_m105"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "9%"
+  "effect" "2"
+  "targetname" "itg_m105_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*106"
+  "wait" "0.1"
+  "target" "itg_m106_msg"
+  "targetname" "itg_m106"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "11%"
+  "effect" "2"
+  "targetname" "itg_m106_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*107"
+  "wait" "0.1"
+  "target" "itg_m107_msg"
+  "targetname" "itg_m107"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "12%"
+  "effect" "2"
+  "targetname" "itg_m107_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*108"
+  "wait" "0.1"
+  "target" "itg_m108_msg"
+  "targetname" "itg_m108"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "14%"
+  "effect" "2"
+  "targetname" "itg_m108_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*109"
+  "wait" "0.1"
+  "target" "itg_m109_msg"
+  "targetname" "itg_m109"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "15%"
+  "effect" "2"
+  "targetname" "itg_m109_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*110"
+  "wait" "0.1"
+  "target" "itg_m110_msg"
+  "targetname" "itg_m110"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "16%"
+  "effect" "2"
+  "targetname" "itg_m110_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*111"
+  "wait" "0.1"
+  "target" "itg_m111_msg"
+  "targetname" "itg_m111"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "17%"
+  "effect" "2"
+  "targetname" "itg_m111_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*112"
+  "wait" "0.1"
+  "target" "itg_m112_msg"
+  "targetname" "itg_m112"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "18%"
+  "effect" "2"
+  "targetname" "itg_m112_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*113"
+  "wait" "0.1"
+  "target" "itg_m113_msg"
+  "targetname" "itg_m113"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "19%"
+  "effect" "2"
+  "targetname" "itg_m113_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*114"
+  "wait" "0.1"
+  "target" "itg_m114_msg"
+  "targetname" "itg_m114"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "20%"
+  "effect" "2"
+  "targetname" "itg_m114_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*115"
+  "wait" "0.1"
+  "target" "itg_m115_msg"
+  "targetname" "itg_m115"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "21%"
+  "effect" "2"
+  "targetname" "itg_m115_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*116"
+  "wait" "0.1"
+  "target" "itg_m116_msg"
+  "targetname" "itg_m116"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "22%"
+  "effect" "2"
+  "targetname" "itg_m116_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*117"
+  "wait" "0.1"
+  "target" "itg_m117_msg"
+  "targetname" "itg_m117"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "23%"
+  "effect" "2"
+  "targetname" "itg_m117_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*118"
+  "wait" "0.1"
+  "target" "itg_m118_msg"
+  "targetname" "itg_m118"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "24%"
+  "effect" "2"
+  "targetname" "itg_m118_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*119"
+  "wait" "0.1"
+  "target" "itg_m119_msg"
+  "targetname" "itg_m119"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "25%"
+  "effect" "2"
+  "targetname" "itg_m119_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*120"
+  "wait" "0.1"
+  "target" "itg_m120_msg"
+  "targetname" "itg_m120"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "26%"
+  "effect" "2"
+  "targetname" "itg_m120_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*121"
+  "wait" "0.1"
+  "target" "itg_m121_msg"
+  "targetname" "itg_m121"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "27%"
+  "effect" "2"
+  "targetname" "itg_m121_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*122"
+  "wait" "0.1"
+  "target" "itg_m122_msg"
+  "targetname" "itg_m122"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "28%"
+  "effect" "2"
+  "targetname" "itg_m122_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*123"
+  "wait" "0.1"
+  "target" "itg_m123_msg"
+  "targetname" "itg_m123"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "29%"
+  "effect" "2"
+  "targetname" "itg_m123_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*124"
+  "wait" "0.1"
+  "target" "itg_m124_msg"
+  "targetname" "itg_m124"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "30%"
+  "effect" "2"
+  "targetname" "itg_m124_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*125"
+  "wait" "0.1"
+  "target" "itg_m125_msg"
+  "targetname" "itg_m125"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "31%"
+  "effect" "2"
+  "targetname" "itg_m125_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*126"
+  "wait" "0.1"
+  "target" "itg_m126_msg"
+  "targetname" "itg_m126"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "32%"
+  "effect" "2"
+  "targetname" "itg_m126_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*127"
+  "wait" "0.1"
+  "target" "itg_m127_msg"
+  "targetname" "itg_m127"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "33%"
+  "effect" "2"
+  "targetname" "itg_m127_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*128"
+  "wait" "0.1"
+  "target" "itg_m128_msg"
+  "targetname" "itg_m128"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "34%"
+  "effect" "2"
+  "targetname" "itg_m128_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*129"
+  "wait" "0.1"
+  "target" "itg_m129_msg"
+  "targetname" "itg_m129"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "35%"
+  "effect" "2"
+  "targetname" "itg_m129_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*130"
+  "wait" "0.1"
+  "target" "itg_m130_msg"
+  "targetname" "itg_m130"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "36%"
+  "effect" "2"
+  "targetname" "itg_m130_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*131"
+  "wait" "0.1"
+  "target" "itg_m131_msg"
+  "targetname" "itg_m131"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "37%"
+  "effect" "2"
+  "targetname" "itg_m131_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*132"
+  "wait" "0.1"
+  "target" "itg_m132_msg"
+  "targetname" "itg_m132"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "38%"
+  "effect" "2"
+  "targetname" "itg_m132_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*133"
+  "wait" "0.1"
+  "target" "itg_m133_msg"
+  "targetname" "itg_m133"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "39%"
+  "effect" "2"
+  "targetname" "itg_m133_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*134"
+  "wait" "0.1"
+  "target" "itg_m134_msg"
+  "targetname" "itg_m134"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "40%"
+  "effect" "2"
+  "targetname" "itg_m134_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*135"
+  "wait" "0.1"
+  "target" "itg_m135_msg"
+  "targetname" "itg_m135"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "41%"
+  "effect" "2"
+  "targetname" "itg_m135_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*136"
+  "wait" "0.1"
+  "target" "itg_m136_msg"
+  "targetname" "itg_m136"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "42%"
+  "effect" "2"
+  "targetname" "itg_m136_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*137"
+  "wait" "0.1"
+  "target" "itg_m137_msg"
+  "targetname" "itg_m137"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "43%"
+  "effect" "2"
+  "targetname" "itg_m137_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*138"
+  "wait" "0.1"
+  "target" "itg_m138_msg"
+  "targetname" "itg_m138"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "44%"
+  "effect" "2"
+  "targetname" "itg_m138_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*138"
+  "origin" "-32 16 -96"
+  "wait" "0.1"
+  "target" "neutralize_z_velocity"
+  "targetname" "itg_m138_safelanding"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "model" "*139"
+  "wait" "0.1"
+  "target" "itg_m139_msg"
+  "targetname" "itg_m139"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "45%"
+  "effect" "2"
+  "targetname" "itg_m139_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*140"
+  "wait" "0.1"
+  "target" "itg_m140_msg"
+  "targetname" "itg_m140"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "49%"
+  "effect" "2"
+  "targetname" "itg_m140_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*141"
+  "wait" "0.1"
+  "target" "itg_m141_msg"
+  "targetname" "itg_m141"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "46%"
+  "effect" "2"
+  "targetname" "itg_m141_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*142"
+  "wait" "0.1"
+  "target" "itg_m142_msg"
+  "targetname" "itg_m142"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "48%"
+  "effect" "2"
+  "targetname" "itg_m142_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*143"
+  "wait" "0.1"
+  "target" "itg_m143_msg"
+  "targetname" "itg_m143"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "50%"
+  "effect" "2"
+  "targetname" "itg_m143_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*144"
+  "wait" "0.1"
+  "target" "itg_m144_msg"
+  "targetname" "itg_m144"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "52%"
+  "effect" "2"
+  "targetname" "itg_m144_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*145"
+  "wait" "0.1"
+  "target" "itg_m145_msg"
+  "targetname" "itg_m145"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "53%"
+  "effect" "2"
+  "targetname" "itg_m145_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*146"
+  "wait" "0.1"
+  "target" "itg_m146_msg"
+  "targetname" "itg_m146"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "54%"
+  "effect" "2"
+  "targetname" "itg_m146_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*147"
+  "wait" "0.1"
+  "target" "itg_m147_msg"
+  "targetname" "itg_m147"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "55%"
+  "effect" "2"
+  "targetname" "itg_m147_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*148"
+  "wait" "0.1"
+  "target" "itg_m148_msg"
+  "targetname" "itg_m148"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "56%"
+  "effect" "2"
+  "targetname" "itg_m148_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*149"
+  "wait" "0.1"
+  "target" "itg_m149_msg"
+  "targetname" "itg_m149"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "57%"
+  "effect" "2"
+  "targetname" "itg_m149_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*150"
+  "wait" "0.1"
+  "target" "itg_m150_msg"
+  "targetname" "itg_m150"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "58%"
+  "effect" "2"
+  "targetname" "itg_m150_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*151"
+  "wait" "0.1"
+  "target" "itg_m151_msg"
+  "targetname" "itg_m151"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "59%"
+  "effect" "2"
+  "targetname" "itg_m151_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*152"
+  "wait" "0.1"
+  "target" "itg_m152_msg"
+  "targetname" "itg_m152"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "60%"
+  "effect" "2"
+  "targetname" "itg_m152_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*153"
+  "wait" "0.1"
+  "target" "itg_m153_msg"
+  "targetname" "itg_m153"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "61%"
+  "effect" "2"
+  "targetname" "itg_m153_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*154"
+  "wait" "0.1"
+  "target" "itg_m154_msg"
+  "targetname" "itg_m154"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "62%"
+  "effect" "2"
+  "targetname" "itg_m154_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*155"
+  "wait" "0.1"
+  "target" "itg_m155_msg"
+  "targetname" "itg_m155"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "63%"
+  "effect" "2"
+  "targetname" "itg_m155_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*156"
+  "wait" "0.1"
+  "target" "itg_m156_msg"
+  "targetname" "itg_m156"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "64%"
+  "effect" "2"
+  "targetname" "itg_m156_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*157"
+  "wait" "0.1"
+  "target" "itg_m157_msg"
+  "targetname" "itg_m157"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "65%"
+  "effect" "2"
+  "targetname" "itg_m157_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*158"
+  "wait" "0.1"
+  "target" "itg_m158_msg"
+  "targetname" "itg_m158"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "66%"
+  "effect" "2"
+  "targetname" "itg_m158_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*159"
+  "wait" "0.1"
+  "target" "itg_m159_msg"
+  "targetname" "itg_m159"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "67%"
+  "effect" "2"
+  "targetname" "itg_m159_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*160"
+  "wait" "0.1"
+  "target" "itg_m160_msg"
+  "targetname" "itg_m160"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "68%"
+  "effect" "2"
+  "targetname" "itg_m160_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*161"
+  "wait" "0.1"
+  "target" "itg_m161_msg"
+  "targetname" "itg_m161"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "69%"
+  "effect" "2"
+  "targetname" "itg_m161_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*162"
+  "wait" "0.1"
+  "target" "itg_m162_msg"
+  "targetname" "itg_m162"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "70%"
+  "effect" "2"
+  "targetname" "itg_m162_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*163"
+  "wait" "0.1"
+  "target" "itg_m163_msg"
+  "targetname" "itg_m163"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "72%"
+  "effect" "2"
+  "targetname" "itg_m163_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*164"
+  "wait" "0.1"
+  "target" "itg_m164_msg"
+  "targetname" "itg_m164"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "74%"
+  "effect" "2"
+  "targetname" "itg_m164_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*165"
+  "origin" "0 0 -48"
+  "wait" "0.1"
+  "target" "itg_m165_msg"
+  "targetname" "itg_m165"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "76%"
+  "effect" "2"
+  "targetname" "itg_m165_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*166"
+  "wait" "0.1"
+  "target" "itg_m166_msg"
+  "targetname" "itg_m166"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "73%"
+  "effect" "2"
+  "targetname" "itg_m166_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*167"
+  "wait" "0.1"
+  "target" "itg_m167_msg"
+  "targetname" "itg_m167"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "75%"
+  "effect" "2"
+  "targetname" "itg_m167_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*168"
+  "wait" "0.1"
+  "target" "itg_m168_msg"
+  "targetname" "itg_m168"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "77%"
+  "effect" "2"
+  "targetname" "itg_m168_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*169"
+  "wait" "0.1"
+  "target" "itg_m169_msg"
+  "targetname" "itg_m169"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "78%"
+  "effect" "2"
+  "targetname" "itg_m169_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*170"
+  "wait" "0.1"
+  "target" "itg_m170_msg"
+  "targetname" "itg_m170"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "79%"
+  "effect" "2"
+  "targetname" "itg_m170_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*171"
+  "wait" "0.1"
+  "target" "itg_m171_msg"
+  "targetname" "itg_m171"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "80%"
+  "effect" "2"
+  "targetname" "itg_m171_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*172"
+  "wait" "0.1"
+  "target" "itg_m172_msg"
+  "targetname" "itg_m172"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "81%"
+  "effect" "2"
+  "targetname" "itg_m172_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*173"
+  "wait" "0.1"
+  "target" "itg_m173_msg"
+  "targetname" "itg_m173"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "82%"
+  "effect" "2"
+  "targetname" "itg_m173_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*174"
+  "wait" "0.1"
+  "target" "itg_m174_msg"
+  "targetname" "itg_m174"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "83%"
+  "effect" "2"
+  "targetname" "itg_m174_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*175"
+  "wait" "0.1"
+  "target" "itg_m175_msg"
+  "targetname" "itg_m175"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "84%"
+  "effect" "2"
+  "targetname" "itg_m175_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*176"
+  "wait" "0.1"
+  "target" "itg_m176_msg"
+  "targetname" "itg_m176"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "85%"
+  "effect" "2"
+  "targetname" "itg_m176_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*177"
+  "wait" "0.1"
+  "target" "itg_m177_msg"
+  "targetname" "itg_m177"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "86%"
+  "effect" "2"
+  "targetname" "itg_m177_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*178"
+  "wait" "0.1"
+  "target" "itg_m178_msg"
+  "targetname" "itg_m178"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "87%"
+  "effect" "2"
+  "targetname" "itg_m178_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*179"
+  "wait" "0.1"
+  "target" "itg_m179_msg"
+  "targetname" "itg_m179"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "88%"
+  "effect" "2"
+  "targetname" "itg_m179_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*180"
+  "wait" "0.1"
+  "target" "itg_m180_msg"
+  "targetname" "itg_m180"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "89%"
+  "effect" "2"
+  "targetname" "itg_m180_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*181"
+  "wait" "0.1"
+  "target" "itg_m181_msg"
+  "targetname" "itg_m181"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "90%"
+  "effect" "2"
+  "targetname" "itg_m181_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*182"
+  "wait" "0.1"
+  "target" "itg_m182_msg"
+  "targetname" "itg_m182"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "91%"
+  "effect" "2"
+  "targetname" "itg_m182_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*183"
+  "wait" "0.1"
+  "target" "itg_m183_msg"
+  "targetname" "itg_m183"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "92%"
+  "effect" "2"
+  "targetname" "itg_m183_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*184"
+  "wait" "0.1"
+  "target" "itg_m184_msg"
+  "targetname" "itg_m184"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "93%"
+  "effect" "2"
+  "targetname" "itg_m184_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*185"
+  "wait" "0.1"
+  "target" "itg_m185_msg"
+  "targetname" "itg_m185"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "94%"
+  "effect" "2"
+  "targetname" "itg_m185_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*186"
+  "wait" "0.1"
+  "target" "itg_m186_msg"
+  "targetname" "itg_m186"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "95%"
+  "effect" "2"
+  "targetname" "itg_m186_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*187"
+  "wait" "0.1"
+  "target" "itg_m187_msg"
+  "targetname" "itg_m187"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "46%"
+  "effect" "2"
+  "targetname" "itg_m187_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*188"
+  "wait" "0.1"
+  "target" "itg_m188_msg"
+  "targetname" "itg_m188"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "96%"
+  "effect" "2"
+  "targetname" "itg_m188_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*189"
+  "wait" "0.1"
+  "target" "itg_m189_msg"
+  "targetname" "itg_m189"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "97%"
+  "effect" "2"
+  "targetname" "itg_m189_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*190"
+  "wait" "0.1"
+  "target" "itg_m190_msg"
+  "targetname" "itg_m190"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "98%"
+  "effect" "2"
+  "targetname" "itg_m190_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*191"
+  "wait" "0.1"
+  "target" "itg_m191_msg"
+  "targetname" "itg_m191"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "99%"
+  "effect" "2"
+  "targetname" "itg_m191_msg"
+  "channel" "3"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 160 160"
+  "color" "255 255 255"
+  "y" "0.875"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "model" "*192"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*193"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*194"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*195"
+  "speed" "1600"
+  "angles" "-90 0 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*196"
+  "speed" "400"
+  "angles" "0 180 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*197"
+  "speed" "400"
+  "angles" "0 180 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*198"
+  "speed" "400"
+  "angles" "0 180 0"
+  "classname" "trigger_push"
+}
+{
+  "model" "*199"
+  "targetname" "fwto_platform1"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*200"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*201"
+  "targetname" "fwto_platform2"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*202"
+  "targetname" "fwto_platform3"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*203"
+  "targetname" "fwto_platform4"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*204"
+  "targetname" "fwto_platform5"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*205"
+  "targetname" "fwto_platform6"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*206"
+  "targetname" "fwto_platform7"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*207"
+  "targetname" "fwto_platform8"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*208"
+  "targetname" "fwto_platform9"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*209"
+  "targetname" "fwto_platform10"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*210"
+  "targetname" "fwto_platform11"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*211"
+  "targetname" "fwto_platform12"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*212"
+  "targetname" "fwto_platform13"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*213"
+  "targetname" "fwto_platform14"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*214"
+  "targetname" "fwto_platform15"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*215"
+  "targetname" "fwto_platform16"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*216"
+  "targetname" "fwto_platform17"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*217"
+  "targetname" "fwto_platform18"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*218"
+  "targetname" "fwto_platform19"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*219"
+  "targetname" "fwto_platform20"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*220"
+  "targetname" "fwto_platform21"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*221"
+  "targetname" "fwto_platform22"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*222"
+  "targetname" "fwto_platform23"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*223"
+  "targetname" "fwto_platform24"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*224"
+  "targetname" "fwto_platform25"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*225"
+  "targetname" "fwto_platform26"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*226"
+  "targetname" "fwto_platform27"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*227"
+  "targetname" "fwto_platform28"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*228"
+  "targetname" "fwto_platform29"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*229"
+  "targetname" "fwto_platform30"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*230"
+  "targetname" "fwto_platform31"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*231"
+  "targetname" "fwto_platform32"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*232"
+  "targetname" "fwto_platform33"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*233"
+  "targetname" "fwto_platform34"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*234"
+  "targetname" "fwto_platform35"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*235"
+  "targetname" "fwto_platform36"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "func_wall_toggle"
+}
+{
+  "model" "*235"
+  "origin" "-80 0 80"
+  "wait" "0.1"
+  "target" "itg_m235_msg"
+  "targetname" "itg_m235"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "-1728 -3184 1680"
+  "message" "End of RAGE shortcut.\n\n(Do not pass through the red X, that goes backwards!)"
+  "effect" "1"
+  "targetname" "itg_m235_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "160 0 0"
+  "color" "255 128 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "origin" "-1600 -3304 1504"
+  "fwto_mm_main_loopB" "18"
+  "fwto_mm_main36" "35"
+  "fwto_mm_main31-35" "30"
+  "fwto_mm_main26-30" "25"
+  "fwto_mm_main21-25" "20"
+  "fwto_mm_main16-20" "15"
+  "fwto_mm_main11-15" "10"
+  "fwto_mm_main6-10" "5"
+  "fwto_mm_main1-5" "0.01"
+  "targetname" "fwto_mm_main_loopA"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1560 -3328 1504"
+  "fwto_sound_mm_loop" "1"
+  "fwto_sound" "0.01"
+  "targetname" "fwto_sound_mm"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1560 -3304 1504"
+  "fwto_sound_mm" "1"
+  "fwto_sound" "0.01"
+  "targetname" "fwto_sound_mm_loop"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1560 -3304 1520"
+  "target" "fwto_sound_mm"
+  "spawnflags" "1"
+  "classname" "trigger_auto"
+}
+{
+  "origin" "-1592 -3304 1520"
+  "target" "fwto_mm_main_loopA"
+  "spawnflags" "1"
+  "classname" "trigger_auto"
+}
+{
+  "model" "*236"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*237"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*238"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*239"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*240"
+  "wait" "0.1"
+  "target" "itg_m240_msg"
+  "targetname" "itg_m240"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "[RIGHT -->]\nShortcut of RAGE\n\n[<-- LEFT]\nMain path"
+  "effect" "2"
+  "targetname" "itg_m240_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*241"
+  "wait" "0.1"
+  "target" "itg_m241_msg"
+  "targetname" "itg_m241"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "Shortcut of RAGE"
+  "effect" "2"
+  "targetname" "itg_m241_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*241"
+  "origin" "-48 880 2376"
+  "wait" "0.1"
+  "target" "neutralize_z_velocity"
+  "targetname" "itg_m241_safelanding"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "model" "*242"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*243"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*244"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*245"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*246"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*247"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*248"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*249"
+  "renderamt" "200"
+  "rendermode" "2"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*250"
+  "wait" "0.1"
+  "target" "itg_m250_msg"
+  "targetname" "itg_m250"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "[<-- LEFT]\nShortcut of RAGE\n\n[FORWARD ^]\nMain path"
+  "effect" "2"
+  "targetname" "itg_m250_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*251"
+  "wait" "0.1"
+  "target" "itg_m251_msg"
+  "targetname" "itg_m251"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 0"
+  "message" "Jump in!\nYou won't fall :)"
+  "effect" "2"
+  "targetname" "itg_m251_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "model" "*252"
+  "zhlt_lightflags" "3"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "model" "*253"
+  "classname" "func_ladder"
+}
+{
+  "model" "*254"
+  "classname" "func_ladder"
+}
+{
+  "model" "*255"
+  "classname" "func_ladder"
+}
+{
+  "origin" "-1048 -1488 1228"
+  "tpo_mm5b#5" "12.5"
+  "tpo_mm5b#4" "10"
+  "tpo_mm5b#3" "7.5"
+  "tpo_mm5b#2" "5"
+  "tpo_mm5b#1" "2.50"
+  "tpo_mm5b" "0.01"
+  "targetname" "tpo_mm5b_main"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3328 1504"
+  "fwto_platform5#1" "5"
+  "fwto_platform5" "4.01"
+  "fwto_platform4#1" "4"
+  "fwto_platform4" "3.01"
+  "fwto_platform3#1" "3"
+  "fwto_platform3" "2.01"
+  "fwto_platform2#1" "2"
+  "fwto_platform2" "1.01"
+  "fwto_platform1#1" "1"
+  "fwto_platform1" "0.01"
+  "targetname" "fwto_mm_main1-5"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3344 1504"
+  "fwto_platform10#1" "5"
+  "fwto_platform10" "4.01"
+  "fwto_platform9#1" "4"
+  "fwto_platform9" "3.01"
+  "fwto_platform8#1" "3"
+  "fwto_platform8" "2.01"
+  "fwto_platform7#1" "2"
+  "fwto_platform7" "1.01"
+  "fwto_platform6#1" "1"
+  "fwto_platform6" "0.01"
+  "targetname" "fwto_mm_main6-10"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3360 1504"
+  "fwto_platform15#1" "5"
+  "fwto_platform15" "4.01"
+  "fwto_platform14#1" "4"
+  "fwto_platform14" "3.01"
+  "fwto_platform13#1" "3"
+  "fwto_platform13" "2.01"
+  "fwto_platform12#1" "2"
+  "fwto_platform12" "1.01"
+  "fwto_platform11#1" "1"
+  "fwto_platform11" "0.01"
+  "targetname" "fwto_mm_main11-15"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3376 1504"
+  "fwto_platform20#1" "5"
+  "fwto_platform20" "4.01"
+  "fwto_platform19#1" "4"
+  "fwto_platform19" "3.01"
+  "fwto_platform18#1" "3"
+  "fwto_platform18" "2.01"
+  "fwto_platform17#1" "2"
+  "fwto_platform17" "1.01"
+  "fwto_platform16#1" "1"
+  "fwto_platform16" "0.01"
+  "targetname" "fwto_mm_main16-20"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3392 1504"
+  "fwto_platform25#1" "5"
+  "fwto_platform25" "4.01"
+  "fwto_platform24#1" "4"
+  "fwto_platform24" "3.01"
+  "fwto_platform23#1" "3"
+  "fwto_platform23" "2.01"
+  "fwto_platform22#1" "2"
+  "fwto_platform22" "1.01"
+  "fwto_platform21#1" "1"
+  "fwto_platform21" "0.01"
+  "targetname" "fwto_mm_main21-25"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3408 1504"
+  "fwto_platform30#1" "5"
+  "fwto_platform30" "4.01"
+  "fwto_platform29#1" "4"
+  "fwto_platform29" "3.01"
+  "fwto_platform28#1" "3"
+  "fwto_platform28" "2.01"
+  "fwto_platform27#1" "2"
+  "fwto_platform27" "1.01"
+  "fwto_platform26#1" "1"
+  "fwto_platform26" "0.01"
+  "targetname" "fwto_mm_main26-30"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3424 1504"
+  "fwto_platform35#1" "5"
+  "fwto_platform35" "4.01"
+  "fwto_platform34#1" "4"
+  "fwto_platform34" "3.01"
+  "fwto_platform33#1" "3"
+  "fwto_platform33" "2.01"
+  "fwto_platform32#1" "2"
+  "fwto_platform32" "1.01"
+  "fwto_platform31#1" "1"
+  "fwto_platform31" "0.01"
+  "targetname" "fwto_mm_main31-35"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1592 -3440 1504"
+  "fwto_platform36#1" "1"
+  "fwto_platform36" "0.01"
+  "targetname" "fwto_mm_main36"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-1584 -3304 1504"
+  "fwto_mm_main_loopA" "18"
+  "fwto_mm_main36" "35"
+  "fwto_mm_main31-35" "30"
+  "fwto_mm_main26-30" "25"
+  "fwto_mm_main21-25" "20"
+  "fwto_mm_main16-20" "15"
+  "fwto_mm_main11-15" "10"
+  "fwto_mm_main6-10" "5"
+  "fwto_mm_main1-5" "0.01"
+  "targetname" "fwto_mm_main_loopB"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-2232 -1128 16"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1344 -432 -560"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1456 160 -896"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1408 616 -824"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1624 1232 -624"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2368 1472 -528"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-3136 1216 -528"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-3200 608 -592"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-3200 160 -592"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-3200 -256 -592"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-3232 -736 -24"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2880 -1024 -24"
+  "message" "ambience/wind1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-768 -2176 304"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound1"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1280 -2176 304"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound2"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1632 -1952 336"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound3"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1728 368"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound4"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1200 -1480 1116"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound5a"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1200 -1736 1116"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound6a"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1144 -1480 1168"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound5b"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1144 -1736 1168"
+  "message" "ambience/steamburst1.wav"
+  "targetname" "tpo_sound6b"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1408 -3264 1144"
+  "message" "weapons/dryfire1.wav"
+  "targetname" "fwto_sound"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "52"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -3264 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -3264 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -2240 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -2240 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -1216 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -1216 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -1216 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -1216 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -2240 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -2240 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -3264 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -3264 1232"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -1216 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -2240 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -3264 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -3264 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -3264 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -2240 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -1216 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -1216 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -1216 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -2240 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -2240 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -3264 2384"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -1216 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -2240 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -3264 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -3264 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -3264 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -2240 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -1216 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -1216 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -1216 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -2240 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -2240 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -3264 3408"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -3264 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -2240 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -2240 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -1216 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -1216 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -1216 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -1216 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -2240 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -2240 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -3264 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -3264 208"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -3264 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -3264 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -2240 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -2240 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -1216 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -1216 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-640 -1216 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1664 -1216 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -2240 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -2240 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "384 -3264 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "1408 -3264 -816"
+  "message" "ambience/wind2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 3184"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 3184"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 2672"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 2672"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 2160"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 2160"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 1648"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 1648"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 1136"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 1136"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 624"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 624"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 112"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 112"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -400"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -400"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -912"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -912"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -1424"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -1424"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -1936"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -1936"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -2448"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -2448"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -2960"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -2960"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -3472"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-2064 -1488 -3472"
+  "message" "ambience/steamjet1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1048 -1744 1228"
+  "tpo_mm6b#6" "17.5"
+  "tpo_mm6b#5" "13.75"
+  "tpo_mm6b#4" "5"
+  "tpo_mm6b#3" "1.25"
+  "tpo_mm6b#2" "12.50"
+  "tpo_mm6b#1" "6.25"
+  "tpo_mm6b" "0.01"
+  "targetname" "tpo_mm6b_main"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "344 -1448 -1408"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 90 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "376 -1448 -1408"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 90 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "408 -1448 -1408"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 90 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "768 -1072 -896"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 270 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "736 -1072 -896"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 270 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "704 -1072 -896"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 270 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2934 -248 -940"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 180 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2934 -228 -940"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 180 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2934 -208 -940"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 180 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1920 -1456 -816"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1920 -1488 -816"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1920 -1520 -816"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-716 -2160 304"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-716 -2192 304"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1228 -2160 304"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1228 -2192 304"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1580 -1936 336"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1580 -1968 336"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2012 -1712 368"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2012 -1744 368"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2080 -1296 416"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 270 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2048 -1296 416"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 270 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-2152 -1488 1816"
+  "m_flCustomRespawnTime" "3"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-632 -816 2120"
+  "m_flCustomRespawnTime" "3"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "1952 -752 1824"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "1952 -720 1824"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "1952 -688 1824"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1296 -3216 672"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 180 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1296 -3264 672"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 180 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-1296 -3312 672"
+  "healthcap" "100"
+  "health" "65535"
+  "angles" "0 180 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "0 0 0"
+  "m_iszNewValue" "0"
+  "m_iszValueName" "velocity"
+  "target" "!activator"
+  "m_iAppendSpaces" "0"
+  "m_trigonometricBehaviour" "0"
+  "m_iszValueType" "0"
+  "targetname" "neutralize_z_velocity"
+  "spawnflags" "3"
+  "classname" "trigger_changevalue"
+}
