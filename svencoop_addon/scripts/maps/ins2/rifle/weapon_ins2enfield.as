@@ -65,16 +65,16 @@ string SPR_CAT = "ins2/rfl/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/enfield/shoot.ogg";
 string EMPTY_S = "ins2/wpn/enfield/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 36;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 10;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
 int FLAGS       	= ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_NOAUTOSWITCHEMPTY;
-uint DAMAGE     	= 50;
+uint DAMAGE     	= 55;
 uint SLOT       	= 6;
 uint POSITION   	= 7;
 float RPM_AIR   	= 1.26f; //Rounds per minute in air
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_303brit" : "357";
+string AMMO_TYPE 	= "ins2_303brit";
 
 class weapon_ins2enfield : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 {
@@ -144,7 +144,7 @@ class weapon_ins2enfield : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_357;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -154,6 +154,8 @@ class weapon_ins2enfield : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 		info.iId     	= g_ItemRegistry.GetIdForName( self.pev.classname );
 		info.iFlags 	= FLAGS;
 		info.iWeight 	= WEIGHT;
+
+		//g_Game.AlertMessage( at_console, "weapon id: " + info.iId + "\n" );
 
 		return true;
 	}
@@ -292,16 +294,18 @@ class weapon_ins2enfield : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 	void ItemPostFrame()
 	{
 		// Checks if the player pressed one of the attack buttons, stops the reload and then attack
-		if( CheckButton() && m_fRifleReload && m_flNextReload <= g_Engine.time )
+		if( m_fRifleReload )
 		{
-			self.SendWeaponAnim( RELOAD_END, 0, GetBodygroup() );
+			if( (CheckButton() || (self.m_iClip >= MAX_CLIP && m_pPlayer.pev.button & IN_RELOAD != 0)) && m_flNextReload <= g_Engine.time )
+			{
+				self.SendWeaponAnim( RELOAD_END, 0, GetBodygroup() );
 
-			self.m_flTimeWeaponIdle = g_Engine.time + (48.0/38.50);
-			self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + (48.0/38.50);
-			m_fRifleReload = false;
-			m_bCanBolt = false;
+				self.m_flTimeWeaponIdle = g_Engine.time + (48.0/38.50);
+				self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = g_Engine.time + (48.0/38.50);
+				m_fRifleReload = false;
+				m_bCanBolt = false;
+			}
 		}
-
 		BaseClass.ItemPostFrame();
 	}
 
@@ -489,7 +493,7 @@ class ENFIELD_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_357, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_357 );
 	}
 }
 
@@ -507,7 +511,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_ENFIELD::weapon_ins2enfield", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_ENFIELD::ENFIELD_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_357, "", GetAmmoName() ); // Register the weapon
 }
 
 }

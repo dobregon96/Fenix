@@ -54,7 +54,7 @@ string SPR_CAT = "ins2/shg/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/ithaca/shoot.ogg";
 string EMPTY_S = "ins2/wpn/ithaca/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 125;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 6;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
@@ -64,7 +64,7 @@ uint DAMAGE_MELEE 	= 20;
 uint SLOT       	= 3;
 uint POSITION   	= 11;
 float RPM_AIR   	= 0.745f; //Rounds per minute in air
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_12x70buckshot" : "buckshot";
+string AMMO_TYPE 	= "ins2_12x70buckshot";
 uint PELLETCOUNT 	= 8;
 Vector VECTOR_CONE( 0.04062, 0.04062, 0.0 ); //4 DEGREES?
 
@@ -120,7 +120,7 @@ class weapon_ins2ithaca : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, IN
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_BUCK;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -276,14 +276,17 @@ class weapon_ins2ithaca : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, IN
 	void ItemPostFrame()
 	{
 		// Checks if the player pressed one of the attack buttons, stops the reload and then attack
-		if( CheckButton() && m_fShotgunReload && m_flNextReload <= g_Engine.time )
+		if( m_fShotgunReload )
 		{
-			self.SendWeaponAnim( RELOAD_END, 0, GetBodygroup() );
+			if( (CheckButton() || (self.m_iClip >= MAX_CLIP && m_pPlayer.pev.button & IN_RELOAD != 0)) && m_flNextReload <= g_Engine.time )
+			{
+				self.SendWeaponAnim( RELOAD_END, 0, GetBodygroup() );
 
-			self.m_flTimeWeaponIdle = g_Engine.time + (21.0/32.0);
-			self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = self.m_flNextTertiaryAttack = g_Engine.time + (21.0/32.0);
-			m_fShotgunReload = false;
-			m_bCanPump = false;
+				self.m_flTimeWeaponIdle = g_Engine.time + (21.0/32.0);
+				self.m_flNextPrimaryAttack = self.m_flNextSecondaryAttack = self.m_flNextTertiaryAttack = g_Engine.time + (21.0/32.0);
+				m_fShotgunReload = false;
+				m_bCanPump = false;
+			}
 		}
 		BaseClass.ItemPostFrame();
 	}
@@ -430,7 +433,7 @@ class ITHACA_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_BUCK, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_BUCK );
 	}
 }
 
@@ -448,7 +451,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_ITHACA::weapon_ins2ithaca", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_ITHACA::ITHACA_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_BUCK, "", GetAmmoName() ); // Register the weapon
 }
 
 }

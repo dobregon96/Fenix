@@ -31,22 +31,22 @@ void PluginInit()
 	//Third slot 	(slot 2)    		- Submachine Guns
 	INS2_UMP45::POSITION        		= 9;
 	INS2_MP5K::POSITION         		= 10;
-	/*INS2_MP18::POSITION         		= 11;
+	INS2_MP18::POSITION         		= 11;
 	INS2_MP40::POSITION         		= 12;
-	INS2_STERLING::POSITION     		= 13;*/
+	INS2_STERLING::POSITION     		= 13;
 	//INS2_PPSH41::POSITION       		= 14;
-	//INS2_M1928::POSITION        		= 15;
-	//INS2_MP7::POSITION          		= 16;
+	INS2_M1928::POSITION        		= 15;
+	INS2_MP7::POSITION          		= 16;
 	//INS2_VECTOR::POSITION     		= 17;
 	//INS2_UZI::POSITION        		= 18;
 	//INS2_MP5SD::POSITION      		= 19;
 	//Fourth slot 	(slot 3)    		- Carbines & Shotguns
-	//INS2_C96CARBINE::POSITION   		= 9;
+	INS2_C96CARBINE::POSITION   		= 9;
 	//INS2_MK18::POSITION         		= 10;
 	INS2_AKS74U::POSITION       		= 11;
 	INS2_M4A1::POSITION         		= 12;
 	//INS2_M1A1PARA::POSITION     		= 13;
-	//INS2_SKS::POSITION          		= 14;
+	INS2_SKS::POSITION          		= 14;
 	INS2_ITHACA::POSITION       		= 15;
 	INS2_M590::POSITION         		= 16;
 	INS2_COACH::POSITION        		= 17;
@@ -66,12 +66,12 @@ void PluginInit()
 	//INS2_ANM14INC::POSITION   		= 18;
 	//INS2_BINOCULARS::POSITION 		= 19;
 	//Sixth slot 	(slot 5)    		- Assault Rifles
-	//INS2_ASVAL::POSITION        		= 9;
+	INS2_ASVAL::POSITION        		= 9;
 	//INS2_STG44::POSITION        		= 10;
 	//INS2_F2000::POSITION        		= 11;
-	//INS2_AK12::POSITION         		= 12;
+	INS2_AK12::POSITION         		= 12;
 	INS2_AK74::POSITION         		= 13;
-	//INS2_GALIL::POSITION        		= 14;
+	INS2_GALIL::POSITION        		= 14;
 	INS2_M16A4::POSITION        		= 15;
 	INS2_L85A2::POSITION        		= 16;
 	INS2_AKM::POSITION          		= 17;
@@ -81,11 +81,11 @@ void PluginInit()
 	//INS2_K98K::POSITION         		= 9;
 	INS2_M1GARAND::POSITION     		= 10;
 	//INS2_SVT40::POSITION        		= 11;
-	/*INS2_ENFIELD::POSITION      		= 12;
+	INS2_ENFIELD::POSITION      		= 12;
 	INS2_FNFAL::POSITION        		= 13;
 	INS2_G3A3::POSITION         		= 14;
 	//INS2_SG751::POSITION        		= 15;
-	//INS2_M14EBR::POSITION       		= 16;
+	INS2_M14EBR::POSITION       		= 16;
 	//INS2_SCARH::POSITION        		= 17;
 	//INS2_FG42::POSITION         		= 18;
 	//INS2_BAR::POSITION          		= 19;
@@ -95,10 +95,10 @@ void PluginInit()
 	INS2_G43::POSITION          		= 11;
 	//INS2_SVD::POSITION          		= 12;
 	//INS2_LEWIS::POSITION        		= 13;
-	INS2_RPK::POSITION          		= 14;*/
+	INS2_RPK::POSITION          		= 14;
 	INS2_M60::POSITION          		= 15;
 	INS2_M249::POSITION         		= 16;
-	//INS2_MG42::POSITION         		= 17;
+	INS2_MG42::POSITION         		= 17;
 	//INS2_BREN::POSITION       		= 18;
 	//INS2_M21::POSITION        		= 19;
 	//INS2_SVT40::POSITION      		= 20;*
@@ -152,8 +152,8 @@ void MapInit()
 
 	//Assault Rifles & Battle Rifles
 		//AS VAL
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AS VAL", INS2_ASVAL::GetName(), 245, "primary", "assault" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AS VAL 9x39mm Ammo", INS2_ASVAL::GetAmmoName(), 20, "ammo", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AS VAL", INS2_ASVAL::GetName(), 245, "primary", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AS VAL 9x39mm Ammo", INS2_ASVAL::GetAmmoName(), 20, "ammo", "assault" ) );
 		//StG-44
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "StG-44", INS2_STG44::GetName(), 260, "primary", "assault" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "StG-44 7.92x33mm Ammo", INS2_STG44::GetAmmoName(), 30, "ammo", "assault" ) );
@@ -161,14 +161,14 @@ void MapInit()
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FN F2000", INS2_F2000::GetName(), 270, "primary", "assault" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "F2000 5.56x45mm Ammo", INS2_F2000::GetAmmoName(), 30, "ammo", "assault" ) );
 		//AK-12
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AK-12", INS2_AK12::GetName(), 280, "primary", "assault" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AK-12 5.45x39mm Ammo", INS2_AK12::GetAmmoName(), 30, "ammo", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AK-12", INS2_AK12::GetName(), 280, "primary", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AK-12 5.45x39mm Ammo", INS2_AK12::GetAmmoName(), 30, "ammo", "assault" ) );
 		//AK-74
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AKS-74 + Foregrip", INS2_AK74::GetName(), 290, "primary", "assault" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AKS-74 5.45x39mm Ammo", INS2_AK74::GetAmmoName(), 30, "ammo", "assault" ) );
 		//GALIL
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "IMI GALIL ARM + Bipod", INS2_GALIL::GetName(), 300, "primary", "assault" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "GALIL 5.56x45mm Ammo", INS2_GALIL::GetAmmoName(), 35, "ammo", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "IMI GALIL ARM + Bipod", INS2_GALIL::GetName(), 300, "primary", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "GALIL 5.56x45mm Ammo", INS2_GALIL::GetAmmoName(), 35, "ammo", "assault" ) );
 		//M16A4
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M16A4 + M203", INS2_M16A4::GetName(), 310, "primary", "assault" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M16A4 5.56x45mm Ammo", INS2_M16A4::GetAmmoName(), 30, "ammo", "assault" ) );
@@ -182,11 +182,11 @@ void MapInit()
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "AKM 7.62x39mm Ammo", INS2_AKM::GetAmmoName(), 30, "ammo", "assault" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "GP-25 40mm grenade Ammo", INS2_AKM::GetGLName(), 30, "ammo", "launcher" ) );
 		//FN FAL
-	/*g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FN FAL", INS2_FNFAL::GetName(), 310, "primary", "assault" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FN FAL", INS2_FNFAL::GetName(), 310, "primary", "assault" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FN FAL 7.62x51mm Ammo", INS2_FNFAL::GetAmmoName(), 20, "ammo", "assault" ) );
 		//G3A3
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "H&K G3A3", INS2_G3A3::GetName(), 315, "primary", "assault" ) );
-	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "G3A3 7.62x51mm Ammo", INS2_G3A3::GetAmmoName(), 20, "ammo", "assault" ) );*/
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "G3A3 7.62x51mm Ammo", INS2_G3A3::GetAmmoName(), 20, "ammo", "assault" ) );
 		//FG-42
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FG-42 + Bipod", INS2_FG42::GetName(), 330, "primary", "assault" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FG-42 7.92x57mm Ammo", INS2_FG42::GetAmmoName(), 40, "ammo", "assault" ) );
@@ -200,11 +200,11 @@ void MapInit()
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M1 Garand + Bayonet", INS2_M1GARAND::GetName(), 235, "primary", "rifle" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M1 Garand 7.62x63mm Ammo", INS2_M1GARAND::GetAmmoName(), 15, "ammo", "rifle" ) );
 		//Enfield
-	/*g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Lee-Enfield No.IV Mk.I", INS2_ENFIELD::GetName(), 250, "primary", "rifle" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Lee-Enfield No.IV Mk.I", INS2_ENFIELD::GetName(), 250, "primary", "rifle" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Lee-Enfield .303 Ammo", INS2_ENFIELD::GetAmmoName(), 20, "ammo", "rifle" ) );
 		//M14 EBR
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M14 EBR Red Dot Sight", INS2_M14EBR::GetName(), 320, "primary", "rifle" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M14 EBR 7.62x51mm Ammo", INS2_M14EBR::GetAmmoName(), 30, "ammo", "rifle" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M14 EBR Red Dot Sight", INS2_M14EBR::GetName(), 320, "primary", "rifle" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M14 EBR 7.62x51mm Ammo", INS2_M14EBR::GetAmmoName(), 30, "ammo", "rifle" ) );
 		//M40A1
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M40A1 Unertl Scope", INS2_M40A1::GetName(), 305, "primary", "rifle" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M40A1 7.62x51mm Ammo", INS2_M40A1::GetAmmoName(), 15, "ammo", "rifle" ) );
@@ -213,21 +213,21 @@ void MapInit()
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Mosin Nagant 7.62x54mm Ammo", INS2_MOSIN::GetAmmoName(), 15, "ammo", "rifle" ) );
 		//G43
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Gewehr 43 ZF4 Scope", INS2_G43::GetName(), 335, "primary", "rifle" ) );
-	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Gewehr 43 7.92x57mm Ammo", INS2_G43::GetAmmoName(), 20, "ammo", "rifle" ) );*/
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Gewehr 43 7.92x57mm Ammo", INS2_G43::GetAmmoName(), 20, "ammo", "rifle" ) );
 		//Dragunov
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "SVD Dragunov PSO-1 Scope", INS2_SVD::GetName(), 345, "primary", "rifle" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "SVD Dragunov 7.62x54mm Ammo", INS2_SVD::GetAmmoName(), 30, "ammo", "rifle" ) );
 
 	//Shotguns
 		//Ithaca M37
-	/*g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Ithaca M37", INS2_ITHACA::GetName(), 260, "primary", "shotgun" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Ithaca M37", INS2_ITHACA::GetName(), 260, "primary", "shotgun" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Ithaca M37 12 Gauge Ammo", INS2_ITHACA::GetAmmoName(), 40, "ammo", "shotgun" ) );
 		//M590
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Mossberg M590", INS2_M590::GetName(), 275, "primary", "shotgun" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M590 12 Gauge Ammo", INS2_M590::GetAmmoName(), 50, "ammo", "shotgun" ) );
 		//Coach Gun
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Coach Gun", INS2_COACH::GetName(), 290, "primary", "shotgun" ) );
-	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Coach Gun Buckshot Ammo", INS2_COACH::GetAmmoName(), 20, "ammo", "shotgun" ) );*/
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Coach Gun Buckshot Ammo", INS2_COACH::GetAmmoName(), 20, "ammo", "shotgun" ) );
 		//M1014
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Benelli M1014", INS2_M1014::GetName(), 325, "primary", "shotgun" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M1014 12 Gauge Ammo", INS2_M1014::GetAmmoName(), 45, "ammo", "shotgun" ) );
@@ -243,28 +243,28 @@ void MapInit()
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "H&K MP5K", INS2_MP5K::GetName(), 165, "primary", "smg" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP5K 9x19mm Ammo", INS2_MP5K::GetAmmoName(), 20, "ammo", "smg" ) );
 		//MP-18
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Bergmann MP-18,I", INS2_MP18::GetName(), 170, "primary", "smg" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP-18 9x19mm Ammo", INS2_MP18::GetAmmoName(), 25, "ammo", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Bergmann MP-18,I", INS2_MP18::GetName(), 170, "primary", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP-18 9x19mm Ammo", INS2_MP18::GetAmmoName(), 25, "ammo", "smg" ) );
 		//MP40
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP-40", INS2_MP40::GetName(), 175, "primary", "smg" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP-40 9x19mm Ammo", INS2_MP40::GetAmmoName(), 25, "ammo", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP-40", INS2_MP40::GetName(), 175, "primary", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP-40 9x19mm Ammo", INS2_MP40::GetAmmoName(), 25, "ammo", "smg" ) );
 		//Sterling L2A3
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Sterling L2A3", INS2_STERLING::GetName(), 185, "primary", "smg" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Sterling 9x19mm Ammo", INS2_STERLING::GetAmmoName(), 30, "ammo", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Sterling L2A3", INS2_STERLING::GetName(), 185, "primary", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Sterling 9x19mm Ammo", INS2_STERLING::GetAmmoName(), 30, "ammo", "smg" ) );
 		//PPSh41
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "PPSh-41", INS2_PPSH41::GetName(), 195, "primary", "smg" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "PPSh-41 7.62x25mm Ammo", INS2_PPSH41::GetAmmoName(), 50, "ammo", "smg" ) );
 		//Thompson M1928
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Thompson M1928", INS2_M1928::GetName(), 200, "primary", "smg" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Thompson M1928 .45ACP Ammo", INS2_M1928::GetAmmoName(), 50, "ammo", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Thompson M1928", INS2_M1928::GetName(), 200, "primary", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Thompson M1928 .45ACP Ammo", INS2_M1928::GetAmmoName(), 50, "ammo", "smg" ) );
 		//MP7
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "H&K MP7", INS2_MP7::GetName(), 210, "primary", "smg" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP7 4.6x30mm Ammo", INS2_MP7::GetAmmoName(), 30, "ammo", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "H&K MP7", INS2_MP7::GetName(), 210, "primary", "smg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MP7 4.6x30mm Ammo", INS2_MP7::GetAmmoName(), 30, "ammo", "smg" ) );
 
 	//Carbines
 		//C96 M1932 Schnellfeuer
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "C96 M1932 Schnellfeuer", INS2_C96CARBINE::GetName(), 215, "primary", "carbine" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "C96 M1932 7.63x25mm Ammo", INS2_C96CARBINE::GetAmmoName(), 30, "ammo", "carbine" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "C96 M1932 Schnellfeuer", INS2_C96CARBINE::GetName(), 215, "primary", "carbine" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "C96 M1932 7.63x25mm Ammo", INS2_C96CARBINE::GetAmmoName(), 30, "ammo", "carbine" ) );
 		//MK. 18
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Mk. 18", INS2_MK18::GetName(), 225, "primary", "carbine" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Mk.18 5.56x45mm Ammo", INS2_MK18::GetAmmoName(), 30, "ammo", "carbine" ) );
@@ -278,8 +278,8 @@ void MapInit()
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M1A1 Paratrooper", INS2_M1A1PARA::GetName(), 260, "primary", "carbine" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M1A1 Paratrooper 7.62x33mm Ammo", INS2_M1A1PARA::GetAmmoName(), 20, "ammo", "carbine" ) );
 		//SKS
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "SKS Simonov", INS2_SKS::GetName(), 275, "primary", "carbine" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "SKS 7.62x39mm Ammo", INS2_SKS::GetAmmoName(), 25, "ammo", "carbine" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "SKS Simonov", INS2_SKS::GetName(), 275, "primary", "carbine" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "SKS 7.62x39mm Ammo", INS2_SKS::GetAmmoName(), 25, "ammo", "carbine" ) );
 
 	//Launchers & Explosives
 		//M79
@@ -307,8 +307,8 @@ void MapInit()
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Lewis Model 1915 MK.I + Bipod", INS2_LEWIS::GetName(), 345, "primary", "lmg" ) );
 	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Lewis .303 Ammo", INS2_LEWIS::GetAmmoName(), 55, "ammo", "lmg" ) );
 		//RPK
-	/*g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "RPK + Bipod", INS2_RPK::GetName(), 400, "primary", "lmg" ) );
-	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "RPK 7.62x39mm Ammo", INS2_RPK::GetAmmoName(), 75, "ammo", "lmg" ) );*/
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "RPK + Bipod", INS2_RPK::GetName(), 400, "primary", "lmg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "RPK 7.62x39mm Ammo", INS2_RPK::GetAmmoName(), 75, "ammo", "lmg" ) );
 		//M60
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M60 + Bipod", INS2_M60::GetName(), 475, "primary", "lmg" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M60 7.62x51mm Ammo", INS2_M60::GetAmmoName(), 100, "ammo", "lmg" ) );
@@ -316,8 +316,8 @@ void MapInit()
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "FN M249 + Bipod", INS2_M249::GetName(), 575, "primary", "lmg" ) );
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "M249 5.56x45mm AP Ammo", INS2_M249::GetAmmoName(), 150, "ammo", "lmg" ) );
 		//MG-42
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MG-42 + Bipod", INS2_MG42::GetName(), 900, "primary", "lmg" ) );
-	//g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MG-42 7.92x57mm Ammo", INS2_MG42::GetAmmoName(), 200, "ammo", "lmg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MG-42 + Bipod", INS2_MG42::GetName(), 900, "primary", "lmg" ) );
+	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "MG-42 7.92x57mm Ammo", INS2_MG42::GetAmmoName(), 200, "ammo", "lmg" ) );
 
 	//Equipment
 	g_Ins2Menu.AddItem( BuyMenu::BuyableItem( "Stielhandgranate M24", INS2_M24GRENADE::GetName(), 45, "equipment", "" ) );

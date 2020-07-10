@@ -46,17 +46,17 @@ string SPR_CAT = "ins2/cbn/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/aks/shoot.ogg";
 string EMPTY_S = "ins2/wpn/aks/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 600;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 30;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
 int FLAGS       	= ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_NOAUTOSWITCHEMPTY;
-uint DAMAGE     	= 21;
+uint DAMAGE     	= 22;
 uint SLOT       	= 3;
 uint POSITION   	= 7;
 float RPM_AIR   	= 675; //Rounds per minute in air
 float RPM_WTR   	= 550; //Rounds per minute in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_5.45x39mm" : "556";
+string AMMO_TYPE 	= "ins2_5.45x39mm";
 
 class weapon_ins2aks74u : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 {
@@ -112,7 +112,7 @@ class weapon_ins2aks74u : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_556;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -294,7 +294,7 @@ class AKS74U_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_556, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_556 );
 	}
 }
 
@@ -312,7 +312,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_AKS74U::weapon_ins2aks74u", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_AKS74U::AKS74U_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_556, "", GetAmmoName() ); // Register the weapon
 }
 
 }

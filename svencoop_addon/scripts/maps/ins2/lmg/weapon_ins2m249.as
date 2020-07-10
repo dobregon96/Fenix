@@ -70,7 +70,7 @@ string SPR_CAT = "ins2/lmg/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/m249/shoot.ogg";
 string EMPTY_S = "ins2/wpn/m249/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 600;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 200;
 int DEFAULT_GIVE 	= MAX_CLIP * 3;
 int WEIGHT      	= 55;
@@ -80,7 +80,7 @@ uint SLOT       	= 7;
 uint POSITION   	= 14;
 float RPM_AIR   	= 775; //Rounds per minute in air
 float RPM_WTR   	= 600; //Rounds per minute in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_5.56x45mm" : "556";
+string AMMO_TYPE 	= "ins2_5.56x45mm";
 
 class weapon_ins2m249 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2BASE::BipodWeaponBase
 {
@@ -168,7 +168,7 @@ class weapon_ins2m249 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_556;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -413,7 +413,7 @@ class M249_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_556, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_556 );
 	}
 }
 
@@ -431,7 +431,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_M249::weapon_ins2m249", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_M249::M249_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_556, "", GetAmmoName() ); // Register the weapon
 }
 
 }

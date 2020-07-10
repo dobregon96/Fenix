@@ -51,7 +51,7 @@ string SHOOT_S = "ins2/wpn/coach/shoot.ogg";
 string EMPTY_S = "ins2/wpn/coach/empty.ogg";
 string BOTH_S  = "ins2/wpn/coach/sboth.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 125;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 2;
 int DEFAULT_GIVE 	= MAX_CLIP * 10;
 int WEIGHT      	= 20;
@@ -61,7 +61,7 @@ uint DAMAGESLUG 	= 50;
 uint SLOT       	= 3;
 uint POSITION   	= 13;
 float RPM_AIR   	= 0.115f; //Rounds per minute in air
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_12x70buckball" : "buckshot";
+string AMMO_TYPE 	= "ins2_12x70buckball";
 uint PELLETCOUNT 	= 6;
 Vector VECTOR_CONE( 0.03490, 0.03490, 0.0 ); //4x4 DEGREES
 
@@ -119,7 +119,7 @@ class weapon_ins2coach : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_BUCK;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -354,7 +354,7 @@ class COACH_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_BUCK, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_BUCK );
 	}
 }
 
@@ -372,7 +372,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_COACH::weapon_ins2coach", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_COACH::COACH_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_BUCK, "", GetAmmoName() ); // Register the weapon
 }
 
 }

@@ -56,17 +56,17 @@ string SPR_CAT = "ins2/hdg/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/m92fs/shoot.ogg";
 string EMPTY_S = "ins2/wpn/m92fs/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 250;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 15;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
 int FLAGS       	= ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_NOAUTOSWITCHEMPTY;
-uint DAMAGE     	= 16;
+uint DAMAGE     	= 17;
 uint SLOT       	= 1;
 uint POSITION   	= 7;
 float RPM_AIR   	= 0.135f; //Rounds per minute in air
 float RPM_WTR   	= 0.25f; //Rounds per minute in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_9x19mm" : "9mm";
+string AMMO_TYPE 	= "ins2_9x19mm";
 
 class weapon_ins2beretta : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 {
@@ -119,7 +119,7 @@ class weapon_ins2beretta : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_9MM;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -281,7 +281,7 @@ class M9BERETTA_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_9MM, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_9MM );
 	}
 }
 
@@ -299,7 +299,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_M9BERETTA::weapon_ins2beretta", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_M9BERETTA::M9BERETTA_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_9MM, "", GetAmmoName() ); // Register the weapon
 }
 
 }

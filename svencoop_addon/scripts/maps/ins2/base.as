@@ -33,6 +33,37 @@ enum INS2_GL_OPTIONS // Grenade Launcher options
 	GL_AIMED
 };
 
+//default Ammo
+//9mm
+const string DF_AMMO_9MM	= "9mm";
+const int DF_MAX_CARRY_9MM	= 250;
+//buckshot
+const string DF_AMMO_BUCK	= "buckshot";
+const int DF_MAX_CARRY_BUCK	= 125;
+//357
+const string DF_AMMO_357	= "357";
+const int DF_MAX_CARRY_357	= 36;
+//m40a1
+const string DF_AMMO_M40A1	= "m40a1";
+const int DF_MAX_CARRY_M40A1= 15;
+//556
+const string DF_AMMO_556	= "556";
+const int DF_MAX_CARRY_556	= 600;
+//rockets
+const string DF_AMMO_RKT	= "rockets";
+const int DF_MAX_CARRY_RKT	= 5;
+const int DF_MAX_CARRY_RKT2	= 10;
+//uranium
+const string DF_AMMO_URAN	= "uranium";
+const int DF_MAX_CARRY_URAN	= 100;
+//ARgrenades
+const string DF_AMMO_ARGR	= "ARgrenades";
+const int DF_MAX_CARRY_ARGR	= 10;
+//sporeclip
+const string DF_AMMO_SPOR	= "sporeclip";
+const int DF_MAX_CARRY_SPOR	= 30;
+
+
 const string EMPTY_SHOOT_S = "ins2/wpn/empty.ogg"; //Default Empty shoot sound, if your weapons doesn't have any empty sound, it will use this
 const string AMMO_PICKUP_S = "ins2/wpn/ammo.ogg"; //Default ammo pickup sound
 const string FIREMODE_SPRT = "ins2/firemodes.spr"; //Default firemodes sprite for weapons that support it
@@ -523,7 +554,25 @@ mixin class WeaponBase
 				m_flSpeedModifier = 0.0f; // Not holding or dropping weapon
 
 			m_pPlayer.m_flEffectSpeed -= m_flSpeedModifier;
-			m_pPlayer.ApplyEffects();
+
+			//Do not let the player lose these effects when applying the speed modifier - KernCore
+			m_pPlayer.m_iEffectInvulnerable = (m_pPlayer.pev.flags & FL_GODMODE != 0) ? 1 : 0;
+			m_pPlayer.m_iEffectNonSolid = (m_pPlayer.pev.solid == SOLID_NOT) ? 1 : 0;
+
+			if( m_pPlayer.pev.flags & FL_NOTARGET != 0 ) // Has notarget on
+			{
+				int rendermode = m_pPlayer.pev.rendermode;
+				float renderamt = m_pPlayer.pev.renderamt;
+				m_pPlayer.ApplyEffects();
+				m_pPlayer.pev.flags |= FL_NOTARGET;
+				m_pPlayer.pev.rendermode = rendermode;
+				m_pPlayer.pev.renderamt = renderamt;
+			}
+			else
+			{
+				m_pPlayer.ApplyEffects();
+			}
+			//KernCore end
 		}
 		m_iSpeedType = WeaponADSMode;
 	}
@@ -677,12 +726,24 @@ mixin class WeaponBase
 		return VecCone;
 	}
 
+	bool IsWeaponEmpty()
+	{
+		return self.m_iClip <= 0 && self.iMaxClip() != WEAPON_NOCLIP;
+	}
+
+	bool IsNoclipWeaponEmpty()
+	{
+		return m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 && self.iMaxClip() == WEAPON_NOCLIP;
+	}
+
 	void ShootWeapon( const string Sound, const uint numShots, Vector& in CONE, float maxDist, int Damage, const bool shouldTrace = false, const int DmgType = DMG_GENERIC ) // pew pew
 	{
 		if( Sound != string_t() || Sound != "" )
 		{
-			if( self.m_iClip != 0 )
+			if( self.m_iClip != 0 && self.iMaxClip() != WEAPON_NOCLIP )
 				--self.m_iClip;
+			else if( self.iMaxClip() == WEAPON_NOCLIP )
+				m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType, m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) - 1 );
 
 			++m_iShotsFired;
 			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, Sound, Math.RandomFloat( 0.95, 1.0 ), 0.55, 0, 93 + Math.RandomLong( 0, 0xf ) );
@@ -695,7 +756,7 @@ mixin class WeaponBase
 
 		m_pPlayer.FireBullets( numShots, vecSrc, vecAiming, VECTOR_CONE_1DEGREES, maxDist, BULLET_PLAYER_CUSTOMDAMAGE, 2, (m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD) ? int(Damage / 2) : Damage );
 
-		if( self.m_iClip <= 0 && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 )
+		if( IsWeaponEmpty() && m_pPlayer.m_rgAmmo( self.m_iPrimaryAmmoType ) <= 0 )
 			m_pPlayer.SetSuitUpdate( "!HEV_AMO0", false, 0 );
 
 		m_pPlayer.pev.effects |= EF_MUZZLEFLASH;
@@ -706,7 +767,7 @@ mixin class WeaponBase
 		if( DmgType & DMG_BULLET == 0 ) //For silenced weapons
 			DynamicLight( m_pPlayer.EyePosition() + g_Engine.v_forward * 64, 18, Vector(255, 232, 156), 1, 100 );
 
-		if( self.m_iClip <= 0 )
+		if( IsWeaponEmpty() )
 			m_pPlayer.m_flNextAttack = 0.4;
 
 		TraceResult tr;
@@ -872,7 +933,7 @@ mixin class WeaponBase
 		params.color1 = RGBA( 100, 130, 200, alpha );
 		params.color2 = RGBA( 255, 0, 0, alpha );
 		// Frame management
-		params.frame = frame; // 0 = Full auto; 1 = Burst fire; 2 = Semi-auto
+		params.frame = frame;
 		params.numframes = 3;
 		params.framerate = 0;
 
@@ -894,8 +955,8 @@ mixin class WeaponBase
 		params.fadeoutTime = 0.7;
 		params.holdTime = 1.0;
 		params.effect = 0;
-		params.x = 0.9595;
-		params.y = 0.857;
+		params.x = 0.9595f;
+		params.y = 0.857f;
 		params.r1 = RGBA_SVENCOOP.r;
 		params.g1 = RGBA_SVENCOOP.g;
 		params.b1 = RGBA_SVENCOOP.b;

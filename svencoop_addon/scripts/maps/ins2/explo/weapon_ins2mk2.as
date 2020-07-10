@@ -36,7 +36,7 @@ string P_MODEL = "models/ins2/wpn/mk2gren/p_mk2.mdl";
 // Sprites
 string SPR_CAT = "ins2/exp/"; //Weapon category used to get the sprite's location
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 10;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= WEAPON_NOCLIP;
 int DEFAULT_GIVE 	= 1;
 int WEIGHT      	= 20;
@@ -106,7 +106,7 @@ class weapon_ins2mk2 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2B
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1	= MAX_CARRY;
+		info.iMaxAmmo1	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_RKT2;
 		info.iAmmo1Drop	= DEFAULT_GIVE;
 		info.iMaxAmmo2	= -1;
 		info.iAmmo2Drop	= -1;

@@ -70,9 +70,9 @@ string SPR_CAT = "ins2/exp/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/m79/shoot.ogg";
 string SHOOT_A = "ins2/wpn/m79/shoot1.ogg"; // Alternative
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 10;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 1;
-int MAX_CARRY2  	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 30;
+int MAX_CARRY2  	= 1000;
 int MAX_CLIP2   	= 1;
 int DEFAULT_GIVE 	= MAX_CLIP * 8;
 int DEFAULT_GIVE2	= MAX_CLIP2 * 8;
@@ -82,8 +82,8 @@ uint DAMAGE     	= 175;
 uint DAMAGE_BS  	= 10;
 uint SLOT       	= 4;
 uint POSITION   	= 7;
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_40x46mm" : "ARgrenades";
-string AMMO_TYPE2 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_40x46mmBS" : "sporeclip";
+string AMMO_TYPE 	= "ins2_40x46mm";
+string AMMO_TYPE2 	= "ins2_40x46mmBS";
 uint PELLETCOUNT 	= 27; //Yup
 Vector VECTOR_CONE( 0.07846, 0.07846, 0.0 ); //9 DEGREES
 string PROJ_NAME 	= "proj_ins2m79";
@@ -149,9 +149,9 @@ class weapon_ins2m79 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2B
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_ARGR;
 		info.iAmmo1Drop	= MAX_CLIP;
-		info.iMaxAmmo2 	= MAX_CARRY2;
+		info.iMaxAmmo2 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY2 : INS2BASE::DF_MAX_CARRY_SPOR;
 		info.iAmmo2Drop	= MAX_CLIP2;
 		info.iMaxClip 	= MAX_CLIP;
 		info.iSlot  	= SLOT;
@@ -436,7 +436,7 @@ class M79_GL : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_ARGR, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_ARGR );
 	}
 }
 
@@ -457,7 +457,7 @@ class M79_BUCK : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP2, MAX_CARRY2, AMMO_TYPE2 );
+		return CommonAddAmmo( pOther, MAX_CLIP2, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY2 : INS2BASE::DF_MAX_CARRY_SPOR, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE2 : INS2BASE::DF_AMMO_SPOR );
 	}
 }
 
@@ -483,7 +483,7 @@ void Register()
 
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_M79::M79_GL", GetAmmoName() ); // Register the ammo entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_M79::M79_BUCK", GetGLName() ); // Register the buckshot ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, AMMO_TYPE2, GetAmmoName(), GetGLName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_ARGR, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE2 : INS2BASE::DF_AMMO_SPOR, GetAmmoName(), GetGLName() ); // Register the weapon
 }
 
 }

@@ -50,7 +50,7 @@ string SPR_CAT = "ins2/exp/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/faust/shoot.ogg";
 string EMPTY_S = "ins2/wpn/rckt_empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 10;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 1;
 int DEFAULT_GIVE 	= MAX_CLIP * 2;
 int WEIGHT      	= 50;
@@ -113,7 +113,7 @@ class weapon_ins2pzfaust : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, I
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_RKT2;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;

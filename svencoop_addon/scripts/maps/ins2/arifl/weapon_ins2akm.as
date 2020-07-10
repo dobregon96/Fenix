@@ -65,22 +65,22 @@ string EMPTY_S = "ins2/wpn/akm/empty.ogg";
 string SHOOTGL = "ins2/wpn/gp30/shoot.ogg";
 string EMPTYGL = "ins2/wpn/gp30/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 600;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 30;
-int MAX_CARRY2  	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 10;
+int MAX_CARRY2  	= 1000;
 int MAX_CLIP2   	= 1;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int DEFAULT_GIVE2	= MAX_CLIP2 * 2;
 int WEIGHT      	= 35;
 int FLAGS       	= ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_NOAUTOSWITCHEMPTY;
-uint DAMAGE     	= 25;
-uint DAMAGE_GL  	= 125;
+uint DAMAGE     	= 27;
+uint DAMAGE_GL  	= 130;
 uint SLOT       	= 5;
 uint POSITION   	= 19;
 float RPM_AIR   	= 600; //Rounds per minute in air
 float RPM_WTR   	= 400; //Rounds per minute in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_7.62x39mm" : "556";
-string AMMO_TYPE2	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_40x53mm" : "ARgrenades";
+string AMMO_TYPE 	= "ins2_7.62x39mm";
+string AMMO_TYPE2	= "ins2_40x53mm";
 string PROJ_NAME 	= "proj_ins2akm";
 
 class weapon_ins2akm : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2BASE::ExplosiveBase
@@ -152,9 +152,9 @@ class weapon_ins2akm : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2B
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_556;
 		info.iAmmo1Drop	= MAX_CLIP;
-		info.iMaxAmmo2 	= MAX_CARRY2;
+		info.iMaxAmmo2 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY2 : INS2BASE::DF_MAX_CARRY_ARGR;
 		info.iAmmo2Drop	= MAX_CLIP2;
 		info.iMaxClip 	= MAX_CLIP;
 		info.iSlot  	= SLOT;
@@ -407,7 +407,7 @@ class AKM_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_556, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_556 );
 	}
 }
 
@@ -428,7 +428,7 @@ class GP25_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP2, MAX_CARRY2, AMMO_TYPE2 );
+		return CommonAddAmmo( pOther, MAX_CLIP2, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY2 : INS2BASE::DF_MAX_CARRY_ARGR, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE2 : INS2BASE::DF_AMMO_ARGR );
 	}
 }
 
@@ -453,7 +453,7 @@ void Register()
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_AKM::weapon_ins2akm", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_AKM::AKM_MAG", GetAmmoName() ); // Register the ammo entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_AKM::GP25_MAG", GetGLName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, AMMO_TYPE2, GetAmmoName(), GetGLName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_556, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE2 : INS2BASE::DF_AMMO_ARGR, GetAmmoName(), GetGLName() ); // Register the weapon
 }
 
 }//Namespace end

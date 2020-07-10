@@ -52,17 +52,17 @@ string SPR_CAT = "ins2/smg/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/l2a3/shoot.ogg";
 string EMPTY_S = "ins2/wpn/l2a3/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 250;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 34;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
 int FLAGS       	= ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_NOAUTOSWITCHEMPTY;
-uint DAMAGE     	= 16;
+uint DAMAGE     	= 18;
 uint SLOT       	= 2;
 uint POSITION   	= 10;
 float RPM_AIR   	= 600; //Rounds per minute in air
 float RPM_WTR   	= 475; //Rounds per minute in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_9x19mm" : "9mm";
+string AMMO_TYPE 	= "ins2_9x19mm";
 
 class weapon_ins2l2a3 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 {
@@ -117,7 +117,7 @@ class weapon_ins2l2a3 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_9MM;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -248,7 +248,7 @@ class weapon_ins2l2a3 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 		if( m_reloadTimer < g_Engine.time )
 		{
-			(self.m_iClip == 0) ? Reload( MAX_CLIP, RELOAD_EMPTY, (133.0/37.0), GetBodygroup() ) : Reload( MAX_CLIP, RELOAD, (97.0/35.0), GetBodygroup() );
+			(self.m_iClip == 0) ? Reload( MAX_CLIP, RELOAD_EMPTY, (134.0/37.0), GetBodygroup() ) : Reload( MAX_CLIP, RELOAD, (97.0/35.0), GetBodygroup() );
 			canReload = false;
 		}
 
@@ -293,7 +293,7 @@ class STERLING_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_9MM, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_9MM );
 	}
 }
 
@@ -311,7 +311,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_STERLING::weapon_ins2l2a3", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_STERLING::STERLING_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_9MM, "", GetAmmoName() ); // Register the weapon
 }
 
 }

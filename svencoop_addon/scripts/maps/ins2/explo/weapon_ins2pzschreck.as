@@ -52,7 +52,7 @@ string SPR_CAT = "ins2/exp/"; //Weapon category used to get the sprite's locatio
 // Sounds
 string SHOOT_S = "ins2/wpn/schrck/shoot.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 5;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 1;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 50;
@@ -61,7 +61,7 @@ uint DAMAGE     	= 285;
 float SPEED     	= 1550;
 uint SLOT       	= 4;
 uint POSITION   	= 15;
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_88mm_rocket" : "rockets";
+string AMMO_TYPE 	= "ins2_88mm_rocket";
 string PROJ_NAME 	= "proj_ins2pzschreck";
 
 class weapon_ins2pzschreck : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase, INS2BASE::ExplosiveBase
@@ -112,7 +112,7 @@ class weapon_ins2pzschreck : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase,
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_RKT;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -299,7 +299,7 @@ class PZSCHRECK_ROCKET : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_RKT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_RKT );
 	}
 }
 
@@ -318,7 +318,7 @@ void Register()
 	INS2ROCKETPROJECTILE::Register( PROJ_NAME );
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_PZSCHRECK::weapon_ins2pzschreck", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_PZSCHRECK::PZSCHRECK_ROCKET", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_RKT, "", GetAmmoName() ); // Register the weapon
 }
 
 }

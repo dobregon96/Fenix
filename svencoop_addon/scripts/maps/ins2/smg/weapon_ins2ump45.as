@@ -46,19 +46,19 @@ string SPR_CAT = "ins2/smg/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/ump45/shoot.ogg";
 string EMPTY_S = "ins2/wpn/ump45/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 250;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 25;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
 int FLAGS       	= ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_NOAUTOSWITCHEMPTY;
-uint DAMAGE     	= 18;
+uint DAMAGE     	= 19;
 uint SLOT       	= 2;
 uint POSITION   	= 4;
 float RPM_AIR   	= 600; //Rounds per minute in air
 float RPM_WTR   	= 500; //Rounds per minute in water
 float RPM_BURST_AIR	= 850; //Burst fire rate in air
 float RPM_BURST_WTR	= 600; //Burst fire rate in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_45acp" : "9mm";
+string AMMO_TYPE 	= "ins2_45acp";
 
 class weapon_ins2ump45 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 {
@@ -110,13 +110,13 @@ class weapon_ins2ump45 : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 		INS2BASE::PrecacheSound( INS2BASE::DeployFirearmSounds );
 		
 		g_Game.PrecacheGeneric( "sprites/" + SPR_CAT + self.pev.classname + ".txt" );
-		g_Game.PrecacheGeneric( "events/" + "muzzle_ins2_SMGs.txt" );
+		g_Game.PrecacheGeneric( "events/" + "muzzle_ins2_SMGs_big.txt" );
 		CommonPrecache();
 	}
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_9MM;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -349,7 +349,7 @@ class UMP45_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_9MM, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_9MM );
 	}
 }
 
@@ -367,7 +367,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_UMP45::weapon_ins2ump45", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_UMP45::UMP45_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_9MM, "", GetAmmoName() ); // Register the weapon
 }
 
 }

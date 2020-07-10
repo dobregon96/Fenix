@@ -52,7 +52,7 @@ string SPR_CAT = "ins2/hdg/"; //Weapon category used to get the sprite's locatio
 string SHOOT_S = "ins2/wpn/deagle/shoot.ogg";
 string EMPTY_S = "ins2/wpn/deagle/empty.ogg";
 // Information
-int MAX_CARRY   	= (INS2BASE::ShouldUseCustomAmmo) ? 1000 : 36;
+int MAX_CARRY   	= 1000;
 int MAX_CLIP    	= 7;
 int DEFAULT_GIVE 	= MAX_CLIP * 4;
 int WEIGHT      	= 20;
@@ -62,7 +62,7 @@ uint SLOT       	= 1;
 uint POSITION   	= 12;
 float RPM_AIR   	= 0.155f; //Rounds per minute in air
 float RPM_WTR   	= 0.255f; //Rounds per minute in water
-string AMMO_TYPE 	= (INS2BASE::ShouldUseCustomAmmo) ? "ins2_50ae" : "357";
+string AMMO_TYPE 	= "ins2_50ae";
 
 class weapon_ins2deagle : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 {
@@ -115,7 +115,7 @@ class weapon_ins2deagle : ScriptBasePlayerWeaponEntity, INS2BASE::WeaponBase
 
 	bool GetItemInfo( ItemInfo& out info )
 	{
-		info.iMaxAmmo1 	= MAX_CARRY;
+		info.iMaxAmmo1 	= (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_357;
 		info.iAmmo1Drop	= MAX_CLIP;
 		info.iMaxAmmo2 	= -1;
 		info.iAmmo2Drop	= -1;
@@ -277,7 +277,7 @@ class DEAGLE_MAG : ScriptBasePlayerAmmoEntity, INS2BASE::AmmoBase
 
 	bool AddAmmo( CBaseEntity@ pOther )
 	{
-		return CommonAddAmmo( pOther, MAX_CLIP, MAX_CARRY, AMMO_TYPE );
+		return CommonAddAmmo( pOther, MAX_CLIP, (INS2BASE::ShouldUseCustomAmmo) ? MAX_CARRY : INS2BASE::DF_MAX_CARRY_357, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_357 );
 	}
 }
 
@@ -295,7 +295,7 @@ void Register()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_DEAGLE::weapon_ins2deagle", GetName() ); // Register the weapon entity
 	g_CustomEntityFuncs.RegisterCustomEntity( "INS2_DEAGLE::DEAGLE_MAG", GetAmmoName() ); // Register the ammo entity
-	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, AMMO_TYPE, "", GetAmmoName() ); // Register the weapon
+	g_ItemRegistry.RegisterWeapon( GetName(), SPR_CAT, (INS2BASE::ShouldUseCustomAmmo) ? AMMO_TYPE : INS2BASE::DF_AMMO_357, "", GetAmmoName() ); // Register the weapon
 }
 
 }
