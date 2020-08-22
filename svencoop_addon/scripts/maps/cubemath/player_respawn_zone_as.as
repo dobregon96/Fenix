@@ -1,5 +1,15 @@
+/*
+* player_respawn_zone_as
+* Point Entity
+* Custom zone for respawning players
+*/
+
 class player_respawn_zone_as : ScriptBaseEntity
 {
+	Vector customOrigin = Vector(0, 0, 0);
+	Vector customAngles = Vector(0, 0, 0);
+
+	int respawnPlayersInBox = 0;
 	int respawnDeadPlayers = 0;
 	int moveLivingPlayers = 0;
 	int moveDeadPlayers = 0;
@@ -15,6 +25,18 @@ class player_respawn_zone_as : ScriptBaseEntity
 			g_Utility.StringToVector( self.pev.vuser2, szValue );
 			return true;
 		}
+		else if( szKey == "spawnorigin" ) {
+			g_Utility.StringToVector( customOrigin, szValue );
+			return true;
+		}
+		else if( szKey == "spawnangles" ) {
+			g_Utility.StringToVector( customAngles, szValue );
+			return true;
+		}
+		else if( szKey == "zonetype" ) {
+            respawnPlayersInBox = atoi( szValue );
+            return true;
+        }
 		else if( szKey == "respawndeadplayers" ) {
 			respawnDeadPlayers = atoi( szValue );
 			return true;
@@ -61,12 +83,24 @@ class player_respawn_zone_as : ScriptBaseEntity
 			
 			if( pPlayer !is null )
 			{
-				if( !playerInBox( pPlayer, self.pev.absmin, self.pev.absmax ) )
+				if( ( !playerInBox( pPlayer, self.pev.absmin, self.pev.absmax ) && respawnPlayersInBox == 0 ) || ( playerInBox( pPlayer, self.pev.absmin, self.pev.absmax ) && respawnPlayersInBox == 1 ) || respawnPlayersInBox == 2)
 				{
 					if( moveDeadPlayers == 1 || pPlayer.IsAlive() )
 					{
 						g_PlayerFuncs.RespawnPlayer( pPlayer, moveLiving, respawnDead );
-						pPlayer.pev.origin = self.pev.absmin + ( (self.pev.absmax - self.pev.absmin) / 2 );
+						if( customOrigin != Vector(0, 0, 0) )
+                        {
+                            pPlayer.pev.origin = customOrigin;
+                        }
+                        else
+                        {
+							pPlayer.pev.origin = self.pev.absmin + ( (self.pev.absmax - self.pev.absmin) / 2 );
+                        }
+                        
+                        if( customAngles != Vector(0, 0, 0) )
+                        {
+                            pPlayer.pev.angles = customAngles;
+                        }
 					}
 				}
 			}

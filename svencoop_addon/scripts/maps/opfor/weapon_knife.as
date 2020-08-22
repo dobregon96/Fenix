@@ -211,7 +211,7 @@ class weapon_hlknife : ScriptBasePlayerWeaponEntity
 			m_pPlayer.SetAnimation( PLAYER_ATTACK1 ); 
 
 			// AdamR: Custom damage option
-			float flDamage = 20;
+			float flDamage = 35;
 			if ( self.m_flCustomDmg > 0 )
 				flDamage = self.m_flCustomDmg;
 			// AdamR: End
