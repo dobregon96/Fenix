@@ -794,7 +794,7 @@ void AttackEffects(WeaponState& state, bool windupAttack=false)
 		}
 	}
 	
-	// muzzle flash
+	// muzzle flash
 	int flash_size = int(state.active_opts.muzzle_flash_adv.x);
 	int flash_life = int(state.active_opts.muzzle_flash_adv.y);
 	int flash_decay = int(state.active_opts.muzzle_flash_adv.z);
