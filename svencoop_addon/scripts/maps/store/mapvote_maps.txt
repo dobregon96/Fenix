@@ -32,7 +32,8 @@ sprites/dynamic_mapvote/tutorial.spr|Half-Life\nHalf-Life|hl_t00
 sprites/dynamic_mapvote/etc2.spr|Half-Life\nEarthQuake test center II|etc2_1
 sprites/dynamic_mapvote/restriction.spr|Half-Life\nrestriction|restriction01
 sprites/dynamic_mapvote/aom.spr|Half-Life\nAfraid Of Monsters|afraidofmonsters_lobby
-
+sprites/dynamic_mapvote/op4_boot.spr|Half-Life\nOpossing Force-Bootleg Squadrog|bootsquad1
+sprites/dynamic_mapvote/train.spr|Half-Life\nDAV-Train|davtrain1
 
 
 
