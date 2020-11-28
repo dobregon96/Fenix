@@ -12,11 +12,13 @@ models/barneyhands/v_357.mdl
 models/barneyhands/v_9mmar.mdl
 models/barneyhands/v_crossbow.mdl
 models/barneyhands/v_desert_eagle.mdl
+models/barneyhands/v_displacer.mdl
 models/barneyhands/v_egon.mdl
 models/barneyhands/v_gauss.mdl
 models/barneyhands/v_glock.mdl
 models/barneyhands/v_grenade.mdl
 models/barneyhands/v_m16a2.mdl
+models/barneyhands/v_m40a1.mdl
 models/barneyhands/v_medkit.mdl
 models/barneyhands/v_pipe_wrench.mdl
 models/barneyhands/v_poolstick.mdl

@@ -1,0 +1,144 @@
+hlcsg v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlcsg -----
+Command line: C:\DOCUME~1\ADMINI~1\ESCRIT~1\zhl\hlcsg.exe "C:\Archivos de programa\Valve\SvenCoop\maps\ally"
+Entering C:\Archivos de programa\Valve\SvenCoop\maps\ally.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       1 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 4194304 ] [ 4194304 ]
+max lighting memory   [ 6291456 ] [ 6291456 ]
+priority              [  Normal ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [      on ] [      on ]
+clip hull type        [  legacy ] [  legacy ]
+onlyents              [     off ] [     off ]
+wadtextures           [      on ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+nullfile              [    None ] [    None ]
+min surface area      [   0.500 ] [   0.500 ]
+brush union threshold [   0.000 ] [   0.000 ]
+
+Using mapfile wad configuration
+Wadinclude list :
+[zhlt.wad]
+
+0 brushes (totalling 0 sides) discarded from clipping hulls
+CreateBrush:
+ (0.06 seconds)
+SetModelCenters:
+ (0.00 seconds)
+CSGBrush:
+ (0.19 seconds)
+
+Using Wadfile: \archivos de programa\valve\valve\liquids.wad
+ - Contains 0 used textures, 0.00 percent of map (32 textures in wad)
+Including Wadfile: \documents and settings\administrador\escritorio\zhl\zhlt.wad
+ - Contains 2 used textures, 9.52 percent of map (8 textures in wad)
+Using Wadfile: \archivos de programa\valve\cstrike\cstrike.wad
+ - Contains 1 used texture, 4.76 percent of map (123 textures in wad)
+Using Wadfile: \archivos de programa\valve\valve\halflife.wad
+ - Contains 18 used textures, 85.71 percent of map (3116 textures in wad)
+Using Wadfile: \archivos de programa\valve\cstrike\decals.wad
+ - Contains 0 used textures, 0.00 percent of map (233 textures in wad)
+
+added 10 additional animating textures.
+Texture usage is at 0.39 mb (of 4.00 mb MAX)
+0.30 seconds elapsed
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlbsp -----
+Command line: C:\DOCUME~1\ADMINI~1\ESCRIT~1\zhl\hlbsp.exe "C:\Archivos de programa\Valve\SvenCoop\maps\ally"
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       1 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 4194304 ] [ 4194304 ]
+priority            [  Normal ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+noopt               [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 8192)
+
+
+SolidBSP [hull 0] 499 (0.03 seconds)
+BSP generation successful, writing portal file 'C:\Archivos de programa\Valve\SvenCoop\maps\ally.prt'
+SolidBSP [hull 1] 500...522 (0.05 seconds)
+SolidBSP [hull 2] 470 (0.05 seconds)
+SolidBSP [hull 3] 500...528 (0.05 seconds)
+0.42 seconds elapsed
+
+-----   END   hlbsp -----
+
+
+
+hlvis v3.4 Final (Feb 25 2006)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (amckern@yahoo.com)
+-----  BEGIN  hlvis -----
+Command line: C:\DOCUME~1\ADMINI~1\ESCRIT~1\zhl\hlvis.exe "C:\Archivos de programa\Valve\SvenCoop\maps\ally"
+ 294 portalleafs
+ 754 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       1 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 4194304 ] [ 4194304 ]
+max vis distance    [       0 ] [       0 ]
+priority            [  Normal ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [     off ] [     off ]
+
+
+BasePortalVis:
+ (0.13 seconds)
+LeafThread:
+ (0.61 seconds)
+average leafs visible: 47
+g_visdatasize:8309  compressed from 10878
+0.77 seconds elapsed
+
+-----   END   hlvis -----
+
+
+

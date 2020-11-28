@@ -1,0 +1,246 @@
+hlcsg v2.5.3 rel Custom Build 1.7 (Dec  9 2002)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (merlinis@bigpond.net.au)
+-----  BEGIN  hlcsg -----
+Command line: D:\PROGRA~1\VALVEH~1\tools\hlcsg.exe d:\spiele\halflife\svencoop\maps\sc_caget -nowadtextures 
+Entering d:\spiele\halflife\svencoop\maps\sc_caget.map
+
+Current hlcsg Settings
+Name                 |  Setting  |  Default
+---------------------|-----------|-------------------------
+threads               [       1 ] [  Varies ]
+verbose               [     off ] [     off ]
+log                   [      on ] [      on ]
+developer             [       0 ] [       0 ]
+chart                 [     off ] [     off ]
+estimate              [     off ] [     off ]
+max texture memory    [ 4194304 ] [ 4194304 ]
+priority              [  Normal ] [  Normal ]
+
+noclip                [     off ] [     off ]
+null texture stripping[      on ] [      on ]
+clipnode economy mode [      on ] [      on ]
+onlyents              [     off ] [     off ]
+wadtextures           [     off ] [      on ]
+skyclip               [      on ] [      on ]
+hullfile              [    None ] [    None ]
+min surface area      [   0.500 ] [   0.500 ]
+brush union threshold [   0.000 ] [   0.000 ]
+
+Using mapfile wad configuration
+Wadinclude list :
+[zhlt.wad]
+
+83 brushes (totalling 497 sides) discarded from clipping hulls
+CreateBrush:
+ (101.89 seconds)
+SetModelCenters:
+ (0.00 seconds)
+CSGBrush:
+ (12.69 seconds)
+
+Using Wadfile: \spiele\halflife\valve\xeno.wad
+ - Contains 7 used textures, 5.00 percent of map (264 textures in wad)
+Using Wadfile: \spiele\halflife\valve\decals.wad
+ - Contains 0 used textures, 0.00 percent of map (222 textures in wad)
+Using Wadfile: \spiele\halflife\valve\halflife.wad
+ - Contains 38 used textures, 27.14 percent of map (3116 textures in wad)
+Using Wadfile: \spiele\halflife\thewastes\maggot1-2.wad
+ - Contains 3 used textures, 2.14 percent of map (235 textures in wad)
+Using Wadfile: \spiele\halflife\thewastes\thewastes.wad
+ - Contains 15 used textures, 10.71 percent of map (629 textures in wad)
+Using Wadfile: \dokumente und einstellungen\trempler-home-base\desktop\caged_source\cg_caged.wad
+ - Contains 77 used textures, 55.00 percent of map (92 textures in wad)
+Using Wadfile: \dokumente und einstellungen\trempler-home-base\desktop\dtex_asylum_01.wad
+ - Contains 0 used textures, 0.00 percent of map (84 textures in wad)
+
+added 8 additional animating textures.
+Texture usage is at 3.11 mb (of 4.00 mb MAX)
+121.34 seconds elapsed [2m 1s]
+
+-----   END   hlcsg -----
+
+
+
+hlbsp v2.5.3 rel Custom Build 1.7 (Dec  9 2002)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (merlinis@bigpond.net.au)
+-----  BEGIN  hlbsp -----
+Command line: D:\PROGRA~1\VALVEH~1\tools\hlbsp.exe d:\spiele\halflife\svencoop\maps\sc_caget 
+
+Current hlbsp Settings
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       1 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 4194304 ] [ 4194304 ]
+priority            [  Normal ] [  Normal ]
+
+noclip              [     off ] [     off ]
+nofill              [     off ] [     off ]
+null tex. stripping [      on ] [      on ]
+notjunc             [     off ] [     off ]
+subdivide size      [     240 ] [     240 ] (Min 64) (Max 512)
+max node size       [    1024 ] [    1024 ] (Min 64) (Max 4096)
+
+
+BSP generation successful, writing portal file 'd:\spiele\halflife\svencoop\maps\sc_caget.prt'
+139.62 seconds elapsed [2m 19s]
+
+-----   END   hlbsp -----
+
+
+
+hlvis v2.5.3 rel Custom Build 1.7 (Dec  9 2002)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (merlinis@bigpond.net.au)
+-----  BEGIN  hlvis -----
+Command line: D:\PROGRA~1\VALVEH~1\tools\hlvis.exe d:\spiele\halflife\svencoop\maps\sc_caget 
+4865 portalleafs
+16572 numportals
+
+-= Current hlvis Settings =-
+Name               |  Setting  |  Default
+-------------------|-----------|-------------------------
+threads             [       1 ] [  Varies ]
+verbose             [     off ] [     off ]
+log                 [      on ] [      on ]
+developer           [       0 ] [       0 ]
+chart               [     off ] [     off ]
+estimate            [     off ] [     off ]
+max texture memory  [ 4194304 ] [ 4194304 ]
+max vis distance    [       0 ] [       0 ]
+priority            [  Normal ] [  Normal ]
+
+fast vis            [     off ] [     off ]
+full vis            [     off ] [     off ]
+
+
+BasePortalVis:
+ (244.06 seconds)
+LeafThread:
+ (962.33 seconds)
+Warning: Leaf portals saw into leaf
+    Problem at portal between leaves 280 and 288:
+       (-1739.000 3322.000 119.000)
+    (-1740.000 3327.334 121.667)
+    (-1740.000 3328.000 122.000)
+    (-1707.161 3328.000 122.000)
+    (-1707.000 3327.000 121.500)
+
+average leafs visible: 187
+g_visdatasize:259695  compressed from 2962785
+1210.36 seconds elapsed [20m 10s]
+
+-----   END   hlvis -----
+
+
+
+hlrad v2.5.3 rel Custom Build 1.7 (Dec  9 2002)
+Zoner's Half-Life Compilation Tools -- Custom Build
+Based on code modifications by Sean 'Zoner' Cavanaugh
+Based on Valve's version, modified with permission.
+Submit detailed bug reports to (merlinis@bigpond.net.au)
+-----  BEGIN  hlrad -----
+Command line: D:\PROGRA~1\VALVEH~1\tools\hlrad.exe d:\spiele\halflife\svencoop\maps\sc_caget 
+
+-= Current hlrad Settings =-
+Name                | Setting             | Default
+--------------------|---------------------|-------------------------
+threads              [                 1 ] [            Varies ]
+verbose              [               off ] [               off ]
+log                  [                on ] [                on ]
+developer            [                 0 ] [                 0 ]
+chart                [               off ] [               off ]
+estimate             [               off ] [               off ]
+max texture memory   [           4194304 ] [           4194304 ]
+priority             [            Normal ] [            Normal ]
+
+vismatrix algorithm  [          Original ] [          Original ]
+oversampling (-extra)[               off ] [               off ]
+bounces              [                 1 ] [                 1 ]
+ambient light        [ 0.000 0.000 0.000 ] [ 0.000 0.000 0.000 ]
+maximum light        [           255.000 ] [           256.000 ]
+circus mode          [               off ] [               off ]
+
+smoothing threshold  [            50.000 ] [            50.000 ]
+direct threshold     [            25.000 ] [            25.000 ]
+direct light scale   [             2.000 ] [             2.000 ]
+coring threshold     [             1.000 ] [             1.000 ]
+patch interpolation  [                on ] [                on ]
+
+texscale             [                on ] [                on ]
+patch subdividing    [                on ] [                on ]
+chop value           [            64.000 ] [            64.000 ]
+texchop value        [            32.000 ] [            32.000 ]
+
+global fade          [             1.000 ] [             1.000 ]
+global falloff       [                 2 ] [                 2 ]
+global light scale   [ 1.000 1.000 1.000 ] [ 1.000 1.000 1.000 ]
+global gamma         [ 0.500 0.500 0.500 ] [ 0.500 0.500 0.500 ]
+global light scale   [             1.000 ] [             1.000 ]
+global sky diffusion [             1.000 ] [             1.000 ]
+
+opaque entities      [                on ] [                on ]
+sky lighting fix     [                on ] [                on ]
+incremental          [               off ] [               off ]
+dump                 [               off ] [               off ]
+
+colour jitter        [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+monochromatic jitter [       0.0 0.0 0.0 ] [       0.0 0.0 0.0 ]
+softlight hack       [   0.0 0.0 0.0 0.0 ] [   0.0 0.0 0.0 0.0 ]
+diffuse hack         [                on ] [                on ]
+spotlight points     [                on ] [                on ]
+
+custom shadows with bounce light
+                     [               off ] [               off ]
+rgb transfers        [               off ] [               off ]
+
+
+[Reading texlights from 'D:\PROGRA~1\VALVEH~1\tools\lights.rad']
+Warning: Duplication of texlight '+0~FIFTIES_LGT2' in file 'D:\PROGRA~1\VALVEH~1\tools\lights.rad'!
+Warning: Duplication of texlight '+0~TNNL_LGT3' in file 'D:\PROGRA~1\VALVEH~1\tools\lights.rad'!
+Warning: Duplication of texlight '+0~LIGHT3A' in file 'D:\PROGRA~1\VALVEH~1\tools\lights.rad'!
+Warning: Duplication of texlight '+0~LIGHT5A' in file 'D:\PROGRA~1\VALVEH~1\tools\lights.rad'!
+Warning: Duplication of texlight '~LIGHT3C' in file 'D:\PROGRA~1\VALVEH~1\tools\lights.rad'!
+Warning: Duplication of texlight '+0~GENERIC86R' in file 'D:\PROGRA~1\VALVEH~1\tools\lights.rad'!
+[235 texlights parsed from 'D:\PROGRA~1\VALVEH~1\tools\lights.rad']
+
+15256 faces
+Create Patches : 44697 base patches
+0 opaque faces
+491003 square feet [70704456.00 square inches]
+4845 direct lights
+
+BuildFacelights:
+ (191.19 seconds)
+visibility matrix   : 119.1 megs
+BuildVisLeafs:
+ (265.54 seconds)
+MakeScales:
+ (640.14 seconds)
+SwapTransfers:
+ (38.45 seconds)
+Transfer Lists :    19118364 :   19.12M transfers
+       Indices :    15297040 :   14.59M bytes
+          Data :    76473456 :   72.93M bytes
+GatherLight:
+ (2.27 seconds)
+FinalLightFace:
+ (10.24 seconds)
+1167.70 seconds elapsed [19m 27s]
+
+-----   END   hlrad -----
+
+
+

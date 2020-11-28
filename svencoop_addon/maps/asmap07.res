@@ -3,7 +3,6 @@
 
 asheep.wad
 events/muzzle_M41A.txt
-models/azuresheep/adrian.mdl
 models/azuresheep/barniel.mdl
 models/azuresheep/kate.mdl
 models/azuresheep/p_9mmberetta.mdl

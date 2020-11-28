@@ -1,0 +1,29 @@
+sc_buro_prologue
+by PU_1338
+
+
+
+GDS : Gena Defence Service
+
+State: Top Secret
+
+
+Localisation: New York
+Time: 4:20 am
+
+
+One of our banks has been attacked by an unknown group.
+They have taken the Director of the bank and some Guards 
+as hostages. 
+
+
+
+PRIMARY OBJECTIVE:
+
+Find and rescure the director.
+
+
+SECONDARY OBJECTIVE:
+
+Eliminate all enemy forces.
+

@@ -1,0 +1,7 @@
+Wa_wall2       detail/sc_buro_prologue/Wa_wall2 			1.0	1.0
+Wa_flr1       detail/sc_buro_prologue/Wa_flr2 				2.0	2.0
+Wa_flr3       detail/sc_buro_prologue/Wa_flr2_2 			2.0	2.0
+Wa_flr4       detail/sc_buro_prologue/Wa_flr2_2 			2.0	2.0
+
++0~FIFTS_LGHT06       detail/sc_buro_prologue/lght 			1.0	1.0
++A~FIFTS_LGHT06       detail/sc_buro_prologue/lght 			1.0	1.0

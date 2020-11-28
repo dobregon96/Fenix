@@ -1,0 +1,10 @@
+By HelloTimber:
+sc_buildingjumper is my first game map.
+I know it is looks poor.
+I made it for Sven Co-op V4.8 in,ehh...maybe in 2014?
+And I remake it for Sven Co-op V5.0 in 2017.
+Emm,maybe there's still some entity BUGs in this map.
+If you discover any bug,and also you have time(of course you would like to do that),you can fix these bugs by yourself.
+Why not fix these bug by myself?Because I have already written this is the FINAL version,I think I would better don't change it anymore.
+If you are a host of a server,and you wanna add this map into your server,you can fix these possible bugs.
+So I add the ENT file in this package.

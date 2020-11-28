@@ -1,0 +1,45 @@
+       Borg-Cube - Alpha (50%) Version
+             A map for Sven Coop
+
+       Made by: AGAMEMNON (Alex_Scheinert@web.de)
+       Suitable for 3-8 players
+
+MAP DESCRIPTION
+
+You fight yourself through a Star-Trek Borg-Cube!
+(I still need a good "Borg" as Zombie-replacement!!!)
+(The alien is only a placeholder)
+Please help me!
+
+Features that are in this Version:
+
+- Custom Sound with Terminator Theme (Others will follow)
+- Custom sky by Ax
+- Custom Textures by Shebob, Schwenz and ::[MIIB]::Thomas (some edited by me due to memory probs)
+- Custom models by ... Scarecrow (phaser) and Oliver (alien Zombie)
+
+MAP INFORMATION
+
+
+Editors used:      Worldcraft 3.3, Wally 1.55B, Goldwave
+New textures:      YES alot!
+New sky:           YES
+New sounds:        YES
+New models:        YES
+
+-----------------------------------                   
+
+Known problems:    
+
+- Sometimes high r_speeds because of VERY High Detail.
+- till now... no one
+                     
+
+
+Compile Time:       approximately 23 minutes
+Compile Machine:    P4 2,4 Ghz 256Mb RAM
+
+
+MISSION OBJECIVE:
+
+Just have fun!

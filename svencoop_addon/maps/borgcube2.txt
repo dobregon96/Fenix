@@ -1,0 +1,43 @@
+       Borg-Cube2 - Beta Version
+             A map for Sven Coop
+
+       Made by: AGAMEMNON (Alex_Scheinert@web.de)
+       MINIMUM 3 players
+
+MAP DESCRIPTION
+
+You fight yourself through a more or less Star-Trekky Borg-Cube!
+
+Features that are in this Version:
+
+- Custom Sound with Terminator and Matrix Themes
+- Custom sky by Ax
+- Custom Textures by Shebob, Schwenz and ::[MIIB]::Thomas (some edited by me due to memory problems)
+- Custom models by ... Scarecrow (phaser) and Oliver (alien Zombie)
+- 
+
+MAP INFORMATION
+
+
+Editors used:      Worldcraft 3.4, Wally 1.55B, Goldwave, SpriteWizard
+New textures:      YES alot!
+New sky:           YES
+New sounds:        YES
+New models:        YES
+New sprites:       YES
+
+-----------------------------------                   
+
+Known problems:    
+
+- Sometimes high r_speeds because of VERY High Detail.
+- too less ammo: SHOOT AT THE HEAD!                     
+
+
+Compile Time:       approximately 23 minutes
+Compile Machine:    P4 2,4 Ghz 256Mb RAM
+
+
+MISSION OBJECIVE:
+
+Just have fun!

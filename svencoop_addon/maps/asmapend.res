@@ -2,7 +2,6 @@
 // https://github.com/wootguy/resguy
 
 events/muzzle_M41A.txt
-models/azuresheep/adrian.mdl
 models/azuresheep/barniel.mdl
 models/azuresheep/freeman.mdl
 models/azuresheep/kate.mdl
