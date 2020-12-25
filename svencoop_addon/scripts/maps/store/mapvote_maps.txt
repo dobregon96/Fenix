@@ -1,4 +1,4 @@
-Time: 30
+Time: 120
 sprites/dynamic_mapvote/half-life.spr|Half-Life|hl_c00|hl_c02_a1
 sprites/dynamic_mapvote/blue-shift.spr|Half-Life\nBlue Shift|ba_tram1|ba_canal1
 sprites/dynamic_mapvote/opposing-force.spr|Half-Life\nOpposing Force|of0a0|of1a1
@@ -24,7 +24,6 @@ sprites/dynamic_mapvote/blackmesaepf.spr|Half-Life\nblackmesaepf|BlackMesaEPF
 sprites/dynamic_mapvote/TH-ep1.spr|Half-Life\nth_ep1|th_ep1_00|th_ep1_01
 sprites/dynamic_mapvote/TH-ep2.spr|Half-Life\nth_ep2|th_ep2_00
 sprites/dynamic_mapvote/TH-ep3.spr|Half-Life\nth_ep3|th_ep3_00
-sprites/dynamic_mapvote/TH-ep3.spr|Half-Life\nth_ep3|th_ep3_00
 sprites/dynamic_mapvote/TH-all.spr|Half-Life\nth_escape|th_escape
 sprites/dynamic_mapvote/tetris.spr|Half-Life\ntetris|sc_tetris1
 sprites/dynamic_mapvote/crack-life.spr|Half-Life\ncrack-life|cracklife_c00|cracklife_c01_a1
@@ -34,6 +33,14 @@ sprites/dynamic_mapvote/restriction.spr|Half-Life\nrestriction|restriction01
 sprites/dynamic_mapvote/aom.spr|Half-Life\nAfraid Of Monsters|afraidofmonsters_lobby
 sprites/dynamic_mapvote/op4_boot.spr|Half-Life\nOpossing Force-Bootleg Squadrog|bootsquad1
 sprites/dynamic_mapvote/train.spr|Half-Life\nDAV-Train|davtrain1
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nyabma|yabma
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nhplanet|hplanet
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nsc_another|sc_another
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nsuspension|suspension
+sprites/dynamic_mapvote/half-life.spr|Half-Life\ndeadsimpleneo2|deadsimpleneo2
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nzero|zero
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nshattered|shattered
+sprites/dynamic_mapvote/half-life.spr|Half-Life\nvger|vger
 
 
 
