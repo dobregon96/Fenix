@@ -3,7 +3,7 @@
 #include "HLSPClassicMode"
 #include "cubemath/trigger_once_mp"
 #include "cubemath/trigger_mediaplayer"
-#include "ofnvision"
+//#include "ofnvision"
 #include "crouch_spawn"
 void MapInit()
 {
@@ -11,7 +11,7 @@ void MapInit()
 	RegisterTriggerSuitcheckEntity();
 	RegisterTriggerOnceMpEntity();
 	RegisterTriggerMediaPlayerEntity();
-	g_nv.MapInit();
+	//g_nv.MapInit();
 	g_crspawn.Enable();
 	g_EngineFuncs.CVarSetFloat( "mp_hevsuit_voice", 1 );
 	
