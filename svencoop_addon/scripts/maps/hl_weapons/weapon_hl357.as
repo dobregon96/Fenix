@@ -94,7 +94,7 @@ class weapon_hl357 : ScriptBasePlayerWeaponEntity
 		info.iMaxAmmo2	= -1;
 		info.iAmmo2Drop	= -1;
 		info.iMaxClip 	= PYTHON_MAX_CLIP;
-		info.iSlot 		= 3;
+		info.iSlot 		= 1;
 		info.iPosition 	= 4;
 		info.iFlags 	= 0;
 		info.iWeight 	= PYTHON_WEIGHT;
