@@ -41,7 +41,7 @@ sprites/dynamic_mapvote/half-life.spr|Half-Life\ndeadsimpleneo2|deadsimpleneo2
 sprites/dynamic_mapvote/half-life.spr|Half-Life\nzero|zero
 sprites/dynamic_mapvote/half-life.spr|Half-Life\nshattered|shattered
 sprites/dynamic_mapvote/half-life.spr|Half-Life\nvger|vger
-
+sprites/dynamic_mapvote/half-life.spr|Half-Life - Counter-Strike|hlcs_c00|hlcs_c02_a1
 
 
 
