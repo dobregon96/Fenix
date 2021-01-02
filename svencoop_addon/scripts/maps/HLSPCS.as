@@ -7,6 +7,8 @@
 #include "hlsp/trigger_suitcheck"
 #include "HLSPClassicMode"
 #include "cs16/cs16register"
+#include "cubemath/trigger_mediaplayer"
+
 
 void MapInit()
 {
@@ -15,6 +17,7 @@ void MapInit()
 	RegisterPointCheckPointEntity();
 	RegisterTriggerOnceMpEntity();
 	RegisterTriggerSuitcheckEntity();
+    RegisterTriggerMediaPlayerEntity();
 	
 	g_EngineFuncs.CVarSetFloat( "mp_hevsuit_voice", 1 );
 	
