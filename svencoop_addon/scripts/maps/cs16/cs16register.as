@@ -13,7 +13,7 @@ void CS16MapInit() //Nero
 	CS16::CSMoneyMapInit(); //Nero
 }
 
-void MapActivate()
+void MapStart()
 {
 	CS16::CSMoneyMapActivate(); //Nero
 }
