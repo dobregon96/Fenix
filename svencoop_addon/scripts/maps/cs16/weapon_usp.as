@@ -150,7 +150,7 @@ class weapon_usp : ScriptBasePlayerWeaponEntity
 	
 	void PrimaryAttack()
 	{
-		if( m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD || self.m_iClip <= 0 )
+		if( ( m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD && g_iCurrentMode != CS16_MODE_SILENCER ) || self.m_iClip <= 0 )
 		{
 			self.PlayEmptySound();
 			self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.15f;
@@ -339,48 +339,4 @@ void RegisterUSP()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( GetUSPName(), GetUSPName() );
 	g_ItemRegistry.RegisterWeapon( GetUSPName(), "cs16", "ammo_cs_45acp" );
-}
-
-/* COUNTER-STRIKE 1.6 45 ACP AMMO - USED BY USP, UMP-45 AND MAC-10*/
-class CS16_Ammo_45acp : ScriptBasePlayerAmmoEntity
-{
-	void Spawn()
-	{
-		Precache();
-		g_EntityFuncs.SetModel( self, "models/cs16/ammo/45acp/w_45acp.mdl" );
-		BaseClass.Spawn();
-	}
-	
-	void Precache()
-	{
-		g_Game.PrecacheModel( "models/cs16/ammo/45acp/w_45acp.mdl" );
-		g_Game.PrecacheModel( "models/cs16/ammo/45acp/w_45acpt.mdl" );
-		g_SoundSystem.PrecacheSound( "items/9mmclip1.wav" );
-	}
-
-	bool AddAmmo( CBaseEntity@ pither )
-	{
-		int iGive;
-		
-		iGive = USP_DEFAULT_GIVE;
-		
-		if( pither.GiveAmmo( iGive, "ammo_cs_45acp", CS_45acp_MAX_CARRY ) != -1 )
-		{
-			g_SoundSystem.EmitSound( self.edict(), CHAN_ITEM, "items/9mmclip1.wav", 1, ATTN_NORM );
-			return true;
-		}
-		return false;
-	}
-}
-
-string GetCS16_Ammo_45acp()
-{
-	return "ammo_cs_45acp";
-}
-
-void RegisterCS_AMMO_45ACP()
-{
-	g_Game.PrecacheModel( "models/cs16/ammo/45acp/w_45acp.mdl" );
-	g_Game.PrecacheModel( "models/cs16/ammo/45acp/w_45acpt.mdl" );
-	g_CustomEntityFuncs.RegisterCustomEntity( "CS16_Ammo_45acp", GetCS16_Ammo_45acp() );
 }

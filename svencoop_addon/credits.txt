@@ -1,0 +1,28 @@
+This is a credits file.
+People credited for this work are:
+Valve
+SoloKiller
+KernCore
+AOMDC (For shotgun and knife base)
+w00tguy123 (For supporting)
+Nero (For inspirating me in doing this port with another port of his)
+D.N.I.O 071
+VitorHunter (For video and playtesting)
+R4to0.exe (For providing server and ideas)
+The303 (For attempting to create a sniper scope)
+Lobster (For helping me understand Angelscript)
+spy-warrior(For providing mirror)
+RNG (For providing the .res file to ensure things are downloaded)
+KaLo (For providing constructive feedback)
+@n!t@ (Great Feedback)
+Julcool (Semi auto functions)
+fgsfds (Respawning ammo for HE Grenade)
+Babylon (Fix for the Dual Berettas player animations)
+
+The Playtesters:
+Tabajara
+Leviathan
+Kelvin
+R4to0
+VitorHunter
+Lobster

@@ -109,12 +109,26 @@ HookReturnCode ClientSay( SayParameters@ pParams )
 	
 	if( args.ArgC() == 1 && args.Arg(0) == "buy" || args.Arg(0) == "/buy" )
 	{
-        pParams.ShouldHide = true;
+		pParams.ShouldHide = true;
+
+		if( !pPlayer.m_fLongJump ) //Nero
+		{
+			g_PlayerFuncs.ClientPrint( pPlayer, HUD_PRINTTALK, "You may only buy weapons from the charging stations.\n" );
+			return HOOK_CONTINUE;
+		}
+
 		g_BuyMenu.Show( pPlayer );
 	}
 	else if( args.ArgC() == 2 && args.Arg(0) == "buy" || args.Arg(0) == "/buy" )
 	{
 		pParams.ShouldHide = true;
+
+		if( !pPlayer.m_fLongJump ) //Nero
+		{
+			g_PlayerFuncs.ClientPrint( pPlayer, HUD_PRINTTALK, "You may only buy weapons from the charging stations.\n" );
+			return HOOK_CONTINUE;
+		}
+
 		bool bItemFound = false;
 		string szItemName;
 		uint uiCost;

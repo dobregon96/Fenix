@@ -149,7 +149,7 @@ class weapon_m4a1 : ScriptBasePlayerWeaponEntity
 	
 	void PrimaryAttack()
 	{
-		if( m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD || self.m_iClip <= 0 )
+		if( ( m_pPlayer.pev.waterlevel == WATERLEVEL_HEAD && g_iCurrentMode != CS16_MODE_SILENCER ) || self.m_iClip <= 0 )
 		{
 			self.PlayEmptySound();
 			self.m_flNextPrimaryAttack = WeaponTimeBase() + 0.15f;

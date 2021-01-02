@@ -1,0 +1,84 @@
+*Update 1.1:
+-Added credits.
+-Added showcase picture.
+
+*Update 1.2:
+-Now silencers do have a reason!
+-Changed names so that they don't conflict with other stuff.
+-Removed 'Nova Pasta'.
+-Some updates in the codes for pistols and weapons that uses multiple shooting sounds.
+
+*Update 1.3:
+-Added the XM1014 Models.
+-Checked code for missing files and sprites.
+
+*Update 1.4:
+-Fixed script not being to load (awp leftover code).
+-Fixed M3 ammo glitching with 9mmparab ammo.
+-Added ammo models for the weapons (included in the .res file)
+
+*Update 1.5:
+-Scoped weapons have more innacuracy when not scoped.
+-Added more punches in the AK-47 (Recoil is more difficult to control).
+-Added HE Grenades (They have their own custom ammo [weapon_hegrenade] because it will conflict with the weapon_handgrenade. Also included in the .res file).
+
+*Update 1.5.1:
+-Removed y axis in punchaim in the AK-47.
+-Fixed He Grenades not having sprites (Hopefully).
+-Fixed Knife Primary Attack and Secondary Attack timings.
+
+*Update 1.5.2:
+-Fixed typos in Famas and Mac-10 Sounds (Was trying to precache famas-clipin/mac10_clipin1 when they didn't exist).
+
+*Update 1.5.3:
+-Fixed Knife auto attacking something (wall or npc) when hitting nothing.
+
+*Update 1.6:
+-Fixed Knife auto attacking again.
+-Increased range for first attack for the knife to 47 units (was 32).
+-Increased range for the second attack for the knife to 37 units (was 32).
+-Changed how stuff gets precached (It'll get precached inside the weapon class, preventing crashes).
+-Changed how dual berettas handles player animations (Thanks Babylon!).
+-Added missing models in the .res files.
+
+*Update 1.7:
+-Pistols now are trully semi automatic (Thanks Julcool).
+-You can now pick up the same weapon_hegrenade from the ground as ammo (Thanks fgsfds).
+-Optimization for the code (It no longer uses a bunch of enums).
+-Added CS1.6 original shells to each weapon.
+-Added updated Buy Menu Script (Just type buy/buy <weapon> and happy buying).
+
+*Update 1.8:
+-Optimized compatibility with WW2 and various other weapons;
+-Bullets now eject from the same direction as in CS1.6;
+-Increased FOV in AUG/SG552 to the same value as in CS1.6;
+-Changes to recoil in some weapons;
+-Scoping in will now slow your speed, like in CS1.6.
+
+Update 1.9:
+-Fixed glitch related to the knife and holster;
+-Optimized code for shared ammo;
+-Fixed bug related to the HE Grenade (Thanks DavidBlack);
+-HE Grenades timer will only start after being thrown (Similiar to CS1.6's grenades);
+-Increased HE Grenade's throw speed;
+-Decreased recoil (punchaim) for Glock-18.
+
+Update 2.0:
+-Support for 5.11 API;
+-Added weapon_c4 (Thanks Nero! Also D.N.I.O. 071 for the new playermodel with the backpack);
+-Added cs16.fgd for mappers (Thanks R4to0!);
+-Brought back DestroyItem() to HE Grenade;
+-Changed all names of the ammo entities (they're on the Notes section, and again mappers, remember to change the name of the entities on your maps if you previously used them);
+-Changed the whole folder structure to a more organized one (Mappers, remember to change your structure as well in case you used them);
+-Numerous fixes about Holster;
+-Empty Sounds are now played on CHAN_AUTO, fixes shoot sounds being stopped;
+-Fixed draw sound on MAC10;
+-Changed shotgunshell.mdl to use hlclassic (included in the 5.11 update);
+-Removed unused knife viewmodel;
+-Changed knife's worldmodel (Thanks D.N.I.O. 071!);
+-Fire in the hole!
+
+Update 2.1:
+***WORKAROUND: Due to the game not being able to play Schedules in the Holster() functions anymore, a temporary fix is to not let the players drop weapons
+That means you'll not be able to drop the: HE Grenade, and the C4***
+Unfortunately nothing else was update prior to this release. There is a code rewrite in the making and planned for release after 5.16. Stay tunned.
