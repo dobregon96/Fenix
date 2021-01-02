@@ -12,14 +12,20 @@
 
 void MapInit()
 {
-	CS16MapInit();
+    RegisterCS16();
+    CS16::CSMoneyMapInit();
 
-	RegisterPointCheckPointEntity();
-	RegisterTriggerOnceMpEntity();
-	RegisterTriggerSuitcheckEntity();
+    RegisterPointCheckPointEntity();
+    RegisterTriggerOnceMpEntity();
+    RegisterTriggerSuitcheckEntity();
     RegisterTriggerMediaPlayerEntity();
-	
-	g_EngineFuncs.CVarSetFloat( "mp_hevsuit_voice", 1 );
-	
-	//ClassicModeMapInit();
+    
+    g_EngineFuncs.CVarSetFloat( "mp_hevsuit_voice", 1 );
+    
+    //ClassicModeMapInit();
+}
+
+void MapActivate()
+{
+    CS16::CSMoneyMapActivate();
 }
