@@ -122,7 +122,7 @@ array<ItemMapping@> g_Ins2ItemMappings = {
 	//handgrenade
 	ItemMapping( "weapon_handgrenade", g_GrenadeCandidates[iGrenChooser] ),
 	//crowbar
-	ItemMapping( "weapon_crowbar", g_CrowbarCandidates[iCrowbChooser] ),
+	//ItemMapping( "weapon_crowbar", g_CrowbarCandidates[iCrowbChooser] ),
 	//uzi
 	ItemMapping( "weapon_uzi", g_UziCandidates[iUziChooser][0] ),
 		ItemMapping( "ammo_uziclip", g_UziCandidates[iUziChooser][1] ), ItemMapping( "ammo_9mmbox", g_UziCandidates[iUziChooser][1] ),
