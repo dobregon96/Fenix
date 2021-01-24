@@ -1,0 +1,5 @@
+Half-Life Counter-Strike Edition
+
+-Press Use key (e) at charging stations to operate the buy menu
+
+-Once you aquire the longjump module type "buy" in the chat to open up the buy menu
