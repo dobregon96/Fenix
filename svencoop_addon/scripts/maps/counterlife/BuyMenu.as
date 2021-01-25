@@ -7,7 +7,7 @@ namespace BuyMenu
 {
 
 //fall back for map_script
-const int StartMoney = 10;
+const int StartMoney = 50;
 
 // Stop using comprar/shop in my buymenus, typing 'buy' is way better than typing 7/4 letters
 bool FirstArgChecker( const CCommand@ args )
