@@ -1,0 +1,37 @@
+Frostline 1.0
+
+-- Starting the game --
+- Select one of the gamemode you want to play by clicking VOTE,
+  you can also activate modifiers by clicking them.
+- Set the rule limit and press GO to start the game,
+  you will also directed to additional voting to choose the map timeline.
+
+-- Gameplay --
+- Defend the main objective from incoming enemy waves,
+  there are 10 enemy waves you have to fend off.
+- Use the upgrade kit inside your shelter to purchase 
+  additional upgrades ranging from Team Effect to Equipment.
+- You'll earn points from taking out enemies and wave completion.
+- Keep an eye out for Resource Pack that will drop in every wave start, 
+  it will give your team additional points if you can return it to the shelter.
+- There are 4 achievements in this map, can you and your team get'em all?
+
+-- Additional Note --
+- It is recommended to disable XP Mod or any health/armor altering plugins.
+- It may also recommended to play this map with stable connection due to
+  the map contains thousands of entities involved in the gameplay.
+- This map contains seperate models folder for NPCs, if you are
+  experience performance issues, you can replace the model in
+  'models/frostline/npc'.
+- The achievements ARE NOT IMPOSSIBLE, if you're wondering 'HOW IS THIS
+  EVEN POSSIBLE? YOU CAN'T SPEND 100.000 POINTS IN A SINGLE GAME!'...
+  Don't worry. It's saved in the game data or in your favourite game server.
+
+-- Credits --
+Map by: Rhizka "I-ka."
+Chemlight and Resource Pack model by: Rhizka "I-ka."
+First Aid and Item Respawn sound by: Febbs!
+Using env_weather's snow effect by: w00tguy
+
+Special thanks to everyone involved in the testing, also to
+Sven Co-op community and devs for answering questions in mapping channel!
