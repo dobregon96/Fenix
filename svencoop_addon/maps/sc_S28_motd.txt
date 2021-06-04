@@ -1,0 +1,18 @@
+Map created by [Furry]The fox
+Created for the SvenCoop map contest 2009
+Email: tommywolfie@hotmail.com
+-----------------------------------------
+
+You are a unfortunate crew of security guards caught in the midst of the Black Mesa disaster, you must now
+fight your way out of the facility to survive. Almost no one is on your side, so value the allies you find.
+
+Just a few moments ago, a message was transmitted over the radio, indicating that a airborne rescue from the surface
+is possible, however they will not wait forever, so you will need to move quickly.
+
+There are also rumors that the old facilities hold a way out, but so far these are only rumors.
+
+Other notes; 
+
+Alot in this map is controlled by random triggers, so what happens one time might not happen the other.
+
+

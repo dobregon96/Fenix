@@ -1,0 +1,29 @@
+Changelog from entry contest to final(v1):
+
+Redesigned outer area bunker 3
+Completely remade bunker 2
+Redesigned outer area bunker 1
+Removed the spawn area, made a new one
+Changed lighting scheme, which is now more appealing (no longer white lights)
+Changed how players enter the bunkers (is now elevators for every bunker)
+Changed how enemies can encounter the super computer (if psu's are broken, then doors are opened, which allows enemies to instantly see super computer)
+Added more visual aid for beginning the map
+Changed some monster types (not only alien grunts anymore)
+Added new mechanic at bunker 1
+Added zombies at bunker 1
+Added visual aid for doors you cannot enter
+Closed off path to bunker 1 at start, so players only have to defend bunker 2 and 3 at start
+Added some more custom textures
+Added some detail textures
+Added a shotgun and some ammo here and there
+Removed map 1, which was an introductionairy map, the map now only consists of one .bsp
+Fixed text messages, they no longer appear in upper left corner, instead they appear in top center, also they are all consistent now. There's 2 types of messages: radio transmissions and messages which indicate map progress.
+Added custom content (sprites, textures, sounds, detail textures)
+Improved compile time by removing a big part of the underground rocks and replacing it with bunker like architecture
+Changed timing of certain events (like computer entering a bunker)
+Tried to optimize player walkable space, meaning that clip brushes have been added in order to either prevent players from getting somewhere or simply to improve compile time.
+Used other settings in the compile which I will not list, since it's too unimportant to mention
+Mission objectives and story line has been updated and other text files too (meaning the _motd.txt and the .txt itself, also the .res file)
+
+Fixed more bugs which are too little to mention
+
