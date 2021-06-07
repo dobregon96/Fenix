@@ -1,0 +1,27 @@
+#---         ---#   
+#Push the button#
+# By: Streamfox #
+#---         ---#
+
+A fun and annoying map.
+
+Minimum of 2 players are required!
+
+
+Push the correct buttons to open the EXIT door.
+
+Each row of buttons have one correct button on both sides. 
+So that is a totall of 4 correct buttons. Be aware, each time
+when the map loaded the four correct buttons (one in each row) will be
+chosen randomly. So each time different buttons open the exit door.
+One more thing, wrong buttons explode the shit out of you.
+
+Wait for others before start the map, otherwise they won't able to hear the
+music, which is an essential part of the map.
+
+Betatest team:
+RNG
+Lemonsoda
+Blue Cheetah
+Magpie
+
