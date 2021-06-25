@@ -1,0 +1,45 @@
+=========================================================================
+The-Climb2: Map made by Joe^vi[.r!]
+=========================================================================
+
+The sequel to The-Climb!!, This one is much more detailed and hopefully, funner :D
+
+
+The Story:
+You and your fellow explorer's were exploring this deep, deep, cave....
+When suddenly...the rope to get back up was broken...you are now trapped down 4 miles deep.....and you are running low on food....You must climb out if you wish to survive.....
+
+Notes: The juggle wave is from the escape map Artifact: by Kami, Thanks Kami! :D
+
+=========================================================================
+The-Climb2: Map made by Joe^vi[.r!]
+=========================================================================
+
+
+
+--------------------------------------------------------------------------------
+
+Ported to Sven Co-op by Adam "Adambean" Reece
+
+Originally a custom map for Team Fortress Classic available here:
+https://gamebanana.com/maps/161016
+
+Tips/notes:
+
+* There are no checkpoints! If you fall off you have to climb back up.
+* This is a pretty hard challenge, and will stress test your ability to manoeuvre in the GoldSrc/Svengine game engine. Expect your first attempt to take at least 1 hour. (This is the easiest of the 3 maps.)
+* Some of the longer jumps later on will require the strafe jumping technique.
+* You may want (or ask the server owner) to enable Sven Co-op's Teleport plug-in so you can save your position by saying "/s", and restore it by saying "/p" when (not if) you fall.
+* If you do use "/p" while falling you will still fall after restoring, thus you will likely be killed. Wait until you stop falling first.
+* Fall damage is will hurt you badly. Please heal other players when they're hurt.
+* Press +use (usually "E") to instantly stop moving when you land on something.
+* Please be patient of players in front of you. This isn't a race, so don't try to push past causing others fall off.
+* Although this map may seem impossible throughout it HAS been tested to completion by 3 people. It's just hard.
+
+Differences from the original map:
+
+* Medkits added at the very start so should you fall (and not die) you can begin again with full health. (Probably pointless.)
+* The 12 coloured items at the end have not been ported. (They did nothing anyway.)
+* A portal has been added at the end to give you points and let you run through the map again.
+
+If you can beat this map (legitimately, no cheating, etc) you can call yourself pretty darn dexterous on this game engine. (You will also score 10 points for each completion.)

@@ -1,0 +1,28 @@
+Map: SC_PROPANIC_PART 2
+
+Created by Christopher "Trempler" Lembrecht
+========================================
+
+Greetings @Everyone,
+after a long time, I finally found time to release my propanic map.
+The map was in development for way too long and it took even longer because I kept reworking the map and parts of it.
+
+You are a member of squad that is trying to invade the propanic's base in order to rescue a prisoneer and destroy their secret project. 
+
+The map features:
+			- 3 difficulties
+			- 4 custom weapons
+			- a lot of custom models, sprites, and sounds
+			- an insane boss fight
+			- secrets
+
+The map is huge and was split into 2 maps so the engine is able to run it.
+The map needs at least 2 players, but I would recommend 4-6 for the best experience.
+
+Good luck and I would love to get some comments and feedback. 
+
+I hope you like it,
+
+Trempler 
+
+========================================

@@ -1,0 +1,34 @@
+================================================================================
+* LEVEL INFORMATION *
+---------------------------------------------------------------------------------
+AUTHOR:      Fortune2 (Ben Finn)
+---------------------------------------------------------------------------------
+* STORY *
+---------------------------------------------------------------------------------
+It seems we have lost contact with a Police team that were protecting the transfer
+of UN Special Force weapons. About half way through, they were hit by a major snow
+storm. This storm caused them to stop, and move the weapons to a near by cave. 
+
+But it seems a small group of Terrorists were following this cargo, and attacked. 
+They quickly overpowered and killed the team, and then the driver. They are known 
+only as the Arch Angels, said to bring the holy war to the earth, any way they can. 
+They see this way as starting WW3. These are not a normal group, for they have 
+weapons, a team, and what seems to be a leader.
+
+Search the cave, kill the Angels and then stop them from entering the subway, or
+follow them in...
+---------------------------------------------------------------------------------
+* OTHER NOTES / SPECIAL THANKS *
+---------------------------------------------------------------------------------
+* Thanks to Dave J as Always
+* Hondo and AHL Mod for textures
+* Thanks to Zoner, who made those nice compiler tools
+* NovaRain, NeoRae, Radjah, [SK-187]Vengeance, Arachnid-X and Shiewn
+* There are no secrets in this map. Don't waste your time looking
+
+=================================================================================
+* COPYRIGHT / PERMISSIONS *
+---------------------------------------------------------------------------------
+All logos, models, textures, sounds, sky's and the map are property of their 
+respective owners. Ask first, take later.
+--------------------------------------------------------------------------------

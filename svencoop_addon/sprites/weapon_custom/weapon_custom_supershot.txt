@@ -1,0 +1,11 @@
+10
+ammo			320 was2	0	0	24	24
+crosshair		320 ofch1  24  0   24  24
+autoaim			320 crosshairs	72	72	24	24
+weapon          320 tjhud2 0 0 170 52
+weapon_s        320 tjhud2 0 0 170 52
+ammo			640 was2	0	0	24	24
+crosshair		640 ofch1  24  0   24  24
+autoaim			640 crosshairs	72	72	24	24
+weapon          640 tjhud2 0   0   170 52
+weapon_s        640 tjhud2 0   0   170 52

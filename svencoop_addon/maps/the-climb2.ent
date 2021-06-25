@@ -1,0 +1,2790 @@
+{
+  "wad" "halflife.wad;liquids.wad;xeno.wad;tfc.wad;tfc2.wad"
+  "mapversion" "220"
+  "scversion2" "517"
+  "startdark" "1"
+  "MaxRange" "32768"
+  "skyname" "night"
+  "classname" "worldspawn"
+}
+{
+  "origin" "-1056 -64 -3392"
+  "angles" "0 124 0"
+  "classname" "info_player_start"
+}
+{
+  "origin" "0 0 0"
+  "triggerstate" "1"
+  "delay" "0.25"
+  "target" "spawn_msg"
+  "targetname" "spawn_msg_relay"
+  "spawnflags" "64"
+  "classname" "trigger_relay"
+}
+{
+  "origin" "0 0 0"
+  "message" "Map made by Joe/NYRONIC"
+  "effect" "1"
+  "targetname" "spawn_msg"
+  "channel" "1"
+  "fxtime" "0.25"
+  "holdtime" "4"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 0 160"
+  "color" "224 224 80"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "2"
+  "classname" "game_text"
+}
+{
+  "origin" "-1388 280 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 270 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1268 280 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 270 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1268 120 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 90 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1388 120 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 90 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1388 228 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1348 228 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1348 172 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1308 172 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1308 228 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1268 228 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1268 172 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1148 272 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 289 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1088 268 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 239 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1164 208 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 318 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1164 136 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 35 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1104 116 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 103 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1052 192 -3348"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 180 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-1388 172 -3364"
+  "triggerstate" "1"
+  "target" "spawn_msg_relay"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_player_deathmatch"
+}
+{
+  "origin" "-272 128 -3392"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-272 96 -3392"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-272 64 -3392"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-272 32 -3392"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-272 0 -3392"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "origin" "-272 -32 -3392"
+  "angles" "0 0 0"
+  "classname" "item_healthkit"
+}
+{
+  "model" "*1"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*2"
+  "damagetype" "32"
+  "dmg" "65535"
+  "classname" "trigger_hurt"
+}
+{
+  "model" "*2"
+  "origin" "0 0 320"
+  "wait" "0.1"
+  "target" "fall_snd"
+  "spawnflags" "16"
+  "classname" "trigger_multiple"
+}
+{
+  "origin" "0 0 -3392"
+  "target5" "fall_snd5"
+  "target4" "fall_snd4"
+  "target3" "fall_snd3"
+  "target2" "fall_snd2"
+  "target1" "fall_snd1"
+  "max_delay" "0"
+  "min_delay" "0"
+  "target_count" "5"
+  "targetname" "fall_snd"
+  "spawnflags" "4"
+  "classname" "trigger_random"
+}
+{
+  "origin" "0 0 -3392"
+  "message" "scientist/scream1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "fall_snd1"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 -3392"
+  "message" "scientist/scream2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "fall_snd2"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 -3392"
+  "message" "scientist/scream20.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "fall_snd3"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 -3392"
+  "message" "scientist/scream24.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "fall_snd4"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 -3392"
+  "message" "scientist/scream5.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "fall_snd5"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1112 192 -3412"
+  "vp_type" "1"
+  "scale" "1"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/fire.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-1112 192 -3410"
+  "volstart" "5"
+  "message" "ambience/burning1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-1112 192 -3410"
+  "style" "1"
+  "_light" "157 72 9 200"
+  "classname" "light"
+}
+{
+  "model" "*3"
+  "damagetype" "8"
+  "dmg" "5"
+  "classname" "trigger_hurt"
+}
+{
+  "model" "*4"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*5"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*6"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*7"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*8"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*9"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*10"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*11"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*12"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*13"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-1076 310 -3416"
+  "message" "theclimb2/cricket2.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*14"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_wall"
+}
+{
+  "model" "*15"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*16"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*17"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*18"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-816 8 -3416"
+  "message" "theclimb2/cricket.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*19"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1000000"
+  "spawnflags" "6"
+  "classname" "func_breakable"
+}
+{
+  "model" "*20"
+  "origin" "412 248 -2856"
+  "angles" "0 189 0"
+  "avelocity" "45 90 135"
+  "target" "b1p1"
+  "volume" "0.85"
+  "dmg" "100000"
+  "speed" "64"
+  "rendercolor" "0 0 0"
+  "targetname" "b1"
+  "classname" "func_train"
+}
+{
+  "origin" "412 248 -2856"
+  "speed" "300"
+  "target" "b1p2"
+  "targetname" "b1p1"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "408 192 -2944"
+  "speed" "450"
+  "target" "b1p3"
+  "targetname" "b1p2"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "384 136 -3080"
+  "speed" "600"
+  "target" "b1p4"
+  "targetname" "b1p3"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "360 104 -3216"
+  "message" "b1b"
+  "speed" "300"
+  "target" "b1p5"
+  "targetname" "b1p4"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "328 88 -3248"
+  "speed" "450"
+  "target" "b1p6"
+  "targetname" "b1p5"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "288 64 -3368"
+  "speed" "700"
+  "target" "b1p7"
+  "targetname" "b1p6"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "224 64 -3800"
+  "message" "b1e"
+  "targetname" "b1p7"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "224 64 -3800"
+  "targetname" "b1e"
+  "message" "debris/bustconcrete1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*21"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "targetname" "b1b"
+  "spawnflags" "1"
+  "classname" "func_breakable"
+}
+{
+  "model" "*22"
+  "target" "b1"
+  "classname" "trigger_once"
+}
+{
+  "model" "*23"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "spawnflags" "6"
+  "classname" "func_breakable"
+}
+{
+  "model" "*24"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "targetname" "b1"
+  "spawnflags" "1"
+  "classname" "func_breakable"
+}
+{
+  "model" "*25"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "390 439 -3134"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "388 429 -3136"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "390 417 -3142"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "384 429 -3148"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "386 429 -3160"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "368 429 -3140"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot1"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-464 416 -3340"
+  "targetname" "lspot1"
+  "classname" "info_target"
+}
+{
+  "model" "*26"
+  "targetname" "b1e"
+  "damagetype" "32"
+  "dmg" "10000"
+  "spawnflags" "2"
+  "classname" "trigger_hurt"
+}
+{
+  "model" "*27"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "spawnflags" "6"
+  "classname" "func_breakable"
+}
+{
+  "model" "*28"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-454 -388 -2622"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-452 -398 -2624"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-454 -410 -2630"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-432 -398 -2628"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot2"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-448 -398 -2636"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-450 -398 -2648"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "464 -400 -2837"
+  "targetname" "lspot2"
+  "classname" "info_target"
+}
+{
+  "model" "*29"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "spawnflags" "6"
+  "classname" "func_breakable"
+}
+{
+  "model" "*30"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "40"
+  "rendermode" "5"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-444 196 -3432"
+  "message" "ambience/waterfall3.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 196 64"
+  "message" "ambience/water_flowing1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 196 -3432"
+  "rendermode" "5"
+  "scale" "4"
+  "renderamt" "255"
+  "model" "sprites/XSmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-444 92 -3432"
+  "rendermode" "5"
+  "scale" "4"
+  "renderamt" "255"
+  "model" "sprites/XSmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-428 144 -3432"
+  "rendermode" "5"
+  "scale" "4"
+  "renderamt" "255"
+  "model" "sprites/XSmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-460 144 -3432"
+  "rendermode" "5"
+  "scale" "4"
+  "renderamt" "255"
+  "model" "sprites/XSmoke1.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "classname" "env_sprite"
+}
+{
+  "model" "*31"
+  "skin" "-3"
+  "speed" "100"
+  "wait" "4"
+  "angles" "0 0 0"
+  "renderamt" "40"
+  "rendermode" "5"
+  "rendercolor" "0 0 0"
+  "classname" "func_water"
+}
+{
+  "model" "*32"
+  "skin" "-3"
+  "speed" "100"
+  "wait" "4"
+  "angles" "0 0 0"
+  "renderamt" "40"
+  "rendermode" "5"
+  "rendercolor" "0 0 0"
+  "frequency" "2"
+  "density" "2"
+  "classname" "func_water"
+}
+{
+  "model" "*33"
+  "skin" "-3"
+  "speed" "100"
+  "wait" "4"
+  "angles" "0 0 0"
+  "renderamt" "40"
+  "rendermode" "5"
+  "rendercolor" "0 0 0"
+  "frequency" "2"
+  "density" "2"
+  "classname" "func_water"
+}
+{
+  "origin" "-444 144 -3424"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 -3056"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 -2560"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 -2048"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 -1536"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 -1024"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 -512"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 144 64"
+  "message" "theclimb2/waterrun.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*34"
+  "origin" "360 111 -2774"
+  "targetname" "ledge1"
+  "distance" "5"
+  "rendercolor" "0 0 0"
+  "speed" "100"
+  "wait" "-1"
+  "g_e" "1"
+  "g_a" "1"
+  "angles" "0 0 0"
+  "spawnflags" "130"
+  "classname" "func_door_rotating"
+}
+{
+  "model" "*35"
+  "target" "ledge1"
+  "delay" "0.7"
+  "classname" "trigger_once"
+}
+{
+  "model" "*36"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "targetname" "ledge1"
+  "spawnflags" "1"
+  "classname" "func_breakable"
+}
+{
+  "origin" "160 112 -2688"
+  "targetname" "ledge1"
+  "frequency" "2.5"
+  "duration" "2"
+  "radius" "100"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "model" "*37"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "89 -454 -2398"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "99 -452 -2400"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "99 -432 -2404"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot3"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "111 -454 -2406"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "99 -448 -2412"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "99 -450 -2424"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "99 472 -2752"
+  "targetname" "lspot3"
+  "classname" "info_target"
+}
+{
+  "model" "*38"
+  "classname" "func_ladder"
+}
+{
+  "model" "*39"
+  "classname" "func_ladder"
+}
+{
+  "model" "*40"
+  "classname" "func_ladder"
+}
+{
+  "model" "*41"
+  "classname" "func_ladder"
+}
+{
+  "model" "*42"
+  "classname" "func_ladder"
+}
+{
+  "model" "*43"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-439 454 -1962"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-429 452 -1964"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-417 454 -1970"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-429 450 -1988"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-429 432 -1968"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot4"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-429 448 -1976"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-432 -476 -2112"
+  "targetname" "lspot4"
+  "classname" "info_target"
+}
+{
+  "model" "*44"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "452 429 -2240"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "454 417 -2246"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "454 439 -2238"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "432 429 -2244"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot5"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "448 429 -2252"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "450 429 -2264"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-464 432 -2384"
+  "targetname" "lspot5"
+  "classname" "info_target"
+}
+{
+  "model" "*45"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "targetname" "b2b"
+  "spawnflags" "1"
+  "classname" "func_breakable"
+}
+{
+  "origin" "224 272 -1216"
+  "speed" "300"
+  "target" "b2p2"
+  "targetname" "b2p1"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "224 272 -1392"
+  "speed" "450"
+  "target" "b2p3"
+  "targetname" "b2p2"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "224 272 -1536"
+  "message" "b2b"
+  "speed" "400"
+  "target" "b2p4"
+  "targetname" "b2p3"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "176 240 -1584"
+  "speed" "425"
+  "target" "b2p5"
+  "targetname" "b2p4"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "160 224 -1776"
+  "speed" "500"
+  "target" "b2p6"
+  "targetname" "b2p5"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "160 224 -2048"
+  "speed" "600"
+  "target" "b2p7"
+  "targetname" "b2p6"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "160 224 -2368"
+  "message" "b2e"
+  "speed" "600"
+  "targetname" "b2p7"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "model" "*46"
+  "origin" "224 272 -1216"
+  "avelocity" "45 90 135"
+  "target" "b2p1"
+  "volume" "0.85"
+  "dmg" "10000"
+  "speed" "64"
+  "rendercolor" "0 0 0"
+  "targetname" "b2"
+  "classname" "func_train"
+}
+{
+  "model" "*47"
+  "target" "b2"
+  "classname" "trigger_once"
+}
+{
+  "model" "*48"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "targetname" "b2"
+  "spawnflags" "1"
+  "classname" "func_breakable"
+}
+{
+  "origin" "160 224 -2368"
+  "targetname" "b2e"
+  "message" "debris/bustconcrete1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "224 272 -1216"
+  "targetname" "b2"
+  "frequency" "2.5"
+  "duration" "3"
+  "radius" "1000"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "origin" "412 248 -2856"
+  "targetname" "b1s"
+  "frequency" "2.5"
+  "duration" "3"
+  "radius" "1000"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "origin" "224 64 -3800"
+  "targetname" "b1e"
+  "frequency" "2.5"
+  "duration" "3"
+  "radius" "1000"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "origin" "160 224 -2368"
+  "targetname" "b2e"
+  "frequency" "2.5"
+  "duration" "3"
+  "radius" "1000"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "model" "*49"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "454 417 -1442"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "452 429 -1436"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "448 429 -1448"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "450 429 -1460"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "454 439 -1434"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "432 429 -1440"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot6"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-464 432 -1644"
+  "targetname" "lspot6"
+  "classname" "info_target"
+}
+{
+  "model" "*50"
+  "origin" "-96 -448 -1445"
+  "volume" "0.85"
+  "dmg" "10000"
+  "speed" "64"
+  "target" "b3p1"
+  "rendercolor" "0 0 0"
+  "targetname" "b3"
+  "classname" "func_train"
+}
+{
+  "origin" "-96 -448 -1445"
+  "speed" "300"
+  "target" "b3p2"
+  "targetname" "b3p1"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-96 -448 -1496"
+  "speed" "450"
+  "target" "b3p3"
+  "targetname" "b3p2"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-96 -448 -1600"
+  "speed" "575"
+  "target" "b3p4"
+  "targetname" "b3p3"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-96 -448 -1776"
+  "speed" "700"
+  "target" "b3p5"
+  "targetname" "b3p4"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-96 -448 -1968"
+  "speed" "800"
+  "target" "b3p6"
+  "targetname" "b3p5"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "origin" "-96 -448 -2824"
+  "message" "b3e"
+  "speed" "800"
+  "targetname" "b3p6"
+  "angles" "0 0 0"
+  "classname" "path_corner"
+}
+{
+  "model" "*51"
+  "rendercolor" "0 0 0"
+  "material" "8"
+  "health" "1"
+  "targetname" "b3"
+  "spawnflags" "1"
+  "classname" "func_breakable"
+}
+{
+  "origin" "-96 -448 -2824"
+  "targetname" "b3e"
+  "frequency" "2.5"
+  "duration" "3"
+  "radius" "1000"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "origin" "-96 -448 -2824"
+  "targetname" "b3e"
+  "message" "debris/bustconcrete1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "56"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-96 -448 -1445"
+  "targetname" "b3"
+  "frequency" "2.5"
+  "duration" "3"
+  "radius" "1000"
+  "amplitude" "4"
+  "classname" "env_shake"
+}
+{
+  "model" "*52"
+  "target" "b3"
+  "classname" "trigger_once"
+}
+{
+  "origin" "0 0 -1536"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*53"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*54"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*55"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*56"
+  "classname" "func_ladder"
+}
+{
+  "origin" "0 0 -1152"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 -768"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 -384"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 0"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 384"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 768"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*57"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-438 454 -1026"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-450 432 -1024"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot7"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-450 450 -1044"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-450 448 -1032"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-460 454 -1018"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-450 452 -1020"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-448 -464 -1216"
+  "targetname" "lspot7"
+  "classname" "info_target"
+}
+{
+  "model" "*58"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-450 452 -556"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-438 454 -562"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-450 448 -568"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-450 450 -580"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-460 454 -554"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-450 432 -560"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot8"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-448 -464 -752"
+  "targetname" "lspot8"
+  "classname" "info_target"
+}
+{
+  "model" "*59"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "414 -452 420"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "426 -454 414"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "414 -432 416"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot9"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "414 -448 408"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "414 -450 396"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "404 -454 422"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "416 464 224"
+  "targetname" "lspot9"
+  "classname" "info_target"
+}
+{
+  "origin" "0 0 1152"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 1536"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 1920"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 2304"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 2688"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "0 0 3072"
+  "message" "theclimb2/erriewind.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*60"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*61"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*62"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*63"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-80 -352 3600"
+  "_fade" "1.0"
+  "_light" "255 255 255 50"
+  "classname" "light"
+}
+{
+  "origin" "80 -352 3600"
+  "_fade" "1.0"
+  "_light" "255 255 255 50"
+  "classname" "light"
+}
+{
+  "model" "*64"
+  "skin" "-1"
+  "renderamt" "255"
+  "rendermode" "4"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*65"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "416 -112 -1600"
+  "message" "theclimb2/creak.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "model" "*66"
+  "origin" "416 -122 -1590"
+  "distance" "2"
+  "speed" "10"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "129"
+  "classname" "func_pendulum"
+}
+{
+  "model" "*67"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*68"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*69"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*70"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*71"
+  "skin" "-1"
+  "rendercolor" "0 0 0"
+  "renderamt" "255"
+  "rendermode" "4"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*72"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*73"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*74"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*75"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*76"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "model" "*77"
+  "skin" "-1"
+  "rendermode" "4"
+  "renderamt" "255"
+  "rendercolor" "0 0 0"
+  "classname" "func_illusionary"
+}
+{
+  "origin" "-240 160 3598"
+  "volstart" "5"
+  "message" "ambience/burning1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-240 160 3598"
+  "style" "1"
+  "_light" "157 72 9 200"
+  "classname" "light"
+}
+{
+  "origin" "-240 160 3596"
+  "vp_type" "1"
+  "scale" "1"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/fire.spr"
+  "framerate" "10.0"
+  "rendercolor" "0 0 0"
+  "angles" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "model" "*78"
+  "damagetype" "8"
+  "dmg" "5"
+  "classname" "trigger_hurt"
+}
+{
+  "model" "*79"
+  "classname" "func_ladder"
+}
+{
+  "model" "*80"
+  "classname" "func_ladder"
+}
+{
+  "model" "*81"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-422 454 1390"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-434 448 1384"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-434 450 1372"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-444 454 1398"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-434 452 1396"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-434 432 1392"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot10"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-416 -448 1152"
+  "targetname" "lspot10"
+  "classname" "info_target"
+}
+{
+  "model" "*82"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "454 -406 698"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "432 -418 700"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot11"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "448 -418 692"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "450 -418 680"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "452 -418 704"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "454 -428 706"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-432 -416 592"
+  "targetname" "lspot11"
+  "classname" "info_target"
+}
+{
+  "model" "*83"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "212 -454 2022"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "222 -432 2016"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot12"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "222 -452 2020"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "222 -448 2008"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "222 -450 1996"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "234 -454 2014"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "224 448 1712"
+  "targetname" "lspot12"
+  "classname" "info_target"
+}
+{
+  "model" "*84"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-460 454 2354"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-450 452 2352"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-438 454 2346"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-450 448 2340"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-450 450 2328"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-450 432 2348"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot13"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-448 -432 2048"
+  "targetname" "lspot13"
+  "classname" "info_target"
+}
+{
+  "model" "*85"
+  "rendercolor" "0 0 0"
+  "classname" "func_wall"
+}
+{
+  "origin" "-454 463 2654"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "15"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-452 451 2660"
+  "_fade" "1.0"
+  "_light" "255 255 128 50"
+  "classname" "light"
+}
+{
+  "origin" "-432 451 2656"
+  "pitch" "-15"
+  "_cone2" "90"
+  "_cone" "30"
+  "_falloff" "0"
+  "target" "lspot14"
+  "angles" "0 180 0"
+  "_fade" "1.0"
+  "_light" "255 255 128 255"
+  "classname" "light_spot"
+}
+{
+  "origin" "-454 441 2662"
+  "scale" "1"
+  "rendermode" "5"
+  "renderamt" "255"
+  "model" "sprites/moths.spr"
+  "framerate" "10.0"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-448 451 2648"
+  "message" "theclimb2/light_hum.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "2"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-450 451 2636"
+  "message" "ambience/flies.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "2"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "432 448 2448"
+  "targetname" "lspot14"
+  "classname" "info_target"
+}
+{
+  "origin" "384 -384 3712"
+  "message" "theclimb2/jungle_ambience.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-384 384 3712"
+  "message" "theclimb2/jungle_ambience.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "spawnflags" "8"
+  "classname" "ambient_generic"
+}
+// {
+//   "origin" "-104 376 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Flag h4x"
+//   "group_no" "1"
+//   "items" "33554432"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "4"
+//   "hasnt_item_from_group" "1"
+//   "skin" "4"
+//   "mdl" "models/flag.mdl"
+//   "goal_no" "1"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-200 376 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Flag h4x"
+//   "group_no" "1"
+//   "items" "16777216"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "3"
+//   "hasnt_item_from_group" "1"
+//   "skin" "3"
+//   "mdl" "models/flag.mdl"
+//   "goal_no" "1"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-296 376 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Flag h4x"
+//   "group_no" "1"
+//   "items" "262144"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "2"
+//   "hasnt_item_from_group" "1"
+//   "skin" "1"
+//   "mdl" "models/flag.mdl"
+//   "goal_no" "1"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-392 376 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Flag h4x"
+//   "group_no" "1"
+//   "items" "131072"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "1"
+//   "hasnt_item_from_group" "1"
+//   "skin" "2"
+//   "mdl" "models/flag.mdl"
+//   "goal_no" "1"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-392 312 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Key h4x"
+//   "group_no" "2"
+//   "items" "131072"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "1"
+//   "hasnt_item_from_group" "2"
+//   "skin" "1"
+//   "mdl" "models/keycard.mdl"
+//   "goal_no" "2"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-296 312 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Key h4x"
+//   "group_no" "2"
+//   "items" "262144"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "2"
+//   "hasnt_item_from_group" "2"
+//   "skin" "4"
+//   "mdl" "models/keycard.mdl"
+//   "goal_no" "2"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-200 312 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Key h4x"
+//   "group_no" "2"
+//   "items" "16777216"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "3"
+//   "hasnt_item_from_group" "2"
+//   "skin" "2"
+//   "mdl" "models/keycard.mdl"
+//   "goal_no" "2"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-200 248 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "pausetime" "1"
+//   "message" "Ball h4x"
+//   "group_no" "3"
+//   "items" "16777216"
+//   "goal_result" "16"
+//   "g_a" "4788"
+//   "owned_by" "3"
+//   "hasnt_item_from_group" "3"
+//   "skin" "3"
+//   "mdl" "models/ball.mdl"
+//   "goal_no" "3"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-104 248 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "pausetime" "1"
+//   "message" "Ball h4x"
+//   "group_no" "3"
+//   "items" "33554432"
+//   "goal_result" "16"
+//   "g_a" "4788"
+//   "owned_by" "4"
+//   "hasnt_item_from_group" "3"
+//   "skin" "4"
+//   "mdl" "models/ball.mdl"
+//   "goal_no" "3"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-104 312 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "message" "Key h4x"
+//   "group_no" "2"
+//   "items" "33554432"
+//   "goal_result" "16"
+//   "pausetime" "1"
+//   "g_a" "4788"
+//   "owned_by" "4"
+//   "hasnt_item_from_group" "2"
+//   "skin" "3"
+//   "mdl" "models/keycard.mdl"
+//   "goal_no" "2"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-296 248 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "pausetime" "1"
+//   "message" "Ball h4x"
+//   "group_no" "3"
+//   "items" "262144"
+//   "goal_result" "16"
+//   "g_a" "4788"
+//   "owned_by" "2"
+//   "hasnt_item_from_group" "3"
+//   "skin" "1"
+//   "mdl" "models/ball.mdl"
+//   "goal_no" "3"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+// {
+//   "origin" "-392 248 3584"
+//   "b_b" "Someone is a 1337 Climber!!"
+//   "pausetime" "1"
+//   "message" "Ball h4x"
+//   "group_no" "3"
+//   "items" "131072"
+//   "goal_result" "16"
+//   "g_a" "4788"
+//   "owned_by" "1"
+//   "hasnt_item_from_group" "3"
+//   "skin" "2"
+//   "mdl" "models/ball.mdl"
+//   "goal_no" "3"
+//   "netname" "Blue Flag"
+//   "g_e" "1"
+//   "angles" "0 0 0"
+//   "goal_state" "2"
+//   "classname" "item_inventory"
+// }
+{
+  "model" "*85"
+  "renderamt" "0"
+  "rendermode" "2"
+  "origin" "82 -130 980"
+  "teleport_if_blocked" "1"
+  "teleport_start_inactive" "0"
+  "teleport_ignore_delay" "0"
+  "teleport_cooldown" "0.5"
+  "targetname" "win_portal"
+  "target" "win_destination"
+  "spawnflags" "525"
+  "classname" "trigger_teleport"
+}
+{
+  "origin" "-1312 192 -3168"
+  "teleport_cooldown" "0.5"
+  "targetname" "win_destination"
+  "target" "win_mm"
+  "angles" "0 0 0"
+  "spawnflags" "32"
+  "classname" "info_teleport_destination"
+}
+{
+  "origin" "-384 320 3664"
+  "win_portal_used_snd" "10#0"
+  "win_portal_used_spr" "10#0"
+  "win_portal_spr" "10#1"
+  "win_portal" "10#1"
+  "win_portal_used_snd" "0#1"
+  "win_portal_used_spr" "0#1"
+  "win_portal_spr" "0#0"
+  "win_portal" "0#0"
+  "win_snd" "0#1"
+  "win_msg" "0#1"
+  "win_points" "0#1"
+  "targetname" "win_mm"
+  "spawnflags" "1"
+  "classname" "multi_manager"
+}
+{
+  "origin" "-384 320 3648"
+  "scale" "1"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/e-tele1.spr"
+  "framerate" "10.0"
+  "targetname" "win_portal_spr"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "1"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-384 320 3648"
+  "scale" "1"
+  "renderamt" "255"
+  "rendermode" "5"
+  "model" "sprites/d-tele1.spr"
+  "framerate" "10.0"
+  "targetname" "win_portal_used_spr"
+  "angles" "0 0 0"
+  "rendercolor" "0 0 0"
+  "spawnflags" "2"
+  "classname" "env_sprite"
+}
+{
+  "origin" "-384 320 3648"
+  "message" "debris/beamstart14.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "win_portal_used_snd"
+  "spawnflags" "50"
+  "classname" "ambient_generic"
+}
+{
+  "origin" "-384 320 3680"
+  "frags" "10"
+  "targetname" "win_points"
+  "classname" "game_score"
+}
+{
+  "origin" "-384 320 3696"
+  "message" "Congratulations!\nYou've mastered the climb 2!"
+  "effect" "2"
+  "targetname" "win_msg"
+  "channel" "2"
+  "fxtime" "0.25"
+  "holdtime" "8"
+  "fadeout" "1"
+  "fadein" "0.025"
+  "color2" "0 160 0"
+  "color" "128 255 128"
+  "y" "0.75"
+  "x" "-1"
+  "spawnflags" "0"
+  "classname" "game_text"
+}
+{
+  "origin" "-384 320 3712"
+  "message" "tfc/ambience/goal_1.wav"
+  "pitchstart" "100"
+  "pitch" "100"
+  "health" "10"
+  "targetname" "win_snd"
+  "spawnflags" "112"
+  "classname" "ambient_generic"
+}
