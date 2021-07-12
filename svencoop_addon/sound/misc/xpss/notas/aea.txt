@@ -1,0 +1,481 @@
+hello scientist/hello.wav
+move hgrunt/move!.wav
+yay cards/yay.wav
+finish ambience/goal_1.wav
+horror ambience/the_horror1.wav
+fool scientist/c3a2_sci_fool.wav
+freeman scientist/c3a2_sci_fool.wav
+walter scientist/of4a1_sc01.wav
+
+crab scientist/scream02.wav
+headcrab scientist/scream08.wav
+no scientist/scream10.wav
+
+
+scream scientist/c1a0_sci_catscream.wav
+rotors scientist/c1a0_sci_dis1b.wav
+good2 scientist/c1a0_sci_dis1d.wav
+doomed scientist/c1a3_sci_silo2a.wav
+0 vox/zero.wav
+1 vox/one.wav
+2 vox/two.wav
+3 vox/three.wav
+4 vox/four.wav
+5 vox/five.wav
+nice vox/nice.wav
+hound houndeye/he_attack3.wav
+houndeye houndeye/he_attack1.wav
+zombie zombie/zo_attack1.wav
+tentacle tentacle/te_death2.wav
+snark squeek/sqk_deploy1.wav
+choose gman/gman_choose2.wav
+
+damn otis/imdead.wav
+mmm otis/mmmm.wav
+ded otis/another.wav
+yes scientist/yees.wav
+medic tfc/speech/saveme2.wav
+rip otis/of1a5_ot01.wav
+haha svencoop2/weirdlaugh1.wav
+
+stahp scientist/sci_pain3.wav
+run hunger/thambs/runmanrun.wav
+ass! hgrunt/ass!.wav
+ass vox/ass.wav
+adios vox/adios.wav
+cp vox/checkpoint.wav
+down vox/down.wav
+door vox/door.wav
+failure vox/failure.wav
+fast vox/fast.wav
+goodbye vox/goodbye.wav
+ok vox/ok.wav
+
+
+retry holo/tr_holo_retry.wav
+shit hgrunt/shit.wav
+
+morphine fvox/morphine_shot.wav
+adrenaline fvox/adrenaline_shot.wav
+critical fvox/near_death.wav
+lift ambience/liftmuzak.wav
+gonome gonome/gonome_melee2.wav
+aghh barney/aghh.wav
+
+
+endline barney/ba_endline.wav
+hey barney/ba_heeey.wav
+beer barney/ba_later.wav
+
+
+
+move hgrunt/move!.wav
+
+
+df incoming/df.wav
+absolutely scientist/absolutely.wav
+absolutelynot scientist/absolutelynot.wav
+
+
+ahfreeman scientist/ahfreeman.wav
+alright scientist/alright.wav
+catscream scientist/c1a0_sci_catscream.wav
+gm1 scientist/c1a0_sci_gm1.wav
+
+cough scientist/cough.wav
+dontwantdie scientist/dontwantdie.wav
+excuse scientist/excuse.wav
+
+greetings scientist/greetings.wav
+noo scientist/noo.wav
+nooo scientist/nooo.wav
+noplease scientist/noplease.wav
+overhere scientist/overhere.wav
+
+scream1 scientist/scream1.wav
+
+scream2 scientist/scream2.wav
+
+scream3 scientist/scream3.wav
+
+scream4 scientist/scream4.wav
+
+scream5 scientist/scream5.wav
+
+scream6 scientist/scream6.wav
+
+scream7 scientist/scream7.wav
+scream08 scientist/scream08.wav
+scream09 scientist/scream09.wav
+scream10 scientist/scream10.wav
+scream11 scientist/scream11.wav
+scream12 scientist/scream12.wav
+scream13 scientist/scream13.wav
+scream14 scientist/scream14.wav
+scream15 scientist/scream15.wav
+scream16 scientist/scream16.wav
+scream17 scientist/scream17.wav
+scream18 scientist/scream18.wav
+scream19 scientist/scream19.wav
+scream20 scientist/scream20.wav
+scream21 scientist/scream21.wav
+scream22 scientist/scream22.wav
+scream23 scientist/scream23.wav
+scream24 scientist/scream24.wav
+scream25 scientist/scream25.wav
+shutup scientist/shutup.wav
+shutup2 scientist/shutup2.wav
+sneeze scientist/sneeze.wav
+xdd misc/xpss/sv/0.wav
+ misc/xpss/sv/322.wav
+33 misc/xpss/sv/3322.wav
+a misc/xpss/sv/a.wav
+aa misc/xpss/sv/aa.wav
+
+aca misc/xpss/sv/aca.wav
+aea misc/xpss/sv/aea.wav
+ahora misc/xpss/sv/ahora.wav
+
+alv misc/xpss/sv/alv.wav
+asi misc/xpss/sv/asi.wav
+au misc/xpss/sv/au.wav
+aver misc/xpss/sv/aver.wav
+avisa misc/xpss/sv/avisa.wav
+ay misc/xpss/sv/ay.wav
+ayy misc/xpss/sv/ayay.wav
+ayuda misc/xpss/sv/ayuda.wav
+ayyy misc/xpss/sv/ayy.wav
+basta misc/xpss/sv/basta.wav
+
+bebita misc/xpss/sv/bebita.wav
+bueno misc/xpss/sv/bueno.wav
+bug misc/xpss/sv/bug.wav
+cachar misc/xpss/sv/cachar.wav
+caer misc/xpss/sv/caer.wav
+calla misc/xpss/sv/calla.wav
+callas misc/xpss/sv/calla1.wav
+callate misc/xpss/sv/calla2.wav
+callense misc/xpss/sv/calla3.wav
+calor misc/xpss/sv/calor.wav
+cambien misc/xpss/sv/cambien.wav
+chau misc/xpss/sv/chau.wav
+chika misc/xpss/sv/chika.wav
+chupala misc/xpss/sv/chupala.wav
+chupetin misc/xpss/sv/chupetin.wav
+como misc/xpss/sv/como.wav
+consejo misc/xpss/sv/consejo.wav
+creer misc/xpss/sv/creer.wav
+crjo misc/xpss/sv/crjo.wav
+csm misc/xpss/sv/csm.wav
+ctmr misc/xpss/sv/ctmr.wav
+ctmre misc/xpss/sv/ctmre.wav
+cuidado misc/xpss/sv/cuidado.wav
+curame misc/xpss/sv/curame.wav
+cuy misc/xpss/sv/cuy.wav
+
+
+
+dime misc/xpss/sv/dime.wav
+dross misc/xpss/sv/dross.wav
+eres misc/xpss/sv/eres.wav
+eso misc/xpss/sv/eso.wav
+estamos misc/xpss/sv/estamos.wav
+gil misc/xpss/sv/gil.wav
+gil1 misc/xpss/sv/gil1.wav
+gil2 misc/xpss/sv/gil2.wav
+gil3 misc/xpss/sv/gil3.wav
+gracias misc/xpss/sv/gracias.wav
+habla misc/xpss/sv/habla.wav
+hakai misc/xpss/sv/hakai.wav
+harry misc/xpss/sv/harry.wav
+harry1 misc/xpss/sv/harry1.wav
+hdp misc/xpss/sv/hdp.wav
+paletaso misc/xpss/sv/hiperpaletaso.wav
+hola misc/xpss/sv/holaa.wav
+hot misc/xpss/sv/hot.wav
+imbeciles misc/xpss/sv/imbecil.wav
+ez misc/xpss/sv/izi.wav
+ja misc/xpss/sv/jaaa.wav
+jaja misc/xpss/sv/jaja.wav
+jajaja misc/xpss/sv/jajaja.wav
+
+k misc/xpss/sv/k.wav
+kawai misc/xpss/sv/kawai.wav
+aea2 misc/xpss/sv/aea2.wav
+ga misc/xpss/sv/gaaa.wav
+maroe misc/xpss/sv/keria.wav
+kill misc/xpss/sv/kill.wav
+kingteka misc/xpss/sv/kingteka.wav
+lag misc/xpss/sv/lag.wav
+
+lol misc/xpss/sv/lol.wav
+maincra misc/xpss/sv/maincra.wav
+malcriadas misc/xpss/sv/malcriadas.wav
+maroe2 misc/xpss/sv/maroe.wav
+matalo misc/xpss/sv/matalo.wav
+metes misc/xpss/sv/metes.wav
+miedo misc/xpss/sv/miedo.wav
+monsterkill misc/xpss/sv/monsterkill.wav
+
+nani misc/xpss/sv/nani.wav
+no misc/xpss/sv/no.wav
+no2 misc/xpss/sv/nonono.wav
+noo misc/xpss/sv/noo.wav
+nyanpasu misc/xpss/sv/nya.wav
+oe misc/xpss/sv/oe.wav
+ojete misc/xpss/sv/ojete.wav
+omawea misc/xpss/sv/omaewa.wav
+ooye misc/xpss/sv/ooye.wav
+padoru misc/xpss/sv/padoru.wav
+paletaso1 misc/xpss/sv/paletaaaso.wav
+paletaso2 misc/xpss/sv/paletaaso.wav
+paletaso3 misc/xpss/sv/paletaso.wav
+paletaso4 misc/xpss/sv/paletasoo.wav
+pasa misc/xpss/sv/pasa.wav
+pavo misc/xpss/sv/pavo.wav
+peluche misc/xpss/sv/peluche.wav
+
+poiii misc/xpss/sv/poiii.wav
+prosor misc/xpss/sv/profe.wav
+puta misc/xpss/sv/pta.wav
+quemo misc/xpss/sv/quemo.wav
+rctmr misc/xpss/sv/rctmr.wav
+paletaso5 misc/xpss/sv/repaletaso.wav
+revive misc/xpss/sv/revive.wav
+rico misc/xpss/sv/rico.wav
+rio misc/xpss/sv/rio.wav
+rolon misc/xpss/sv/rolon.wav
+sad misc/xpss/sv/sad.wav
+
+sape misc/xpss/sv/sape.wav
+sau misc/xpss/sv/sau.wav
+sex misc/xpss/sv/sex.wav
+si misc/xpss/sv/si.wav
+sideral misc/sideral.mp3
+sigue misc/xpss/sv/sigue.wav
+smash misc/xpss/sv/smash.wav
+smash1 misc/xpss/sv/smash1.wav
+dejenme misc/xpss/sv/subnormales.wav
+surprise misc/xpss/sv/surprise.wav
+tranqui misc/xpss/sv/tranquilo.wav
+
+ty misc/xpss/sv/ty.wav
+u misc/xpss/sv/u.wav
+unban misc/xpss/sv/unban.wav
+unya misc/xpss/sv/unya.wav
+uo misc/xpss/sv/uo.wav
+vamos misc/xpss/sv/vamos.wav
+vann misc/xpss/sv/vann.wav
+vayanse misc/xpss/sv/vayanse.wav
+ven! misc/xpss/sv/ven!.wav
+ven misc/xpss/sv/ven.wav
+vt misc/xpss/sv/vt.wav
+vuela misc/xpss/sv/vuela.wav
+wa misc/xpss/sv/wa.wav
+wachi misc/xpss/sv/wachi.wav
+
+win misc/win1.mp3
+wow misc/xpss/sv/wow.wav
+wtfboom misc/xpss/sv/wtfboom.wav
+xd misc/xpss/sv/xd.wav
+
+
+
+
+
+
+a! misc/xpss/sv/shomui1.wav
+asusto misc/xpss/sv/shomui.wav
+sad2 misc/xpss/sv/sad.wav
+sad1 misc/xpss/sv/sad1.wav
+
+
+
+
+
+
+f misc/xpss/sv/f.wav
+csmre misc/xpss/sv/csmre.wav
+
+
+chivo misc/xpss/sv/chivo.wav
+
+corre misc/xpss/sv/corre.wav
+corre1 misc/xpss/sv/corre1.wav
+ala misc/xpss/sv/ala.wav
+
+lil misc/already.mp3
+asco misc/xpss/sv/asco.wav
+ay! misc/xpss/sv/ay!.wav
+ayudame misc/xpss/sv/ayuda1.wav
+
+burro misc/xpss/sv/burro.wav
+callate2 misc/xpss/sv/callate.wav
+callense1 misc/xpss/sv/callense.wav
+corre2 misc/xpss/sv/corre2.wav
+ctmree misc/xpss/sv/ctmree.wav
+cura misc/xpss/sv/cura.wav
+disolver misc/xpss/sv/disolver.wav
+
+
+concurso misc/xpss/sv/imbecil1.wav
+inocente misc/xpss/sv/inocente.wav
+juega misc/xpss/sv/juega.wav
+
+leche misc/xpss/sv/leche.wav
+malcriado misc/xpss/sv/malcriado.wav
+
+mata misc/xpss/sv/mata.wav
+mata1 misc/xpss/sv/mata1.wav
+miralo misc/xpss/sv/miralo.wav
+numero misc/xpss/sv/numero.wav
+obama misc/xpss/sv/obama.wav
+
+ola misc/xpss/sv/ola.wav
+pedazo misc/xpss/sv/pedazo.wav
+pegale misc/xpss/sv/pegale.wav
+prosor1 misc/xpss/sv/prosor1.wav
+prosor2 misc/xpss/sv/prosor2.wav
+prosor3 misc/xpss/sv/prosor3.wav
+revive1 misc/xpss/sv/revive1.wav
+running misc/xpss/sv/running.wav
+tampoco misc/xpss/sv/tampoco.wav
+tio misc/xpss/sv/tio.wav
+uy misc/xpss/sv/uy.wav
+vaya misc/xpss/sv/vaya.wav
+voy misc/xpss/sv/voy.wav
+bravo misc/xpss/sv/bravo.wav
+
+
+
+flauta misc/xpss/sv/flauta.wav
+
+
+holaa misc/xpss/sv/holaaa.wav
+prosor4 misc/xpss/sv/prosor4.wav
+
+sax misc/xpss/sv/sax.wav
+taka misc/xpss/sv/taka.wav
+tu misc/xpss/sv/tu.wav
+uh misc/xpss/sv/uh.wav
+x misc/xpss/sv/x.wav
+yey misc/xpss/sv/yey.wav
+yara misc/xpss/yara.wav
+perra misc/xpss/perra.wav
+
+cagon misc/xpss/cagon.wav
+cholo misc/xpss/cholo.wav
+continuara misc/xpss/continuara.wav
+cuack misc/xpss/cuack.wav
+cuack1 misc/xpss/cuack1.wav
+cuack2 misc/xpss/cuack2.wav
+droga misc/xpss/droga.wav
+elmo misc/xpss/elmo.wav
+
+holaaa misc/xpss/hola.wav
+
+
+
+negro misc/xpss/negro.wav
+papi misc/xpss/papi.wav
+chu misc/xpss/pinxa.wav
+mi misc/xpss/sideral1.wav
+
+troll misc/xpss/troll1.wav
+yesyes misc/xpss/sv/yesyes.wav
+terror misc/xpss/sv/terror.wav
+
+
+
+compatriota misc/xpss/sv/compatriota.wav
+dios misc/xpss/sv/dios.mp3
+ese misc/xpss/sv/ese.wav
+inteligente misc/xpss/sv/in.wav
+ja2 misc/xpss/sv/ja2.wav
+ja3 misc/xpss/sv/jo.wav
+ja4 misc/xpss/sv/ju.wav
+la misc/xpss/sv/la.wav
+muere misc/xpss/sv/muere.wav
+muerto misc/xpss/sv/muerto.wav
+nono misc/xpss/sv/no1.wav
+
+eso1 misc/xpss/sv/te.wav
+
+
+ah2 misc/xpss/sv/ah!!.wav
+
+obama1 misc/xpss/sv/obama1.wav
+
+
+mira misc/xpss/sv/mira.wav
+
+pendejos misc/xpss/sv/pendejos.wav
+
+
+ah misc/xpss/sv/ah.wav
+alien misc/xpss/sv/alien.wav
+army misc/xpss/sv/army.wav
+buttercup misc/buttercup.mp3
+enserio misc/xpss/sv/enserio.wav
+ga! misc/xpss/sv/ga3.wav
+ja5 misc/xpss/sv/ja5.wav
+ma1 misc/xpss/sv/ma1.wav
+mierda misc/xpss/sv/mierda.wav
+mueranse misc/xpss/sv/mueranse.wav
+mueves misc/xpss/sv/muevesboludo.wav
+
+nomierda misc/xpss/sv/nomierda.wav
+
+omg misc/xpss/sv/omg!.wav
+parate misc/xpss/sv/parate_ctmr.wav
+peleen misc/xpss/sv/peleen.wav
+quieta misc/xpss/sv/quedatequieta.wav
+ya misc/xpss/sv/ya.wav
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
