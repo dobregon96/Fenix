@@ -1,0 +1,128 @@
+"weapons/hks1.wav" 	"wanted/weapons/pistol_shot1.wav"
+"weapons/hks2.wav" 	"wanted/weapons/pistol_shot2.wav"
+"weapons/hks3.wav" 	"wanted/weapons/pistol_shot1.wav"
+"weapons/sbarrel1.wav" "wanted/weapons/winchester_fire1.wav"
+"weapons/dbarrel1.wav" "wanted/weapons/winchester_fire2.wav"
+"hlclassic/weapons/sbarrel1.wav" "wanted/weapons/winchester_fire1.wav"
+"hlclassic/weapons/dbarrel1.wav" "wanted/weapons/winchester_fire2.wav"
+
+"hgrunt/gr_mgun1.wav" "wanted/weapons/pistol_shot1.wav"
+"hgrunt/gr_mgun2.wav" "wanted/weapons/pistol_shot2.wav"
+"hlclassic/hgrunt/gr_mgun1.wav" "wanted/weapons/pistol_shot1.wav"
+"hlclassic/hgrunt/gr_mgun2.wav" "wanted/weapons/pistol_shot2.wav"
+
+"hgrunt/gr_die1.wav" "wanted/kaiewi/ka_die1.wav"
+"hgrunt/gr_die2.wav" "wanted/kaiewi/ka_die2.wav"
+"hgrunt/gr_die3.wav" "wanted/kaiewi/ka_die3.wav"
+"hgrunt/gr_pain1.wav" "wanted/kaiewi/ka_pain1.wav"
+"hgrunt/gr_pain2.wav" "wanted/kaiewi/ka_pain2.wav"
+"hgrunt/gr_pain3.wav" "wanted/kaiewi/ka_pain3.wav"
+"hgrunt/gr_pain4.wav" "wanted/kaiewi/ka_pain4.wav"
+"hgrunt/gr_pain5.wav" "wanted/kaiewi/ka_pain5.wav"
+
+// sees dynamite
+"!HG_GREN0" "wanted/kaiewi/k_cover0.wav"
+"!HG_GREN1" "wanted/kaiewi/k_cover1.wav"
+"!HG_GREN2" "wanted/kaiewi/k_cover0.wav"
+"!HG_GREN3" "wanted/kaiewi/k_cover1.wav"
+"!HG_GREN4" "wanted/kaiewi/k_cover0.wav"
+"!HG_GREN5" "wanted/kaiewi/k_cover1.wav"
+"!HG_GREN6" "wanted/kaiewi/k_cover0.wav"
+
+// Sees player
+"!HG_ALERT0" "wanted/kaiewi/k_alert0.wav"
+"!HG_ALERT1" "wanted/kaiewi/k_alert1.wav"
+"!HG_ALERT2" "wanted/kaiewi/k_alert2.wav"
+"!HG_ALERT3" "wanted/kaiewi/k_alert1.wav"
+"!HG_ALERT4" "wanted/kaiewi/k_alert0.wav"
+"!HG_ALERT5" "wanted/kaiewi/k_alert1.wav"
+"!HG_ALERT6" "wanted/kaiewi/k_alert2.wav"
+
+//Sees NPC
+"!HG_MONST0" "wanted/kaiewi/k_alert0.wav"
+"!HG_MONST1" "wanted/kaiewi/k_alert1.wav"
+"!HG_MONST2" "wanted/kaiewi/k_alert2.wav"
+"!HG_MONST3" "wanted/kaiewi/k_alert0.wav"
+
+// Take cover
+"!HG_COVER0" "wanted/kaiewi/k_cover0.wav"
+"!HG_COVER1" "wanted/kaiewi/k_cover1.wav"
+"!HG_COVER2" "wanted/kaiewi/k_cover0.wav"
+"!HG_COVER3" "wanted/kaiewi/k_cover1.wav"
+"!HG_COVER4" "wanted/kaiewi/k_cover0.wav"
+"!HG_COVER5" "wanted/kaiewi/k_cover1.wav"
+"!HG_COVER6" "wanted/kaiewi/k_cover0.wav"
+"!HG_COVER7" "wanted/kaiewi/k_cover1.wav"
+
+//Throws Dynamite
+"!HG_THROW0" "wanted/kaiewi/k_dynamite0.wav"
+"!HG_THROW1" "wanted/kaiewi/k_dynamite1.wav"
+"!HG_THROW2" "wanted/kaiewi/k_dynamite2.wav"
+"!HG_THROW3" "wanted/kaiewi/k_dynamite1.wav"
+
+//Taunting Player
+"!HG_TAUNT0" "wanted/kaiewi/k_taunt0.wav"
+"!HG_TAUNT1" "wanted/kaiewi/k_taunt1.wav"
+"!HG_TAUNT2" "wanted/kaiewi/k_taunt2.wav"
+"!HG_TAUNT3" "wanted/kaiewi/k_taunt1.wav"
+"!HG_TAUNT4" "wanted/kaiewi/k_taunt0.wav"
+"!HG_TAUNT5" "wanted/kaiewi/k_taunt1.wav"
+
+//Charge
+"!HG_CHARGE0" "wanted/kaiewi/k_charge0.wav"
+"!HG_CHARGE1" "wanted/kaiewi/k_charge1.wav"
+"!HG_CHARGE2" "wanted/kaiewi/k_charge2.wav"
+"!HG_CHARGE3" "wanted/kaiewi/k_charge1.wav"
+
+//Idle
+"!HG_IDLE0" "wanted/kaiewi/k_idle0.wav"
+"!HG_IDLE1" "wanted/kaiewi/k_idle1.wav"
+"!HG_IDLE2" "wanted/kaiewi/k_idle0.wav"
+
+//Asking question to other Indians
+"!HG_QUEST0" "wanted/kaiewi/k_question0.wav"
+"!HG_QUEST1" "wanted/kaiewi/k_question1.wav"
+"!HG_QUEST2" "wanted/kaiewi/k_question2.wav"
+"!HG_QUEST3" "wanted/kaiewi/k_question3.wav"
+"!HG_QUEST4" "wanted/kaiewi/k_question4.wav"
+"!HG_QUEST5" "wanted/kaiewi/k_question3.wav"
+"!HG_QUEST6" "wanted/kaiewi/k_question2.wav"
+"!HG_QUEST7" "wanted/kaiewi/k_question1.wav"
+"!HG_QUEST8" "wanted/kaiewi/k_question0.wav"
+"!HG_QUEST9" "wanted/kaiewi/k_question1.wav"
+"!HG_QUEST10" "wanted/kaiewi/k_question2.wav"
+"!HG_QUEST11" "wanted/kaiewi/k_question4.wav"
+
+//Answering questions
+"!HG_ANSWER0" "wanted/kaiewi/k_answer0.wav"
+"!HG_ANSWER1" "wanted/kaiewi/k_answer1.wav"
+"!HG_ANSWER2" "wanted/kaiewi/k_answer2.wav"
+"!HG_ANSWER3" "wanted/kaiewi/k_answer1.wav"
+"!HG_ANSWER4" "wanted/kaiewi/k_answer0.wav"
+"!HG_ANSWER5" "wanted/kaiewi/k_answer1.wav"
+"!HG_ANSWER6" "wanted/kaiewi/k_answer2.wav"
+
+//reporting status
+"!HG_CLEAR0" "wanted/kaiewi/k_clear0.wav"
+"!HG_CLEAR1" "wanted/kaiewi/k_clear1.wav"
+"!HG_CLEAR2" "wanted/kaiewi/k_clear2.wav"
+"!HG_CLEAR3" "wanted/kaiewi/k_clear3.wav"
+"!HG_CLEAR4" "wanted/kaiewi/k_clear2.wav"
+"!HG_CLEAR5" "wanted/kaiewi/k_clear1.wav"
+"!HG_CLEAR6" "wanted/kaiewi/k_clear0.wav"
+"!HG_CLEAR7" "wanted/kaiewi/k_clear1.wav"
+"!HG_CLEAR8" "wanted/kaiewi/k_clear2.wav"
+"!HG_CLEAR9" "wanted/kaiewi/k_clear3.wav"
+"!HG_CLEAR10" "wanted/kaiewi/k_clear2.wav"
+"!HG_CLEAR11" "wanted/kaiewi/k_clear1.wav"
+"!HG_CLEAR12" "wanted/kaiewi/k_clear0.wav"
+
+//Checking for intruders
+"!HG_CHECK0" "wanted/kaiewi/k_check0.wav"
+"!HG_CHECK1" "wanted/kaiewi/k_check1.wav"
+"!HG_CHECK2" "wanted/kaiewi/k_check0.wav"
+"!HG_CHECK3" "wanted/kaiewi/k_check1.wav"
+"!HG_CHECK4" "wanted/kaiewi/k_check0.wav"
+"!HG_CHECK5" "wanted/kaiewi/k_check1.wav"
+"!HG_CHECK6" "wanted/kaiewi/k_check0.wav"
+"!HG_CHECK7" "wanted/kaiewi/k_check1.wav"

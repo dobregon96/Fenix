@@ -1,0 +1,58 @@
+"!BG_IDLE0" "bodyguard/_comma.wav"
+"!BG_IDLE1" "bodyguard/_comma.wav"
+"!BG_IDLE2" "bodyguard/_comma.wav"
+"!BG_IDLE3" "bodyguard/_comma.wav"
+"!BG_IDLE4" "bodyguard/_comma.wav"
+
+"!BG_OK0" "bodyguard/_comma.wav"
+"!BG_OK1" "bodyguard/_comma.wav"
+"!BG_OK2" "bodyguard/_comma.wav"
+
+"!BG_WAIT0" "bodyguard/_comma.wav"
+"!BG_WAIT1" "bodyguard/_comma.wav"
+"!BG_WAIT2" "bodyguard/_comma.wav"
+"!BG_WAIT3" "bodyguard/_comma.wav"
+
+"!BG_HELLO0" "bodyguard/_comma.wav"
+"!BG_HELLO1" "bodyguard/_comma.wav"
+"!BG_HELLO2" "bodyguard/_comma.wav"
+
+"!BG_ATTACK0" "bodyguard/_comma.wav"
+"!BG_SMELL0" "bodyguard/_comma.wav"
+
+"!BG_CUREA" "bodyguard/_comma.wav"
+"!BG_CUREB" "bodyguard/_comma.wav"
+"!BG_CUREC" "bodyguard/_comma.wav"
+
+"!BG_SCARED0" "bodyguard/_comma.wav"
+"!BG_SCARED1" "bodyguard/_comma.wav"
+"!BG_SCARED2" "bodyguard/_comma.wav"
+
+"!BG_WOUND0" "bodyguard/_comma.wav"
+"!BG_WOUND1" "bodyguard/_comma.wav"
+"!BG_WOUND2" "bodyguard/_comma.wav"
+"!BG_WOUND3" "bodyguard/_comma.wav"
+
+"!BG_MORTAL0" "bodyguard/_comma.wav"
+
+"!BG_SHOT0" "bodyguard/_comma.wav"
+"!BG_SHOT1" "bodyguard/_comma.wav"
+"!BG_SHOT2" "bodyguard/_comma.wav"
+
+"!BG_MAD0" "bodyguard/_comma.wav"
+"!BG_MAD1" "bodyguard/_comma.wav"
+"!BG_MAD2" "bodyguard/_comma.wav"
+"!BG_KILL0" "bodyguard/_comma.wav"
+"!BG_KILL1" "bodyguard/_comma.wav"
+"!BG_KILL2" "bodyguard/_comma.wav"
+"!BG_POK0" "bodyguard/_comma.wav"
+"!BG_POK1" "bodyguard/_comma.wav"
+"!BG_POK2" "bodyguard/_comma.wav"
+"!BG_POK3" "bodyguard/_comma.wav"
+"!BG_STOP0" "bodyguard/_comma.wav"
+"!BG_STOP1" "bodyguard/_comma.wav"
+"!BG_STOP2" "bodyguard/_comma.wav"
+"!BG_ANSWER0" "bodyguard/_comma.wav"
+"!BG_QUESTION0" "bodyguard/_comma.wav"
+"!BG_STARE0" "bodyguard/_comma.wav"
+"!BG_PQUEST0" "bodyguard/_comma.wav"

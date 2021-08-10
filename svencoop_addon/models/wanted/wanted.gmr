@@ -1,0 +1,27 @@
+"models/v_grenade.mdl" 	"models/wanted/v_dynamite.mdl"
+"models/w_grenade.mdl" 	"models/wanted/w_dynamite.mdl"
+"models/p_grenade.mdl" 	"models/wanted/p_dynamite.mdl"
+
+"models/p_medkit.mdl" "models/wanted/p_syringe.mdl"
+"models/v_medkit.mdl" "models/wanted/v_syringe.mdl"
+"models/w_pmedkit.mdl" "models/wanted/w_syringebox.mdl"
+
+"models/w_medkit.mdl" 	"models/wanted/w_medkit.mdl"
+"models/w_medkit.mdl" 	"models/wanted/w_medkit.mdl"
+"models/w_shotbox.mdl" 	"models/wanted/w_shotbox.mdl"
+"models/w_battery.mdl" 	"models/wanted/w_battery.mdl"
+"models/w_saw_clip.mdl" "models/wanted/w_gattlinggun_belt.mdl"
+"models/w_weaponbox.mdl" "models/wanted/w_weaponbox.mdl"
+
+"models/cactus.mdl" "models/wanted/cactus.mdl"
+"models/glassgibs_small.mdl" "models/wanted/glassgibs_small.mdl"
+"models/smithgibs.mdl" "models/wanted/smithgibs.mdl"
+"models/storegibs.mdl" "models/wanted/storegibs.mdl"
+"models/dawsongibs.mdl" "models/wanted/dawsongibs.mdl"
+"models/skeleton.mdl" "models/wanted/skeleton.mdl"
+"models/wagonwheel.mdl" "models/wanted/wagonwheel.mdl"
+"models/wheelside.mdl" "models/wanted/wheelside.mdl"
+
+"models/leech.mdl" "models/wanted/leech.mdl"
+//"sprites/grenade.spr" "sprites/null.spr"
+//"sprites/saveme.spr" "sprites/null.spr"
