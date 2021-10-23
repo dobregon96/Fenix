@@ -1,0 +1,74 @@
+// Map script Installation:-
+
+// Simply call HEALTHBAR::RegisterHealthBarEntity(); in the MapInit function of your map script. Example:
+// ________________________________________
+// #include "beast/env_healthbar"
+//
+// void MapInit()
+// {
+// 		HEALTHBAR::RegisterHealthBarEntity();
+// }
+// _________________________________________
+// Keys:
+// * "target"              - target entity to show a healthbar for. Can be a player, npc or breakable item ( with hud info enabled )
+// * "sprite"              - path to a custom sprite if desired. Otherwise uses default "sprites/misc/healthbar.spr"
+// * "offset" "x y z"      - adds an offset for the health bar origin
+// * "rendercolor" "r g b" - change color of the sprite
+// * "renderamt" "0.0"     - set max render amount when healthbar is fully visible (255 by default)
+// * "scale" "0.0"         - resize the health bar, this is 0.3 by default
+// * "distance" "0.0"      - the distance you have to be to be able to see the health bar (default and maximum is 12048)
+// * "followtype" "0"      - Sets how the healthbar follows the entity
+// * "spawnflags" "1"      - forces the healthbar to stay on for the entity
+// ___________________________________________
+// TO DO:
+// - Reduce healthbar movement jitter
+// - Fix sprite fadeout after parent dies
+// - Render the healthbars individually for each player
+// - Deal with monster_repel entities
+@BaseClass = Mandatory
+[
+	ondestroyfn(string) : "OnDestroy Function"
+]
+
+@BaseClass base(Mandatory) = Targetname
+[
+	targetname(target_source) : "Name"
+]
+
+@BaseClass = Target
+[
+	target(target_destination) : "Target"
+]
+
+@BaseClass = RenderFields
+[
+	rendermode(choices) : "Render Mode" : 5 =
+	[
+		0: "Normal"
+		1: "Color"
+		2: "Texture"
+		3: "Glow"
+		4: "Solid"
+		5: "Additive"
+	]
+	renderamt(integer) : "FX Amount (1 - 255)"
+	rendercolor(color255) : "FX Color (R G B)" : "0 0 0"
+]
+
+@PointClass sprite() base(Targetname, Target, RenderFields) size(-4 -4 -4, 4 4 4) color(0 0 0) = env_healthbar : "Health Bar"
+[
+	sprite(sprite) : "Health Sprite"
+	scale(string) : "Scale" : "0.3"
+    offset(string) : "Position Offset" : "0 0 16"
+	distance(string) : "Max Draw Distance" : "12048"
+	followtype(choices) : "Follow Type" : 0 =
+	[
+		0: "Follow origin"
+		1: "Use model attachment"
+		2: "Stationary"
+	]
+	spawnflags(flags) =
+	[
+		1: "Stay on" : 0
+	]
+]
