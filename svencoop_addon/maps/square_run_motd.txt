@@ -1,0 +1,18 @@
+===============================
+Map: Square run
+Author: Streamfox
+-------------------------------
+
+Welcome to Square run, a simple jumping puzzle map.
+Pass thorugh several obstacles to reach the end!
+Read the chart to see which square do what.
+
+Minimum 2 players are required.
+-------------------------------
+Special thanks:
+RNG (testing)
+Sence (testing, server providing)
+Lemonsoda (testing, server providing)
+CryoKeen (testing)
+Beton (testing)
+===============================
