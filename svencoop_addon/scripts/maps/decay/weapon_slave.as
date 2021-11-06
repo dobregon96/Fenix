@@ -1,65 +1,64 @@
-/*  
-* The original Half-Life version of the mp5
-*/
-
 enum ISlaveWeaponAnimation
 {
-  ISLWEP_IDLE1 = 0,
-  ISLWEP_IDLE2,
-  ISLWEP_ATTACK1_HIT,
-  ISLWEP_ATTACK1_MISS,
-  ISLWEP_ATTACK2_MISS,
-  ISLWEP_ATTACK2_HIT,
-  ISLWEP_ATTACK3_MISS,
-  ISLWEP_ATTACK3_HIT,
-  ISLWEP_CHARGE,
-  ISLWEP_CHARGE_LOOP,
-  ISLWEP_ZAP,
-  ISLWEP_RETURN,
+	ISLWEP_IDLE1 = 0,
+	ISLWEP_IDLE2,
+	ISLWEP_ATTACK1_HIT,
+	ISLWEP_ATTACK1_MISS,
+	ISLWEP_ATTACK2_MISS,
+	ISLWEP_ATTACK2_HIT,
+	ISLWEP_ATTACK3_MISS,
+	ISLWEP_ATTACK3_HIT,
+	ISLWEP_CHARGE,
+	ISLWEP_CHARGE_LOOP,
+	ISLWEP_ZAP,
+	ISLWEP_RETURN,
 };
 
 class weapon_slave : ScriptBasePlayerWeaponEntity
 {
-	private CBasePlayer@ m_pPlayer = null;
-	
-	float m_flNextAnimTime;
+	int m_iSwing, m_iMode, m_flNextAnimTime;
 	float m_flChargeTime;
-	TraceResult m_trHit;
-	int m_iSwing;
-	int m_iMode;
-	
-	void Spawn(){
+    TraceResult m_trHit;
+
+	protected CBasePlayer@ m_pPlayer
+	{
+		get const { return cast<CBasePlayer@>( self.m_hPlayer.GetEntity() ); }
+		set { self.m_hPlayer = EHandle( @value ); }
+	}
+
+	void Spawn()
+	{
 		Precache();
-		g_EntityFuncs.SetModel( self, "models/decay/w_slave.mdl" );
-		
-    m_iMode = 0;
-    m_flChargeTime = -1.0f;
-    
+
+		m_iMode = 0;
+		m_flChargeTime = -1.0f;
+
 		self.FallInit();
 	}
 
-	void Precache(){
+	void Precache()
+	{
 		self.PrecacheCustomModels();
+		
 		g_Game.PrecacheModel( "sprites/lgtning.spr" );
-		g_Game.PrecacheModel( "models/decay/v_slave.mdl" );
-		g_Game.PrecacheModel( "models/decay/w_slave.mdl" );
-		g_Game.PrecacheModel( "models/decay/p_slave.mdl" );
+		g_Game.PrecacheModel( "models/alien/v_slave.mdl" );
+		g_Game.PrecacheModel( "sprites/alien/weapon_slave.spr" );
+		g_Game.PrecacheGeneric( "sprites/alien/weapon_slave.txt" );
 		
 		g_SoundSystem.PrecacheSound( "debris/zap1.wav" );
 		g_SoundSystem.PrecacheSound( "debris/zap4.wav" );
 		g_SoundSystem.PrecacheSound( "weapons/electro4.wav" );
-    g_SoundSystem.PrecacheSound( "hassault/hw_shoot1.wav" );
-    g_SoundSystem.PrecacheSound( "zombie/zo_pain2.wav" );
-    g_SoundSystem.PrecacheSound( "headcrab/hc_headbite.wav" );
-    g_SoundSystem.PrecacheSound( "weapons/cbar_miss1.wav" );
-	  g_SoundSystem.PrecacheSound( "zombie/claw_strike1.wav" );
-	  g_SoundSystem.PrecacheSound( "zombie/claw_strike2.wav" );
-	  g_SoundSystem.PrecacheSound( "zombie/claw_strike3.wav" );
-	  g_SoundSystem.PrecacheSound( "zombie/claw_miss1.wav" );
-	  g_SoundSystem.PrecacheSound( "zombie/claw_miss2.wav" );
+    	g_SoundSystem.PrecacheSound( "hassault/hw_shoot1.wav" );
+    	g_SoundSystem.PrecacheSound( "weapons/cbar_miss1.wav" );
+		g_SoundSystem.PrecacheSound( "zombie/claw_strike1.wav" );
+		g_SoundSystem.PrecacheSound( "zombie/claw_strike2.wav" );
+		g_SoundSystem.PrecacheSound( "zombie/claw_strike3.wav" );
+		g_SoundSystem.PrecacheSound( "zombie/claw_miss1.wav" );
+		g_SoundSystem.PrecacheSound( "zombie/claw_miss2.wav" );
 	}
 
-	bool GetItemInfo( ItemInfo& out info ){
+	bool GetItemInfo( ItemInfo& out info )
+	{
 		info.iMaxAmmo1 	= -1;
 		info.iMaxAmmo2 	= -1;
 		info.iMaxClip 	= WEAPON_NOCLIP;
@@ -71,7 +70,8 @@ class weapon_slave : ScriptBasePlayerWeaponEntity
 		return true;
 	}
 
-	bool AddToPlayer( CBasePlayer@ pPlayer ){
+	bool AddToPlayer( CBasePlayer@ pPlayer )
+	{
 		if( !BaseClass.AddToPlayer( pPlayer ) )
 			return false;
 			
@@ -81,22 +81,21 @@ class weapon_slave : ScriptBasePlayerWeaponEntity
 			message.WriteLong( self.m_iId );
 		message.End();
     
-    pPlayer.pev.armortype = 0;
+    	pPlayer.pev.armortype = 0;
     
 		return true;
 	}
 	
-	bool Deploy(){
-		return self.DefaultDeploy(
-				self.GetV_Model( "models/decay/v_slave.mdl" ),
-				self.GetP_Model( "models/decay/p_slave.mdl" ), ISLWEP_IDLE1, "mp5"
-		);
+	bool Deploy()
+	{
+		return self.DefaultDeploy( self.GetV_Model( "models/alien/v_slave.mdl" ), "", ISLWEP_IDLE1, "crowbar" );
 	}
 	
-	void Holster(int skiplocal){
+	void Holster(int skiplocal)
+	{
+		SetThink( null );
 		BaseClass.Holster( skiplocal );
 	}
-	
 	
 	void PrimaryAttack()
 	{
@@ -111,7 +110,6 @@ class weapon_slave : ScriptBasePlayerWeaponEntity
 	{
 		g_WeaponFuncs.DecalGunshot( m_trHit, BULLET_PLAYER_CROWBAR );
 	}
-
 
 	void SwingAgain()
 	{
@@ -277,7 +275,6 @@ class weapon_slave : ScriptBasePlayerWeaponEntity
 					break;
 				}
 			}
-
 			// delay the decal a bit
 			m_trHit = tr;
 			SetThink( ThinkFunction( this.Smack ) );
@@ -290,155 +287,194 @@ class weapon_slave : ScriptBasePlayerWeaponEntity
   
 	void SecondaryAttack()
 	{
-    if(m_flChargeTime < 0.0f){
-      m_flChargeTime = g_Engine.time;
-      m_iMode = 0;
-    }else{
-      if(m_iMode == 0 || g_Engine.time - m_flChargeTime > 0.2f * float(m_iMode) - 0.1f) {
-        
-        if(m_iMode < 17){
-          for (int j = 0; j < m_iMode; j++) {
-            TraceResult tr;
-            float flDist = 1.0;
-            
-            Vector vecSrc = self.pev.origin + g_Engine.v_up * 36 + g_Engine.v_forward * 32;
+		if(m_flChargeTime < 0.0f)
+		{
+			m_flChargeTime = g_Engine.time;
+			m_iMode = 0;
+		}
+		else
+		{
+			if(m_iMode == 0 || g_Engine.time - m_flChargeTime > 0.2f * float(m_iMode) - 0.1f)
+			{
+				if(m_iMode < 17)
+				{
+					for(int j = 0; j < m_iMode; j++)
+					{
+						TraceResult tr;
+						float flDist = 1.0;
 
-            for (int i = 0; i < 4; i++) {
-              Vector vecAim = g_Engine.v_right * Math.RandomFloat( -1.0, 1.0 ) + g_Engine.v_up * Math.RandomFloat( -1.0, 1.0 ) + g_Engine.v_forward * Math.RandomFloat( -0.75, 0.75 );
-              TraceResult tr1;
-              
-              g_Utility.TraceLine( vecSrc, vecSrc + vecAim * 512, dont_ignore_monsters, m_pPlayer.edict(), tr1 );
-              if (flDist > tr1.flFraction) {
-                tr = tr1;
-                flDist = tr.flFraction;
-              }
-            }
+						Vector vecSrc = self.pev.origin + g_Engine.v_up * 36 + g_Engine.v_forward * 32;
 
-            // Found something anything close enough
-            if ( flDist < 1.0 ) {
-              g_WeaponFuncs.DecalGunshot( tr, BULLET_PLAYER_CROWBAR );
+						for(int i = 0; i < 4; i++)
+						{
+							Vector vecAim = g_Engine.v_right * Math.RandomFloat( -1.0, 1.0 ) + g_Engine.v_up * Math.RandomFloat( -1.0, 1.0 ) + g_Engine.v_forward * Math.RandomFloat( -0.75, 0.75 );
+							TraceResult tr1;
 
-              CBeam@ m_pBeam = g_EntityFuncs.CreateBeam( "sprites/lgtning.spr", 30 );
-              m_pBeam.PointsInit( self.pev.origin, tr.vecEndPos );
-              m_pBeam.SetColor( 96, 128, 16 );
-              m_pBeam.SetBrightness( 64 );
-              m_pBeam.SetNoise( 80 );
-              m_pBeam.LiveForTime(0.5);
-            }
-          }
-        }
-        
-        if(m_iMode == 17){
-          self.SendWeaponAnim( ISLWEP_RETURN );
-          g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "weapons/electro4.wav", 1, ATTN_NORM, 0, 100 );
-          m_iMode++;
-        }else if(m_iMode < 5) {
-          if(m_iMode < 1) {
-            self.SendWeaponAnim( ISLWEP_CHARGE );
-          }
-          g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "debris/zap4.wav", 1, ATTN_NORM, 0, 100 + m_iMode * 10 );
-          m_iMode++;
-        }else if(m_iMode < 17){
-          self.SendWeaponAnim( ISLWEP_CHARGE_LOOP );
-          g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "debris/zap4.wav", 1, ATTN_NORM, 0, 140 + m_iMode * 2 );
-          m_iMode++;
-        }
-      }
-    }
-    self.m_flNextPrimaryAttack = g_Engine.time + 0.25;
-    self.m_flNextSecondaryAttack = g_Engine.time + 0.01;
-    self.m_flTimeWeaponIdle = g_Engine.time;
+							g_Utility.TraceLine( vecSrc, vecSrc + vecAim * 512, dont_ignore_monsters, m_pPlayer.edict(), tr1 );
+							if(flDist > tr1.flFraction)
+							{
+								tr = tr1;
+								flDist = tr.flFraction;
+							}
+						}
+						// Found something anything close enough
+						if ( flDist < 1.0 )
+						{
+							CBeam@ m_pBeam = g_EntityFuncs.CreateBeam( "sprites/lgtning.spr", 30 );
+							m_pBeam.PointsInit( self.pev.origin, tr.vecEndPos );
+							m_pBeam.SetColor( 96, 128, 16 );
+							m_pBeam.SetBrightness( 64 );
+							m_pBeam.SetNoise( 80 );
+							m_pBeam.LiveForTime( 0.3 );
+						}
+					}
+				}
+
+				if(m_iMode == 17)
+				{
+					self.SendWeaponAnim( ISLWEP_RETURN );
+					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "weapons/electro4.wav", 1, ATTN_NORM, 0, 100 );
+					m_iMode++;
+				}
+				else if(m_iMode < 5)
+				{
+					if(m_iMode < 1)
+					{
+						self.SendWeaponAnim( ISLWEP_CHARGE );
+					}
+					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "debris/zap4.wav", 1, ATTN_NORM, 0, 100 + m_iMode * 10 );
+					m_iMode++;
+				}
+				else if(m_iMode < 17)
+				{
+					self.SendWeaponAnim( ISLWEP_CHARGE_LOOP );
+					g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "debris/zap4.wav", 1, ATTN_NORM, 0, 145 + m_iMode * 2 );
+					m_iMode++;
+				}
+			}
+		}
+		
+		self.m_flNextPrimaryAttack = g_Engine.time + 0.25;
+		self.m_flNextSecondaryAttack = g_Engine.time + 0.01;
+		self.m_flTimeWeaponIdle = g_Engine.time;
+	}
+	
+	void TertiaryAttack()
+	{
+		SecondaryAttack();
 	}
   
-  void ZapBeam(){
-    Vector vecSrc, vecAim;
-    TraceResult tr;
-    
-    vecSrc = m_pPlayer.GetGunPosition();
-    
-    float deflection = 0.02;
-    
-    for(int i = 0; i < 3; i++){
-      vecAim = m_pPlayer.GetAutoaimVector( 0.0f ) + g_Engine.v_right * Math.RandomFloat( -deflection, deflection ) + g_Engine.v_up * Math.RandomFloat( -deflection, deflection );
-      g_Utility.TraceLine( vecSrc, vecSrc + vecAim * 1024, dont_ignore_monsters, m_pPlayer.edict(), tr );
-      CBeam@ m_pBeam = g_EntityFuncs.CreateBeam( "sprites/lgtning.spr", 50 );
-      m_pBeam.PointsInit( self.pev.origin, tr.vecEndPos );
-      m_pBeam.SetColor( 180, 255, 96 );
-      m_pBeam.SetBrightness( 255 );
-      m_pBeam.SetNoise( 20 );
-      m_pBeam.LiveForTime(0.5);
-    }
-    
-    vecAim = m_pPlayer.GetAutoaimVector( 0.0f );
-    g_Utility.TraceLine( vecSrc, vecSrc + vecAim * 1024, dont_ignore_monsters, m_pPlayer.edict(), tr );
-    
-    CBaseEntity@ pEntity = g_EntityFuncs.Instance( tr.pHit );
-    
-    if (pEntity !is null) {
-      if (pEntity.pev.classname == "player" || pEntity.pev.classname == "deadplayer") {
-        CBasePlayer@ pPlayer = cast<CBasePlayer@>(pEntity);
-        if(pPlayer !is null && pPlayer.IsConnected()){
-          if(pPlayer.IsAlive()){
-            if (pPlayer.pev.health < pPlayer.pev.max_health) {
-              pPlayer.pev.health += 10.0;
+	void ZapBeam()
+	{
+		Vector vecSrc = m_pPlayer.GetGunPosition();
+		Vector vecAim = m_pPlayer.GetAutoaimVector( 0.0f );
+		TraceResult tr;
+		float flAttackRange = 1024 * 2;
+		float deflection = 0.01f;
 
-              if (pPlayer.pev.health > pPlayer.pev.max_health)
-                pPlayer.pev.health = pPlayer.pev.max_health;
-            }
-            g_WeaponFuncs.ClearMultiDamage();
-            pPlayer.TraceAttack( pev, 0.0, vecAim, tr, DMG_SHOCK ); 
-            g_WeaponFuncs.ApplyMultiDamage( self.pev, self.pev );
-          }else{
-            pPlayer.GetObserver().RemoveDeadBody();
-            pPlayer.Revive();
-          }
-        }
-      }else{
-        g_WeaponFuncs.ClearMultiDamage();
-        pEntity.TraceAttack( pev, 55.0, vecAim, tr, DMG_SHOCK ); 
-        g_WeaponFuncs.ApplyMultiDamage( self.pev, self.pev );
-      }
-    }
-  }
+		g_Utility.TraceLine( vecSrc, vecSrc + vecAim * flAttackRange, dont_ignore_monsters, m_pPlayer.edict(), tr );
+		// Beams now shoot from the arms - Outerbeast
+		for( int i = 1; i <= 8; i++ )
+		{
+			vecAim = m_pPlayer.GetAutoaimVector( 0.0f ) + g_Engine.v_right * Math.RandomFloat( -deflection, deflection ) + g_Engine.v_up * Math.RandomFloat( -deflection, deflection );
+			g_Utility.TraceLine( vecSrc, vecSrc + vecAim * 1024, dont_ignore_monsters, m_pPlayer.edict(), tr );
+
+			CBeam@ m_pBeam = g_EntityFuncs.CreateBeam( "sprites/lgtning.spr", 50 );
+			m_pBeam.PointEntInit( tr.vecEndPos, m_pPlayer.entindex() );
+			m_pBeam.SetEndAttachment( ( i % 2 ) + 1 );
+			m_pBeam.SetColor( 180, 255, 96 );
+			m_pBeam.SetBrightness( 255 );
+			m_pBeam.SetNoise( 20 );
+			m_pBeam.LiveForTime( 0.5 );
+
+			g_WeaponFuncs.DecalGunshot( tr, DECAL_SCORCH_MARK );
+		}
+    
+		vecAim = m_pPlayer.GetAutoaimVector( 0.0f );
+		g_Utility.TraceLine( vecSrc, vecSrc + vecAim * 1024, dont_ignore_monsters, m_pPlayer.edict(), tr );
+    
+    	CBaseEntity@ pEntity = g_EntityFuncs.Instance( tr.pHit );
+    
+		if(pEntity !is null)
+		{
+			if( pEntity.IsPlayer() )
+			{
+				CBasePlayer@ pPlayer = cast<CBasePlayer@>(pEntity);
+				if(pPlayer !is null && pPlayer.IsConnected())
+				{
+					if(pPlayer.IsAlive())
+					{
+						if(pPlayer.pev.health < pPlayer.pev.max_health)
+						{
+							pPlayer.pev.health += 10.0;
+
+							if(pPlayer.pev.health > pPlayer.pev.max_health)
+								pPlayer.pev.health = pPlayer.pev.max_health;
+						}
+
+						g_WeaponFuncs.ClearMultiDamage();
+						pPlayer.TraceAttack( pev, 0.0, vecAim, tr, DMG_SHOCK ); 
+						g_WeaponFuncs.ApplyMultiDamage( self.pev, self.pev );
+					}
+					else if( !pPlayer.IsAlive() )
+					{
+						//pPlayer.GetObserver().RemoveDeadBody();
+						g_PlayerFuncs.RespawnPlayer( pPlayer, false, true );
+						pPlayer.SetOrigin( pEntity.GetOrigin() );
+					}
+				}
+			}
+			else
+			{
+				g_WeaponFuncs.ClearMultiDamage();
+				pEntity.TraceAttack( pev, 55.0, vecAim, tr, DMG_SHOCK ); 
+				g_WeaponFuncs.ApplyMultiDamage( self.pev, self.pev );
+			}
+		}
+	}
   
 	void WeaponIdle()
 	{
-    self.ResetEmptySound();
-    m_pPlayer.GetAutoaimVector( AUTOAIM_5DEGREES );
-    if(m_iMode > 4 && m_iMode < 17){
-      ZapBeam();
-      g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "hassault/hw_shoot1.wav", 1, ATTN_NORM, 0, Math.RandomLong( 130, 160 ) );
-      self.SendWeaponAnim( ISLWEP_ZAP );
-      
-      self.m_flTimeWeaponIdle = g_Engine.time + 1.0;
-    }else{
-      
-      if( self.m_flTimeWeaponIdle > g_Engine.time ) return;
-      
-      int iAnim;
-      switch( g_PlayerFuncs.SharedRandomLong( m_pPlayer.random_seed,  0, 1 ) )
-      {
-      case 0:	
-        iAnim = ISLWEP_IDLE1;	
-        break;
-      
-      case 1:
-        iAnim = ISLWEP_IDLE2;
-        break;
-        
-      default:
-        iAnim = ISLWEP_IDLE2;
-        break;
-      }
+		self.ResetEmptySound();
+		m_pPlayer.GetAutoaimVector( AUTOAIM_5DEGREES );
 
-      self.SendWeaponAnim( iAnim );
+		if(m_iMode > 4 && m_iMode < 17)
+		{
+			ZapBeam();
 
-      self.m_flTimeWeaponIdle = g_Engine.time + 5.0; // how long till we do this again.
-    }
-    
-    m_flChargeTime = -1.0;
-    m_iMode = 0;
-  }
+			g_SoundSystem.EmitSoundDyn( m_pPlayer.edict(), CHAN_WEAPON, "hassault/hw_shoot1.wav", 1, ATTN_NORM, 0, Math.RandomLong( 130, 160 ) );
+			self.SendWeaponAnim( ISLWEP_ZAP );
+			
+			self.m_flTimeWeaponIdle = g_Engine.time + 1.0;
+		}
+		else
+		{
+			if( self.m_flTimeWeaponIdle > g_Engine.time ) return;
+			
+			int iAnim;
+			switch( g_PlayerFuncs.SharedRandomLong( m_pPlayer.random_seed,  0, 1 ) )
+			{
+			case 0:	
+				iAnim = ISLWEP_IDLE1;	
+				break;
+			
+			case 1:
+				iAnim = ISLWEP_IDLE2;
+				break;
+				
+			default:
+				iAnim = ISLWEP_IDLE2;
+				break;
+			}
+
+			self.SendWeaponAnim( iAnim );
+
+			self.m_flTimeWeaponIdle = g_Engine.time + 5.0; // how long till we do this again.
+		}
+		
+		m_flChargeTime = -1.0;
+		m_iMode = 0;
+	}
 }
 
 string GetWeaponIslaveName()
@@ -449,5 +485,5 @@ string GetWeaponIslaveName()
 void RegisterWeaponIslave()
 {
 	g_CustomEntityFuncs.RegisterCustomEntity( "weapon_slave", GetWeaponIslaveName() );
-	g_ItemRegistry.RegisterWeapon( GetWeaponIslaveName(), "decay" );
+	g_ItemRegistry.RegisterWeapon( GetWeaponIslaveName(), "alien" );
 }

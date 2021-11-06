@@ -1,24 +1,25 @@
 /*
 * |=========================================================================|
-* | O P P O S I N G  F O R C E   N I G H T  V I S I O N  [#include version] |
-* | Author: Neo (SC, Discord),  Version V 1.3, May, 6th 2020                |
+* | O P P O S I N G  F O R C E   N I G H T  V I S I O N                     |
+* | Author: Neo (SC, Discord),  Version V 1.4b, May, 14th 2021              |
 * |=========================================================================|
 * |This map script enables the Opposing Force style NightVision             |
 * |view mode, which can used with standard flash light key.                 |
 * |=========================================================================|
 * |Map script install instructions:                                         |
 * |-------------------------------------------------------------------------|
-* |1. Extract the map script 'scripts/maps/ofnvision.as'                    |
+* |1. Extract the map script 'scripts/maps/nvision.as'                      |
 * |                       to 'svencoop_addon/scripts/maps'.                 |
 * |-------------------------------------------------------------------------|
 * |2. Add to main map script the following code:                            |
 * |                                                                         |
-* | (a) #include "ofnvision"                                                |
+* | (a) #include "opfor/nvision"                                            |
 * |                                                                         |
 * | (b) in function 'MapInit()':                                            |
-* |     g_nv.MapInit();                                                     |
+* |     NightVision::Enable();                                              |
 * |                                                                         |
-* | (c) Add g_nv.SetNVColor( Vector(0, 255, 0) ); below it                  |
+* | (c) To change color put your rgb values in like this:                   |
+* |		NightVision::Enable( Vector(0,255,0) )                              |
 * |=========================================================================|
 * |Usage of OF NightVision:                                                 |
 * |-------------------------------------------------------------------------|
@@ -26,134 +27,144 @@
 * |OF NightVision view mode on and off                                      |
 * |=========================================================================|
 */
-
-NightVision@ g_nv = @NightVision();
-
-HookReturnCode NVPlayerClient(CBasePlayer@ pPlayer)
+namespace NightVision
 {
-	return g_nv.PlayerClient(pPlayer);
+
+enum light_position
+{
+	CENTER = 0,
+	EYE,
+	EAR
 }
 
-HookReturnCode NVPlayerKilled(CBasePlayer@ pPlayer, CBaseEntity@ pAttacker, int iGib)
+int	iRadius 	= 42;
+int	iLife		= 2;
+int	iDecay 		= 1;
+int	iBrightness = 64;
+int	iFadeAlpha 	= 64;
+int	iPosition 	= CENTER;
+
+float  fInterval 	= 0.05f;
+float  flVolume 	= 0.8f;
+float  flFadeTime 	= 0.01f;
+float  flFadeHold 	= 0.5f;
+
+Vector vec_NVColor;
+const Vector NV_GREEN( 0, 255, 0 );
+const Vector NV_RED( 255, 0, 0 );
+
+string szSndHudNV  = "player/hud_nightvision.wav";
+string szSndFLight = "items/flashlight2.wav";
+
+dictionary nvPlayer;
+
+void Enable(Vector vec_NVColorIn = NV_GREEN)
 {
-	return g_nv.PlayerKilled(pPlayer, pAttacker, iGib);
+	if( vec_NVColorIn != g_vecZero )
+		vec_NVColor = vec_NVColorIn;
+	else
+		vec_NVColor = NV_GREEN;
+
+	g_SoundSystem.PrecacheSound(szSndHudNV);
+	g_SoundSystem.PrecacheSound(szSndFLight);
+
+	g_Hooks.RegisterHook(Hooks::Player::ClientPutInServer, @NVPlayerClient);
+	g_Hooks.RegisterHook(Hooks::Player::ClientDisconnect,  @NVPlayerClient);
+	g_Hooks.RegisterHook(Hooks::Player::PlayerKilled,      @NVPlayerKilled);
+	g_Hooks.RegisterHook(Hooks::Player::PlayerPostThink,  @NVPlayerPostThink);
 }
 
-void NVThink()
+void nvOn(EHandle hPlayer) 
 {
-	g_nv.Think();
-}
+	if( !hPlayer )
+		return;
 
+	CBasePlayer@ pPlayer = cast<CBasePlayer@>( hPlayer.GetEntity() );
+	string szSteamId = g_EngineFuncs.GetPlayerAuthId( pPlayer.edict() );
 
-
-final class NightVision
-{
-	private string szSndHudNV  = "player/hud_nightvision.wav";
-	private string szSndFLight = "items/flashlight2.wav";
-	private string szNVThink = "NVThink";
-	private Vector vec_NVColor;
-	Vector NV_GREEN( 0, 255, 0 );
-	Vector NV_RED( 255, 0, 0 );
-	private float  fInterval = 0.05f;
-	private float  flVolume = 0.8f;
-	private int    iRadius = 42;
-	private int    iLife	= 2;
-	private int    iDecay = 1;
-	private int    iBrightness = 64;
-	private float  flFadeTime = 0.01f;
-	private float  flFadeHold = 0.5f;
-	private int    iFadeAlpha = 64;
-	private CScheduledFunction@ pNVThinkFunc = null;
-	private dictionary nvPlayer;
-
-	NightVision()
+	if(!nvPlayer.exists(szSteamId)) 
 	{
-		g_Hooks.RegisterHook(Hooks::Player::ClientPutInServer, @NVPlayerClient);
-		g_Hooks.RegisterHook(Hooks::Player::ClientDisconnect,  @NVPlayerClient);
-		g_Hooks.RegisterHook(Hooks::Player::PlayerKilled,      @NVPlayerKilled);
+		nvPlayer[szSteamId] = true;
+		g_PlayerFuncs.ScreenFade( pPlayer, vec_NVColor, flFadeTime, flFadeHold, iFadeAlpha, FFADE_OUT | FFADE_STAYOUT);
+		g_SoundSystem.EmitSoundDyn( pPlayer.edict(), CHAN_WEAPON, szSndHudNV, flVolume, ATTN_NORM, 0, PITCH_NORM );
 	}
 
-	void MapInit()
+	Vector vecSrc; 
+
+	switch( iPosition )
 	{
-		g_SoundSystem.PrecacheSound(szSndHudNV);
-		g_SoundSystem.PrecacheSound(szSndFLight);
-		@pNVThinkFunc = g_Scheduler.SetInterval(szNVThink, fInterval);
+		case CENTER:
+			vecSrc = pPlayer.Center();
+			break;
+		
+		case EYE:
+			vecSrc = pPlayer.EyePosition();
+			break;
+
+		case EAR:
+			vecSrc = pPlayer.EarPosition();
+			break;
+
+		default:
+			vecSrc = pPlayer.GetOrigin();
 	}
 
-	void SetNVColor( const Vector& in NV_COLOR ) //KernCore: Add new color method
-	{
-		vec_NVColor = NV_COLOR;
-	}
-
-	private Vector GetNVColor()
-	{
-		return vec_NVColor;
-	}
-
-	private void nvOn(CBasePlayer@ pPlayer) 
-	{
-		string szSteamId = g_EngineFuncs.GetPlayerAuthId( pPlayer.edict() );
-		if(!nvPlayer.exists(szSteamId)) 
-		{
-			nvPlayer[szSteamId] = true;
-			g_PlayerFuncs.ScreenFade( pPlayer, GetNVColor(), flFadeTime, flFadeHold, iFadeAlpha, FFADE_OUT | FFADE_STAYOUT);
-			g_SoundSystem.EmitSoundDyn( pPlayer.edict(), CHAN_WEAPON, szSndHudNV, flVolume, ATTN_NORM, 0, PITCH_NORM );
-		}
-
-		Vector vecSrc = pPlayer.EyePosition();
-		NetworkMessage netMsg( MSG_ONE, NetworkMessages::SVC_TEMPENTITY, pPlayer.edict() );
+	NetworkMessage netMsg( MSG_ONE, NetworkMessages::SVC_TEMPENTITY, pPlayer.edict() );
 		netMsg.WriteByte( TE_DLIGHT );
 		netMsg.WriteCoord( vecSrc.x );
 		netMsg.WriteCoord( vecSrc.y );
 		netMsg.WriteCoord( vecSrc.z );
 		netMsg.WriteByte( iRadius );
-		netMsg.WriteByte( int(GetNVColor().x) );
-		netMsg.WriteByte( int(GetNVColor().y) );
-		netMsg.WriteByte( int(GetNVColor().z) );
+		netMsg.WriteByte( int(vec_NVColor.x) );
+		netMsg.WriteByte( int(vec_NVColor.y) );
+		netMsg.WriteByte( int(vec_NVColor.z) );
 		netMsg.WriteByte( iLife );
 		netMsg.WriteByte( iDecay );
-		netMsg.End();
-	}
+	netMsg.End();
+}
 
-	private void nvOff(CBasePlayer@ pPlayer)
-	{
-		string szSteamId = g_EngineFuncs.GetPlayerAuthId( pPlayer.edict() );
-		if(nvPlayer.exists(szSteamId))
-		{
-			g_PlayerFuncs.ScreenFade( pPlayer, GetNVColor(), flFadeTime, flFadeHold, iFadeAlpha, FFADE_IN);
-			g_SoundSystem.EmitSoundDyn( pPlayer.edict(), CHAN_WEAPON, szSndFLight, flVolume, ATTN_NORM, 0, PITCH_NORM );
-			nvPlayer.delete(szSteamId);
-		}
-	}
+void nvOff(EHandle hPlayer)
+{
+	if( !hPlayer )
+		return;
 
-	HookReturnCode PlayerClient(CBasePlayer@ pPlayer)
+	CBasePlayer@ pPlayer = cast<CBasePlayer@>( hPlayer.GetEntity() );
+	string szSteamId = g_EngineFuncs.GetPlayerAuthId( pPlayer.edict() );
+	
+	if(nvPlayer.exists(szSteamId))
 	{
-		if(pPlayer !is null)
+		g_PlayerFuncs.ScreenFade( pPlayer, vec_NVColor, flFadeTime, flFadeHold, iFadeAlpha, FFADE_IN);
+		g_SoundSystem.EmitSoundDyn( pPlayer.edict(), CHAN_WEAPON, szSndFLight, flVolume, ATTN_NORM, 0, PITCH_NORM );
+		nvPlayer.delete(szSteamId);
+	}
+}
+
+HookReturnCode NVPlayerClient(CBasePlayer@ pPlayer)
+{
+	if(pPlayer !is null)
+		nvOff(pPlayer);
+
+	return HOOK_CONTINUE;
+}
+
+HookReturnCode NVPlayerKilled(CBasePlayer@ pPlayer, CBaseEntity@ pAttacker, int iGib)
+{
+	if(pPlayer !is null)
+		nvOff(pPlayer);
+
+	return HOOK_CONTINUE;
+}
+
+HookReturnCode NVPlayerPostThink(CBasePlayer@ pPlayer)
+{
+	if ( pPlayer !is null and pPlayer.IsConnected() and pPlayer.IsAlive())
+	{
+		if(pPlayer.FlashlightIsOn())
+			nvOn(pPlayer);
+		else
 			nvOff(pPlayer);
-
-		return HOOK_CONTINUE;
 	}
+	return HOOK_CONTINUE;
+}
 
-	HookReturnCode PlayerKilled(CBasePlayer@ pPlayer, CBaseEntity@ pAttacker, int iGib)
-	{
-		if(pPlayer !is null)
-			nvOff(pPlayer);
-
-		return HOOK_CONTINUE;
-	}
-
-	void Think()
-	{
-		for ( int i = 1; i <= g_Engine.maxClients; ++i )
-		{
-			CBasePlayer@ pPlayer = g_PlayerFuncs.FindPlayerByIndex(i);
-			if ( pPlayer !is null and pPlayer.IsConnected() and pPlayer.IsAlive())
-			{
-				if(pPlayer.FlashlightIsOn())
-					nvOn(pPlayer);
-				else
-					nvOff(pPlayer);
-			}
-		}
-	}
 }

@@ -1,9 +1,7 @@
-// Created with resguy v9 (September 2018)
+// Created with resguy v10 (WIP)
 // https://github.com/wootguy/resguy
 
 asheep.wad
-models/azuresheep/barniel.mdl
-models/azuresheep/kate.mdl
 models/azuresheep/p_chub.mdl
 models/azuresheep/p_poolstick.mdl
 models/azuresheep/w_blue_suit.mdl
@@ -40,11 +38,8 @@ sound/azuresheep/barniel/badfeeling.wav
 sound/azuresheep/barniel/bequiet.wav
 sound/azuresheep/barniel/bn_another.wav
 sound/azuresheep/barniel/bn_attack1.wav
-sound/azuresheep/barniel/bn_becarefull.wav
 sound/azuresheep/barniel/bn_bring.wav
-sound/azuresheep/barniel/bn_carefull.wav
 sound/azuresheep/barniel/bn_close.wav
-sound/azuresheep/barniel/bn_die1.wav
 sound/azuresheep/barniel/bn_dontdothat.wav
 sound/azuresheep/barniel/bn_dontmake.wav
 sound/azuresheep/barniel/bn_endline.wav
@@ -53,8 +48,6 @@ sound/azuresheep/barniel/bn_friends.wav
 sound/azuresheep/barniel/bn_gotone.wav
 sound/azuresheep/barniel/bn_iwish.wav
 sound/azuresheep/barniel/bn_onelessh.wav
-sound/azuresheep/barniel/bn_pain1.wav
-sound/azuresheep/barniel/bn_pain2.wav
 sound/azuresheep/barniel/bn_post.wav
 sound/azuresheep/barniel/bn_seethat.wav
 sound/azuresheep/barniel/bn_somuch.wav
@@ -148,7 +141,6 @@ sound/azuresheep/gordon/yup.wav
 sound/azuresheep/kate/aimforhead.wav
 sound/azuresheep/kate/anotherdown.wav
 sound/azuresheep/kate/badfelling.wav
-sound/azuresheep/kate/becarefull.wav
 sound/azuresheep/kate/bequiet.wav
 sound/azuresheep/kate/bigeye.wav
 sound/azuresheep/kate/bringitone.wav

@@ -61,6 +61,11 @@ class CAlienflyer : ScriptBaseMonsterEntity{
     SetThink( ThinkFunction( FlyThink ) );
     // SetTouch( TouchFunction( CommandUse ) );
 
+   	if( string( self.m_FormattedName ).IsEmpty() )
+		{
+      self.m_FormattedName = "Boid";
+		}
+
     if ((pev.spawnflags & 0x40) == 0){
       
       pev.solid = SOLID_BBOX;

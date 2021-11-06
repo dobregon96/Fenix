@@ -1,4 +1,4 @@
-// Created with resguy v9 (September 2018)
+// Created with resguy v10 (WIP)
 // https://github.com/wootguy/resguy
 
 asheep.wad
