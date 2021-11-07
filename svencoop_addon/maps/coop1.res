@@ -1,0 +1,1 @@
+maps/coop1.res

@@ -1,0 +1,116 @@
+================================================================================
+* LEVEL INFORMATION *
+--------------------------------------------------------------------------------
+TITLE                   : E.T.C.
+FILENAME                : etc
+AUTHOR                  : Dave Johnston - Converted by Commando
+DATE                    : 03.08.1999
+CONVERSION DATE		: 22.09.2002
+GAME                    : Half-Life
+TYPE                    : SinglePlayer/Cooperative
+EMAIL ADDRESS           : dave@3dgaming.com
+			: tem_commando@lycos.com
+HOMEPAGE URL            : www.planethalflife.com/davej
+			  www.svencoop.com
+ 
+--------------------------------------------------------------------------------
+* NOTES *
+--------------------------------------------------------------------------------
+The levels have been changed to suit Svencoop. Whilst there are few major changes
+there have been lots of changes to monsters, lifts, scripted sequences, etc...
+
+Commando
+ 
+--------------------------------------------------------------------------------
+NEW TEXTURES            : Yes (not really, mostly just modified Valve ones... 
+			  let's see if I can do something about that...)
+UHH... MODIFIED TEXTURES: Yes!
+NEW SOUNDS              : Yes
+ 
+--------------------------------------------------------------------------------
+* CONSTRUCTION *
+--------------------------------------------------------------------------------
+MAP BASE                : New Map
+PREFABS USED            : APC by Scud (Scud@aurum.net.au) - Thanks!
+EDITOR(S) USED          : Worldcraft 2.1 Beta 
+OTHER UTILITIES USED    : Zoners HL Tools
+			  MilkShape 3D		-- more information in 'credits'
+ 
+KNOWN BUGS              : QBSP messed up my APC (not Scud's) and my barrels... 
+			  not much else I can think of... err, oh yeah - 
+			  anti-climax ending - is that a bug?! Maybe... ;)
+ 
+COMPILE MACHINE         : PII-233, 64MB RAM, 180MB Swap, Win95 OSR2. 
+ 
+--------------------------------------------------------------------------------
+* OTHER LEVELS BY THE AUTHOR *
+--------------------------------------------------------------------------------
+Check www.planethalflife.com/davej
+ 
+--------------------------------------------------------------------------------
+* SPECIAL INSTRUCTIONS / ADDITIONAL INFORMATION *
+--------------------------------------------------------------------------------
+INSTALLATION:
+Extract with folder names on to your Svencoop folder.
+
+Otherwise,
+Put .BSP and .CFG files in \svencoop\maps
+Put .WAD file in \svencoop
+Put .WAV file in \svencoop\sound\etc\etc
+ 
+--------------------------------------------------------------------------------
+* CREDITS *
+--------------------------------------------------------------------------------
+Valve Software          : For making a KICK ARSE/KICK BUTT/KICK ASS/KICK-ING/
+			  GREAT/KICK BOTTOM/EXCELLENT (delete as appropriate - 
+			  deleting none is preferable) game
+				http://www.valvesoftware.com/
+
+Rust and HLERC		: Being great resources
+		  	  	http://www.gamedesign.net/
+			  	http://halflife.gamedesign.net/
+
+Half-Life Workshop	: For helping publicise ETC slightly! Well, more than 
+			  slightly...
+			  	http://www.planethalflife.com/workshop/
+
+3DGAMING.COM		: For being a brilliant bunch of people!
+	 		  	http://www.3dgaming.com/
+
+Zoner's HL Tools	: Very useful - helped increase texture memory to 4MB so
+			  I could compile etc0c2... Thanks Zoner!
+	 		  	http://members.home.com/prosperoe/misc/zhlt12.zip
+
+Everyone in #gamedesign and #worldcraft on gamesnet
+			: Especially people like autolycus of the ERC, sneak, 
+			  Penguin... and all those other people I have forgot! 
+			  Thanks guys!
+
+Basically, everyone that has helped me put ETC together should be thanked...
+
+I hope you all enjoy ETC.
+
+--------------------------------------------------------------------------------
+* GREAT SITES * (added for one site only)
+--------------------------------------------------------------------------------
+Bluesnews			: You know who Blue is. No more questions.
+				  http://www.bluesnews.com/
+ 
+================================================================================
+* COPYRIGHT / PERMISSIONS *
+--------------------------------------------------------------------------------
+Authors MAY NOT use this level as a base to build additional levels.
+ 
+You MUST NOT distribute this level UNLESS you INCLUDE THIS FILE WITH
+NO MODIFICATIONS. If you don't co-operate, then DON'T DISTRIBUTE IT
+IN ANY FORM.
+
+This LEVEL may be distributed ONLY over the Internet and/or BBS systems.
+You are NOT authorized to put this LEVEL on any CD or distribute it in
+any way without my written permission.
+
+Magazines: But, if you do ask to put it on your covermount CD or something, I'll 
+probably let you ;) Just ask me first to be sure - dave@3dgaming.com
+
+Half-Life (C) 1998-99 Sierra On-line and Valve L.L.C. All rights reserved.
+[END OF DATA]=========================================================[.txt|Gen]

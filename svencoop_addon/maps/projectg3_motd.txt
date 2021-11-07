@@ -1,0 +1,20 @@
+============PROJECT: GUILTY - Mission 1===================
+
+Objective Info: 
+
+You are a Special Operations Executive (SOE) of the United States special forces
+      
+You have been captured along with your team by a corrupt marine force. Your 
+mission was to prevent the base transmitting secret information in regards to 
+SOE operations.
+
+You have achieved your mission, now you just need to escape..
+
+-Primary Objective  : Escape out of corrupt marine complex.
+
+
+Tips:
+
+» There are secrets in some maps, keep your eyes open.
+
+» Keep each other healed or you will not survive your escape.

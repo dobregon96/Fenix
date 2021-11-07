@@ -1,17 +1,17 @@
 
-Title:
-O==II=========>  Sven Co-op RPG 2  <=========II==0
-
+Title: 
+O==II=========>  SvenCoop RPG 2  <=========II==0 
+	
 
 Author: DeathBog (deathbawg@hotmail.com)
 
-Type of Map: Cooperative
+Type of Map: Cooperative 
 
 Recommended players: 3-12
 
 Thanks to Dead Man Walking and Shaithis for textures.
 
-Thanks to Another1_Real, NivekDev, and Mark for the game rules entity suite.
+Thanks to Another1_Real, NivekDev, and Mark for the gamerules entity suite.
 
 Thanks to Law Enforcer for the Flintlock pistol model
 
@@ -19,23 +19,23 @@ Thanks to Chalupamonk for the skybox textures
 =------------------------------------------=
 * Construction *
 
-Editor(s)               : Worldcraft 3.3, PakScape, Walley, SprView,
-                        PaintShop Pro, Half-Life Compilation Controller,
-                        HL Model Viewer, MilkShape
+Editor(s)		: Worldcraft 3.3, PakScape, Walley, SprView,
+			PaintShop Pro, Half-Life Compilation Controller,
+			HL Model Viewer, MilkShape 
 
 New textures: Yes
 New sky:      Yes
 New sounds:   No
 New models:   Yes
 
-Known Bugs              : None
+Known Bugs		: None
 
-Compile Time(Approximate):  1 hour
+Compile Time(Approximate):  1 hour  
 
-Compile Machine         : AMD Duron 750 MHz  128 MB RAM
+Compile Machine		: AMD Duron 750 MHz  128 MB RAM
 
 R_speeds                : Computer resources may be taxed in the large areas. To remedy this, simply upgrade your computer
-
+       		  
 =========================================================
 With the death of the Monster-Lord Dalamarus achieved and the chaotic havoc wreaked by his minions a bitter memory, Giram once again prospered in an age of peace. Friendly relations were maintained between the provinces, with Militvorn deriving even more powerful divine right through the legendary sword of Sarticulus. The party of adventurers who unbelievably slew the Monster-Lord lapsed into humble oblivion after the sparkling ceremony which bestowed the holy blade upon Grylion, Dalamarus's heir. However, behind the gregarious celebration and fountaining wine, some still remained wary. How could such a small band of fighers destroy such a powerful force of evil? No one seemed to care...
 
@@ -48,8 +48,8 @@ With the death of the Monster-Lord Dalamarus achieved and the chaotic havoc wrea
 Good luck.
 
 =========================================================
-Notes:
-I have spent countless hours putting all of my creative energies into this map. I hope you enjoy it and decide to continue your worship of the DeathBog.
+Notes: 
+I have spent countless hours putting all of my creative energies into this map. I hope you enjoy it and decide to continue your worship of the DeathBog. 
 This text file also applies to svencooprpg3.
 
 All models, textures, and ideas used in this map are open-source; feel free to use them in your own Worldcraftian creations!
