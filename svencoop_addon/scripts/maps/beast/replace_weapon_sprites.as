@@ -4,11 +4,11 @@ Call this code in MapInit block in your map script:
 
 " REPLACE_WEAPON_SPRITES::SetReplacements( "path/to/sprites", "hudsprite01;hudsprite02", "weapon_balls;weapon_pants;weapon_..." ); "
 -First parameter: sets the path of the sprites - you can put "" if you're not using it
--Second paramater: semicolon seperated list of the sprites
+-Second paramater: semicolon seperated list of the sprites containing the hud elements
 -Final parameter: semicolon seperated list of the weapons you want to have replaced hud sprites
 
-If for some reason you want to disable sprites being replaced for certain maps, use this cvar followed by a semicolon seperated
-list of weapons you want ignored:
+If for some reason you want to disable sprites being replaced for certain maps, put this cvar followed by a semicolon seperated
+list of weapons you want ignored in your desired map cfg file:
 
 "as_command rws_ignore_weapons weapon_balls;weapon_pants;weapon_..."
 
@@ -21,6 +21,7 @@ namespace REPLACE_WEAPON_SPRITES
 
 string strDirPath;
 array<string> STR_WEAPONS;
+//CScheduledFunction@ fnPatch = g_Scheduler.SetTimeout( "PatchWeapons", 0.1f );
 
 void SetReplacements(string strRootIn = "", string strHudSprs = "", string strWeapons = "")
 {
@@ -35,17 +36,28 @@ void SetReplacements(string strRootIn = "", string strHudSprs = "", string strWe
         return;
 
     for( uint i = 0; i < STR_HUD_SPRS.length(); i++ )
-    {
         g_Game.PrecacheModel( "sprites/" + strDirPath + STR_HUD_SPRS[i] + ".spr" );
-        g_Game.PrecacheGeneric( "sprites/" + strDirPath + STR_HUD_SPRS[i] + ".spr" );
-    }
 
-    for( uint j = 0; j < STR_WEAPONS.length(); j++ )
-        g_Game.PrecacheGeneric( "sprites/" + strDirPath + STR_WEAPONS[j] + ".txt" );
+    for( uint i = 0; i < STR_WEAPONS.length(); i++ )
+        g_Game.PrecacheGeneric( "sprites/" + strDirPath + STR_WEAPONS[i] + ".txt" );
 
     g_Hooks.RegisterHook( Hooks::Player::PlayerSpawn, PlayerJoined );
     g_Hooks.RegisterHook( Hooks::Player::ClientPutInServer, PlayerJoined );
     g_Hooks.RegisterHook( Hooks::PickupObject::Collected, ItemCollected );
+}
+
+void PatchWeapons()
+{
+    for( uint i = 0; i < STR_WEAPONS.length(); i++ )
+    {
+        if( STR_WEAPONS[i] == "")
+            continue;
+
+        CBaseEntity@ pEntity;
+
+        while( ( @pEntity = g_EntityFuncs.FindEntityByClassname( pEntity, STR_WEAPONS[i] ) ) !is null )
+            g_EntityFuncs.DispatchKeyValue( pEntity.edict(), "CustomSpriteDir", strDirPath );
+    }
 }
 
 void ChangeWpnHudSpr(EHandle hPlayer, EHandle hWeapon)
@@ -63,7 +75,8 @@ void ChangeWpnHudSpr(EHandle hPlayer, EHandle hWeapon)
         if( cvarIgnoreWeaponSprReplacement.GetString() != "" && 
             cvarIgnoreWeaponSprReplacement.GetString().Split( ";" ).find( pWeapon.GetClassname() ) >= 0 )
                 return;
-
+        // !-UNDONE-!: this was leading to the hud icon becoming corrupted.
+        //g_EntityFuncs.DispatchKeyValue( pWeapon.edict(), "CustomSpriteDir", strDirPath );
         pWeapon.LoadSprites( cast<CBasePlayer@>( hPlayer.GetEntity() ), strDirPath + pWeapon.GetClassname() );
     }
 }
@@ -74,7 +87,7 @@ HookReturnCode PlayerJoined(CBasePlayer@ pPlayer)
         return HOOK_CONTINUE;
     // !-BUG-!: HasNamedPlayerItem handle is not valid when the player spawns (assuming), must get it a millisecond later
     for( uint i = 0; i < STR_WEAPONS.length(); i++ )
-        g_Scheduler.SetTimeout( "ChangeWpnHudSpr", 0.01f, EHandle( pPlayer ), EHandle( pPlayer.HasNamedPlayerItem( STR_WEAPONS[i] ) ) );
+        g_Scheduler.SetTimeout( "ChangeWpnHudSpr", 0.1f, EHandle( pPlayer ), EHandle( pPlayer.HasNamedPlayerItem( STR_WEAPONS[i] ) ) );
 
     return HOOK_CONTINUE;
 }
