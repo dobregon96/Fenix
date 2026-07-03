@@ -1,3 +1,0 @@
-"weapons/hks1.wav"		"amckern/avp10-guns/sentry/Fire1.WAV"
-"weapons/hks2.wav"		"amckern/avp10-guns/sentry/Fire2.WAV"
-"weapons/hks3.wav"		"amckern/avp10-guns/sentry/Fire3.WAV"

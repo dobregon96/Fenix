@@ -1,2 +1,0 @@
-"models/dgf_hevstation.mdl" "models/shell.mdl"
-"models/dgf_healthstation.mdl" "models/shell.mdl"
