@@ -1,4 +1,0 @@
-E.T.C. (Earthquake Test Center) by Dave Johnston
-SvenCo-op conversion by Commando
-
-For full information, see the maps\ETC.txt file.

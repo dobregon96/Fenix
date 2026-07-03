@@ -1,1 +1,0 @@
-sound/sc_28/vending_machine_long.wav
